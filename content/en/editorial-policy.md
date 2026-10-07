@@ -37,4 +37,4 @@ Parole de RH is an independent website. If sponsored content or an affiliate lin
 
 ## Reporting an error
 
-An error or outdated information can be reported to [contact@parolederh.fr](mailto:contact@parolederh.fr). Corrections are applied to both the French and English versions of the article.
+An error or outdated information can be reported to [contact@parole-de-rh.fr](mailto:contact@parole-de-rh.fr). Corrections are applied to both the French and English versions of the article.

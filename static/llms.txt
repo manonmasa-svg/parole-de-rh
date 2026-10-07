@@ -6,37 +6,37 @@
 
 Parole de RH est un site d'information indépendant consacré aux ressources humaines. Chaque article s'appuie sur des sources officielles consultables en ligne (Service-Public, Légifrance, CNIL, net-entreprises, institutions européennes), citées et datées en fin d'article. Le site est bilingue : français à la racine, anglais sous /en/. Les articles sont signés par des noms de plume de la rédaction, un par périmètre éditorial.
 
-- [À propos](https://manonmasa-svg.github.io/parole-de-rh/a-propos/)
-- [Ligne éditoriale](https://manonmasa-svg.github.io/parole-de-rh/ligne-editoriale/)
+- [À propos](https://parole-de-rh.fr/a-propos/)
+- [Ligne éditoriale](https://parole-de-rh.fr/ligne-editoriale/)
 
 ## Contenu principal
 
-- [Actualités RH](https://manonmasa-svg.github.io/parole-de-rh/actualites-rh/) : recrutement, formation, paie, droit social, onboarding, management, IA et SIRH, QVCT, marque employeur, rémunération et avantages sociaux, tendances RH
-- [Logiciels RH](https://manonmasa-svg.github.io/parole-de-rh/categories/logiciels-rh/) : SIRH, logiciels de paie, outils de recrutement
-- [Comparatifs](https://manonmasa-svg.github.io/parole-de-rh/categories/comparatifs/) : comparatifs factuels entre dispositifs, contrats ou outils RH
-- [Définitions RH](https://manonmasa-svg.github.io/parole-de-rh/categories/definitions-rh/) : lexique des sigles et notions RH
+- [Actualités RH](https://parole-de-rh.fr/actualites-rh/) : recrutement, formation, paie, droit social, onboarding, management, IA et SIRH, QVCT, marque employeur, rémunération et avantages sociaux, tendances RH
+- [Logiciels RH](https://parole-de-rh.fr/categories/logiciels-rh/) : SIRH, logiciels de paie, outils de recrutement
+- [Comparatifs](https://parole-de-rh.fr/categories/comparatifs/) : comparatifs factuels entre dispositifs, contrats ou outils RH
+- [Définitions RH](https://parole-de-rh.fr/categories/definitions-rh/) : lexique des sigles et notions RH
 
 ## Articles récents
 
-- [Transparence des salaires : ce que prévoit le projet de loi](https://manonmasa-svg.github.io/parole-de-rh/blog/transparence-des-salaires-directive-europeenne/)
-- [Entretien de parcours professionnel : règles et périodicité](https://manonmasa-svg.github.io/parole-de-rh/blog/entretien-de-parcours-professionnel/)
-- [IA et recrutement : ce que prévoit le règlement européen](https://manonmasa-svg.github.io/parole-de-rh/blog/ia-recrutement-reglement-europeen/)
-- [Bulletin de paie : mentions obligatoires et interdites](https://manonmasa-svg.github.io/parole-de-rh/blog/bulletin-de-paie-mentions-obligatoires/)
-- [Période d'essai en CDI : durée, renouvellement, rupture](https://manonmasa-svg.github.io/parole-de-rh/blog/periode-essai-cdi-duree-rupture/)
-- [Recrutement : quelles informations demander à un candidat ?](https://manonmasa-svg.github.io/parole-de-rh/blog/informations-demandees-candidat-recrutement/)
-- [Compte personnel de formation (CPF) : fonctionnement](https://manonmasa-svg.github.io/parole-de-rh/blog/compte-personnel-de-formation-cpf/)
-- [Formalités d'embauche d'un salarié : les étapes obligatoires](https://manonmasa-svg.github.io/parole-de-rh/blog/formalites-embauche-salarie/)
-- [QVCT : définition, origine et thèmes couverts](https://manonmasa-svg.github.io/parole-de-rh/blog/qvct-definition/)
-- [Offre d'emploi : mentions obligatoires et interdites](https://manonmasa-svg.github.io/parole-de-rh/blog/offre-emploi-mentions-obligatoires-interdites/)
-- [Titres-restaurant : règles pour l'employeur et le salarié](https://manonmasa-svg.github.io/parole-de-rh/blog/titres-restaurant-regles/)
-- [Logiciel RH et données personnelles : les règles de la CNIL](https://manonmasa-svg.github.io/parole-de-rh/blog/logiciel-rh-donnees-personnelles-rgpd/)
-- [Rupture conventionnelle ou démission : le comparatif](https://manonmasa-svg.github.io/parole-de-rh/blog/rupture-conventionnelle-ou-demission/)
-- [DSN : définition de la déclaration sociale nominative](https://manonmasa-svg.github.io/parole-de-rh/blog/dsn-definition/)
+- [Transparence des salaires : ce que prévoit le projet de loi](https://parole-de-rh.fr/blog/transparence-des-salaires-directive-europeenne/)
+- [Entretien de parcours professionnel : règles et périodicité](https://parole-de-rh.fr/blog/entretien-de-parcours-professionnel/)
+- [IA et recrutement : ce que prévoit le règlement européen](https://parole-de-rh.fr/blog/ia-recrutement-reglement-europeen/)
+- [Bulletin de paie : mentions obligatoires et interdites](https://parole-de-rh.fr/blog/bulletin-de-paie-mentions-obligatoires/)
+- [Période d'essai en CDI : durée, renouvellement, rupture](https://parole-de-rh.fr/blog/periode-essai-cdi-duree-rupture/)
+- [Recrutement : quelles informations demander à un candidat ?](https://parole-de-rh.fr/blog/informations-demandees-candidat-recrutement/)
+- [Compte personnel de formation (CPF) : fonctionnement](https://parole-de-rh.fr/blog/compte-personnel-de-formation-cpf/)
+- [Formalités d'embauche d'un salarié : les étapes obligatoires](https://parole-de-rh.fr/blog/formalites-embauche-salarie/)
+- [QVCT : définition, origine et thèmes couverts](https://parole-de-rh.fr/blog/qvct-definition/)
+- [Offre d'emploi : mentions obligatoires et interdites](https://parole-de-rh.fr/blog/offre-emploi-mentions-obligatoires-interdites/)
+- [Titres-restaurant : règles pour l'employeur et le salarié](https://parole-de-rh.fr/blog/titres-restaurant-regles/)
+- [Logiciel RH et données personnelles : les règles de la CNIL](https://parole-de-rh.fr/blog/logiciel-rh-donnees-personnelles-rgpd/)
+- [Rupture conventionnelle ou démission : le comparatif](https://parole-de-rh.fr/blog/rupture-conventionnelle-ou-demission/)
+- [DSN : définition de la déclaration sociale nominative](https://parole-de-rh.fr/blog/dsn-definition/)
 
 ## Informations techniques
 
 - Générateur : Hugo
 - Hébergement : GitHub Pages
-- Sitemap : https://manonmasa-svg.github.io/parole-de-rh/sitemap.xml
-- RSS : https://manonmasa-svg.github.io/parole-de-rh/index.xml
-- Version anglaise : https://manonmasa-svg.github.io/parole-de-rh/en/
+- Sitemap : https://parole-de-rh.fr/sitemap.xml
+- RSS : https://parole-de-rh.fr/index.xml
+- Version anglaise : https://parole-de-rh.fr/en/

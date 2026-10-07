@@ -37,4 +37,4 @@ Parole de RH est un site indépendant. Si un contenu sponsorisé ou un lien d'af
 
 ## Signaler une erreur
 
-Une erreur ou une information dépassée peut être signalée à l'adresse [contact@parolederh.fr](mailto:contact@parolederh.fr). Les corrections sont appliquées aux versions française et anglaise de l'article.
+Une erreur ou une information dépassée peut être signalée à l'adresse [contact@parole-de-rh.fr](mailto:contact@parole-de-rh.fr). Les corrections sont appliquées aux versions française et anglaise de l'article.

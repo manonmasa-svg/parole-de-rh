@@ -6,6 +6,6 @@ translationKey: "contact"
 
 To report an error, suggest a topic or ask a question about an article, write to:
 
-[contact@parolederh.fr](mailto:contact@parolederh.fr)
+[contact@parole-de-rh.fr](mailto:contact@parole-de-rh.fr)
 
 Parole de RH does not provide personalised legal advice. For an individual situation, readers should contact the labour inspectorate or a legal professional.

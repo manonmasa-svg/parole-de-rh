@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://manonmasa-svg.github.io/parole-de-rh/sitemap.xml
+Sitemap: https://parole-de-rh.fr/sitemap.xml

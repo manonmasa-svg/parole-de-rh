@@ -7,7 +7,7 @@ translationKey: "legal"
 ## Publisher
 
 - Publisher: Parole de RH
-- Contact: [contact@parolederh.fr](mailto:contact@parolederh.fr)
+- Contact: [contact@parole-de-rh.fr](mailto:contact@parole-de-rh.fr)
 - Publication director: the editorial manager of the Parole de RH website
 
 ## Host

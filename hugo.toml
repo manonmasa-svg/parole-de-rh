@@ -1,4 +1,4 @@
-baseURL = "https://manonmasa-svg.github.io/parole-de-rh/"
+baseURL = "https://parole-de-rh.fr/"
 title = "Parole de RH"
 theme = "parole-de-rh"
 
@@ -244,7 +244,7 @@ enableRobotsTXT = false
   default_og_image = "/images/og-default.jpg"
   logo = "/images/logo.svg"
   founding_year = "2026"
-  contact_email = "contact@parolederh.fr"
+  contact_email = "contact@parole-de-rh.fr"
   expertise = ["Ressources humaines", "Recrutement", "Paie", "Droit social", "Formation professionnelle", "Management", "QVCT", "SIRH"]
   og_locale_alternate = "en_US"
   # Images des 4 tuiles de rubriques de l accueil, dans l ordre du menu principal

@@ -7,7 +7,7 @@ translationKey: "legal"
 ## Éditeur du site
 
 - Éditeur : Parole de RH
-- Contact : [contact@parolederh.fr](mailto:contact@parolederh.fr)
+- Contact : [contact@parole-de-rh.fr](mailto:contact@parole-de-rh.fr)
 - Directeur de la publication : le responsable éditorial du site Parole de RH
 
 ## Hébergeur
