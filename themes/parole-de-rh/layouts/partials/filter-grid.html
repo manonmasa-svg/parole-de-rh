@@ -1,0 +1,33 @@
+{{/* Grille d'articles avec filtres par rubrique.
+     dict "pages" (articles) "terms" (pages de rubrique a proposer en filtre) "level" (h2|h3) */}}
+<div class="filter-grid">
+    {{ if gt (len .terms) 1 }}
+    <div class="filters" role="group" aria-label="{{ T "filterLabel" }}">
+        <button type="button" class="filter-chip" data-filter="*" aria-pressed="true">{{ T "filterAll" }}</button>
+        {{ range .terms }}
+        <button type="button" class="filter-chip" data-filter="{{ path.Base .RelPermalink }}" aria-pressed="false">{{ .Title }}</button>
+        {{ end }}
+    </div>
+    {{ end }}
+    <div class="card-grid">
+        {{ $level := .level }}
+        {{ range .pages }}
+        {{ partial "card.html" (dict "page" . "level" $level "image" true) }}
+        {{ end }}
+    </div>
+</div>
+<script>
+(function() {
+    document.querySelectorAll('.filter-grid').forEach(function(root) {
+        var chips = root.querySelectorAll('.filter-chip');
+        var cards = root.querySelectorAll('.card');
+        chips.forEach(function(chip) {
+            chip.addEventListener('click', function() {
+                var f = chip.dataset.filter;
+                chips.forEach(function(c) { c.setAttribute('aria-pressed', String(c === chip)); });
+                cards.forEach(function(card) { card.hidden = !(f === '*' || card.dataset.cat === f); });
+            });
+        });
+    });
+})();
+</script>

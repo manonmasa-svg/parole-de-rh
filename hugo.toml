@@ -1,0 +1,293 @@
+baseURL = "https://manonmasa-svg.github.io/parole-de-rh/"
+title = "Parole de RH"
+theme = "parole-de-rh"
+
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+removePathAccents = true
+enableRobotsTXT = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[languages]
+  [languages.fr]
+    locale = "fr-FR"
+    label = "Français"
+    weight = 1
+    title = "Parole de RH"
+    [languages.fr.params]
+      description = "Parole de RH décrypte l'actualité des ressources humaines : recrutement, paie, droit social, formation, management, QVCT et logiciels RH, à partir de sources officielles."
+      tagline = "L'actualité RH décryptée, sources officielles à l'appui"
+
+  [languages.en]
+    locale = "en-US"
+    label = "English"
+    weight = 2
+    title = "Parole de RH"
+    [languages.en.params]
+      description = "Parole de RH explains French human resources news: recruitment, payroll, employment law, training, management, workplace wellbeing and HR software, based on official sources."
+      tagline = "French HR news explained, backed by official sources"
+
+# Menu FR
+[[languages.fr.menus.main]]
+  identifier = "actualites"
+  name = "Actualités RH"
+  pageRef = "/actualites-rh"
+  weight = 1
+[[languages.fr.menus.main]]
+  name = "Recrutement"
+  parent = "actualites"
+  pageRef = "/categories/recrutement"
+  weight = 1
+[[languages.fr.menus.main]]
+  name = "Formation"
+  parent = "actualites"
+  pageRef = "/categories/formation"
+  weight = 2
+[[languages.fr.menus.main]]
+  name = "Paie"
+  parent = "actualites"
+  pageRef = "/categories/paie"
+  weight = 3
+[[languages.fr.menus.main]]
+  name = "Droit social"
+  parent = "actualites"
+  pageRef = "/categories/droit-social"
+  weight = 4
+[[languages.fr.menus.main]]
+  name = "Onboarding"
+  parent = "actualites"
+  pageRef = "/categories/onboarding"
+  weight = 5
+[[languages.fr.menus.main]]
+  name = "Management"
+  parent = "actualites"
+  pageRef = "/categories/management"
+  weight = 6
+[[languages.fr.menus.main]]
+  name = "IA et SIRH"
+  parent = "actualites"
+  pageRef = "/categories/ia-et-sirh"
+  weight = 7
+[[languages.fr.menus.main]]
+  name = "QVCT"
+  parent = "actualites"
+  pageRef = "/categories/qvct"
+  weight = 8
+[[languages.fr.menus.main]]
+  name = "Marque employeur"
+  parent = "actualites"
+  pageRef = "/categories/marque-employeur"
+  weight = 9
+[[languages.fr.menus.main]]
+  name = "Rémunération et avantages sociaux"
+  parent = "actualites"
+  pageRef = "/categories/rémunération-et-avantages-sociaux"
+  weight = 10
+[[languages.fr.menus.main]]
+  name = "Tendances RH"
+  parent = "actualites"
+  pageRef = "/categories/tendances-rh"
+  weight = 11
+[[languages.fr.menus.main]]
+  name = "Logiciels RH"
+  pageRef = "/categories/logiciels-rh"
+  weight = 2
+[[languages.fr.menus.main]]
+  name = "Comparatifs"
+  pageRef = "/categories/comparatifs"
+  weight = 3
+[[languages.fr.menus.main]]
+  name = "Définitions RH"
+  pageRef = "/categories/définitions-rh"
+  weight = 4
+[[languages.fr.menus.main]]
+  name = "Agenda RH"
+  pageRef = "/agenda-rh"
+  weight = 5
+  [languages.fr.menus.main.params]
+    tile = false
+[[languages.fr.menus.main]]
+  name = "Le Blog"
+  pageRef = "/blog"
+  weight = 99
+
+[[languages.fr.menus.footer]]
+  name = "À propos"
+  pageRef = "/a-propos"
+  weight = 1
+[[languages.fr.menus.footer]]
+  name = "Ligne éditoriale"
+  pageRef = "/ligne-editoriale"
+  weight = 2
+[[languages.fr.menus.footer]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 3
+[[languages.fr.menus.footer]]
+  name = "Mentions légales"
+  pageRef = "/mentions-legales"
+  weight = 4
+[[languages.fr.menus.footer]]
+  name = "Plan du site"
+  pageRef = "/plan-du-site"
+  weight = 5
+
+# Menu EN
+[[languages.en.menus.main]]
+  identifier = "actualites"
+  name = "HR news"
+  pageRef = "/hr-news"
+  weight = 1
+[[languages.en.menus.main]]
+  name = "Recruitment"
+  parent = "actualites"
+  pageRef = "/categories/recruitment"
+  weight = 1
+[[languages.en.menus.main]]
+  name = "Training"
+  parent = "actualites"
+  pageRef = "/categories/training"
+  weight = 2
+[[languages.en.menus.main]]
+  name = "Payroll"
+  parent = "actualites"
+  pageRef = "/categories/payroll"
+  weight = 3
+[[languages.en.menus.main]]
+  name = "Employment law"
+  parent = "actualites"
+  pageRef = "/categories/employment-law"
+  weight = 4
+[[languages.en.menus.main]]
+  name = "Onboarding"
+  parent = "actualites"
+  pageRef = "/categories/onboarding"
+  weight = 5
+[[languages.en.menus.main]]
+  name = "Management"
+  parent = "actualites"
+  pageRef = "/categories/management"
+  weight = 6
+[[languages.en.menus.main]]
+  name = "AI and HRIS"
+  parent = "actualites"
+  pageRef = "/categories/ai-and-hris"
+  weight = 7
+[[languages.en.menus.main]]
+  name = "Workplace wellbeing"
+  parent = "actualites"
+  pageRef = "/categories/workplace-wellbeing"
+  weight = 8
+[[languages.en.menus.main]]
+  name = "Employer branding"
+  parent = "actualites"
+  pageRef = "/categories/employer-branding"
+  weight = 9
+[[languages.en.menus.main]]
+  name = "Compensation and benefits"
+  parent = "actualites"
+  pageRef = "/categories/compensation-and-benefits"
+  weight = 10
+[[languages.en.menus.main]]
+  name = "HR trends"
+  parent = "actualites"
+  pageRef = "/categories/hr-trends"
+  weight = 11
+[[languages.en.menus.main]]
+  name = "HR software"
+  pageRef = "/categories/hr-software"
+  weight = 2
+[[languages.en.menus.main]]
+  name = "Comparisons"
+  pageRef = "/categories/comparisons"
+  weight = 3
+[[languages.en.menus.main]]
+  name = "HR glossary"
+  pageRef = "/categories/hr-glossary"
+  weight = 4
+[[languages.en.menus.main]]
+  name = "HR calendar"
+  pageRef = "/hr-calendar"
+  weight = 5
+  [languages.en.menus.main.params]
+    tile = false
+[[languages.en.menus.main]]
+  name = "The Blog"
+  pageRef = "/blog"
+  weight = 99
+
+[[languages.en.menus.footer]]
+  name = "About"
+  pageRef = "/about"
+  weight = 1
+[[languages.en.menus.footer]]
+  name = "Editorial policy"
+  pageRef = "/editorial-policy"
+  weight = 2
+[[languages.en.menus.footer]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 3
+[[languages.en.menus.footer]]
+  name = "Legal notice"
+  pageRef = "/legal-notice"
+  weight = 4
+[[languages.en.menus.footer]]
+  name = "Site map"
+  pageRef = "/site-map"
+  weight = 5
+
+[params]
+  default_og_image = "/images/og-default.jpg"
+  logo = "/images/logo.svg"
+  founding_year = "2026"
+  contact_email = "contact@parolederh.fr"
+  expertise = ["Ressources humaines", "Recrutement", "Paie", "Droit social", "Formation professionnelle", "Management", "QVCT", "SIRH"]
+  og_locale_alternate = "en_US"
+  # Images des 4 tuiles de rubriques de l accueil, dans l ordre du menu principal
+  home_tiles = ["/images/rubriques/actualites-rh.jpg", "/images/rubriques/logiciels-rh.jpg", "/images/rubriques/comparatifs.jpg", "/images/rubriques/definitions-rh.jpg"]
+  home_tiles_credit = "Redd Francisco, path digital, Van Tay Media, Pisit Heng"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html", "rss"]
+
+[related]
+  includeNewer = true
+  threshold = 80
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+# Contenu FR a la racine de content/, contenu EN dans content/en/
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    files = ["! en/**"]
+    [module.mounts.sites.matrix]
+      languages = ["fr"]
+  [[module.mounts]]
+    source = "content/en"
+    target = "content"
+    [module.mounts.sites.matrix]
+      languages = ["en"]

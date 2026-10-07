@@ -1,0 +1,11 @@
+public/
+resources/
+.hugo_build.lock
+.DS_Store
+
+# Fichiers internes, non publies
+.claude/
+CLAUDE.md
+MEMORY.md
+BRIEF-DESIGN.md
+README.md

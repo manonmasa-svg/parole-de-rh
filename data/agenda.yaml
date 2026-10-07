@@ -1,0 +1,180 @@
+# Agenda des echeances RH : affiche sur la page d'accueil (6 prochaines) et sur la page Agenda RH (toutes).
+#
+# REGLES (voir aussi CLAUDE.md, section "Agenda des echeances RH") :
+# - Une echeance = une date relevee sur une source officielle, avec l'URL et la date de verification.
+# - Verifier dans le texte brut de la page, pas dans un resume automatique.
+# - Ne JAMAIS calculer soi-meme une date reportee (week-end, jour ferie) : reprendre la date de la source,
+#   ou n'afficher que le mois via le champ `label`.
+# - Les echeances passees sont masquees automatiquement (au build et dans le navigateur),
+#   mais il faut les retirer d'ici et ajouter les suivantes a chaque session de travail sur le site.
+# - `page` (facultatif) : cle de data/home.yaml > pages, pour lier l'article du site qui traite le sujet.
+# - Derniere revue complete : 2026-10-07. Echeances listees a partir de decembre 2026 (demande de Manon).
+
+# Rappel permanent affiche en tete de l'agenda (echeance mensuelle)
+recurring:
+  title:
+    fr: "Chaque mois : la DSN"
+    en: "Every month: the DSN"
+  text:
+    fr: "Au plus tard le 5 du mois suivant pour les entreprises de 50 salariés et plus, le 15 pour les moins de 50 salariés. Si l'échéance tombe un jour non ouvré, elle est reportée au jour ouvrable suivant."
+    en: "No later than the 5th of the following month for companies with 50 or more employees, the 15th for those with fewer than 50. If the deadline falls on a non-working day, it moves to the next working day."
+  source: "Entreprendre.Service-Public"
+  url: "https://entreprendre.service-public.gouv.fr/vosdroits/F34059"
+  checked: "2026-10-07"
+  page: "dsn"
+
+events:
+  - date: "2026-12-31"
+    title:
+      fr: "Titres-restaurant : fin de la dérogation sur les produits alimentaires"
+      en: "Meal vouchers: end of the exemption for food products"
+    text:
+      fr: "Jusqu'à cette date, les titres-restaurant permettent d'acheter tout produit alimentaire, qu'il soit ou non directement consommable."
+      en: "Until this date, meal vouchers can be used to buy any food product, whether or not it is ready to eat."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F21059"
+    checked: "2026-10-07"
+    page: "titres-restaurant"
+
+  - date: "2026-12-31"
+    title:
+      fr: "Rachat de jours de RTT : fin de la période couverte"
+      en: "Buy-back of RTT days: end of the period covered"
+    text:
+      fr: "Le dispositif de rachat par l'employeur s'applique aux journées de RTT acquises entre le 1er janvier 2022 et le 31 décembre 2026."
+      en: "The employer buy-back scheme applies to RTT rest days earned between 1 January 2022 and 31 December 2026."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F34151"
+    checked: "2026-10-07"
+
+  - date: "2026-12-31"
+    title:
+      fr: "Passeport de prévention : fin de la période transitoire"
+      en: "Prevention passport: end of the transitional period"
+    text:
+      fr: "Jusqu'à cette date, les employeurs ne déclarent que certaines catégories de formations en santé et sécurité au travail et disposent d'un délai de 9 mois. Ce délai sera ensuite réduit à 6 mois."
+      en: "Until this date, employers only declare certain categories of occupational health and safety training and have 9 months to do so. This period will then be reduced to 6 months."
+    source: "Entreprendre.Service-Public"
+    url: "https://entreprendre.service-public.gouv.fr/vosdroits/F39616"
+    checked: "2026-10-07"
+
+  - date: "2027-01-01"
+    title:
+      fr: "Smic : revalorisation annuelle"
+      en: "Minimum wage (Smic): annual increase"
+    text:
+      fr: "Le Smic est revalorisé chaque année au 1er janvier. Les bulletins de paie de janvier doivent tenir compte du nouveau montant."
+      en: "The Smic is revised every year on 1 January. January payslips must take the new amount into account."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300"
+    checked: "2026-10-07"
+
+  - date: "2027-01-15"
+    title:
+      fr: "Cotisations du 4e trimestre 2026 : paiement trimestriel"
+      en: "Q4 2026 contributions: quarterly payment"
+    text:
+      fr: "Les employeurs de 1 à 9 salariés qui ont opté pour le paiement trimestriel règlent leurs cotisations le 15 du mois qui suit le trimestre."
+      en: "Employers with 1 to 9 employees who opted for quarterly payment pay their contributions on the 15th of the month following the quarter."
+    source: "Entreprendre.Service-Public"
+    url: "https://entreprendre.service-public.gouv.fr/vosdroits/F34059"
+    checked: "2026-10-07"
+
+  - date: "2027-02-28"
+    title:
+      fr: "Titres-restaurant 2026 : dernier jour d'utilisation"
+      en: "2026 meal vouchers: last day of use"
+    text:
+      fr: "Les titres émis en 2026 restent utilisables en janvier et en février 2027."
+      en: "Vouchers issued in 2026 can still be used in January and February 2027."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F21059"
+    checked: "2026-10-07"
+    page: "titres-restaurant"
+
+  - date: "2027-03-01"
+    title:
+      fr: "Index de l'égalité professionnelle : date limite de publication"
+      en: "Professional equality index: publication deadline"
+    text:
+      fr: "Les entreprises d'au moins 50 salariés publient leur index chaque année au plus tard le 1er mars. Les entreprises concernées déclarent au même moment les écarts de représentation parmi leurs cadres dirigeants. Le projet de loi sur la transparence des salaires prévoit de faire évoluer ce dispositif."
+      en: "Companies with at least 50 employees publish their index every year by 1 March at the latest. The companies concerned declare representation gaps among their senior executives at the same time. The pay transparency bill plans to change this scheme."
+    source: "Entreprendre.Service-Public"
+    url: "https://entreprendre.service-public.gouv.fr/vosdroits/F35103"
+    checked: "2026-10-07"
+    page: "transparence"
+
+  - date: "2027-05-01"
+    title:
+      fr: "Congés payés : début de la période légale de prise"
+      en: "Paid leave: start of the legal period for taking leave"
+    text:
+      fr: "Dans tous les cas, les congés payés sont pris dans la période du 1er mai au 31 octobre de chaque année."
+      en: "In all cases, paid leave is taken in the period from 1 May to 31 October each year."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258"
+    checked: "2026-10-07"
+
+  - date: "2027-05-05"
+    label:
+      fr: "Mai 2027"
+      en: "May 2027"
+    title:
+      fr: "DOETH : déclaration annuelle d'emploi des travailleurs handicapés"
+      en: "DOETH: annual declaration on the employment of disabled workers"
+    text:
+      fr: "La déclaration annuelle se fait dans la DSN du mois d'avril, déposée à l'échéance du mois de mai."
+      en: "The annual declaration is made in the April DSN, filed at the May deadline."
+    source: "Entreprendre.Service-Public"
+    url: "https://entreprendre.service-public.gouv.fr/vosdroits/F22523"
+    checked: "2026-10-07"
+    page: "dsn"
+
+  - date: "2027-05-06"
+    label:
+      fr: "Mai 2027"
+      en: "May 2027"
+    title:
+      fr: "Taxe d'apprentissage : déclaration du solde"
+      en: "Apprenticeship tax: declaration of the balance"
+    text:
+      fr: "Le solde de la taxe d'apprentissage est déclaré une fois par an dans la DSN du mois d'avril, déposée à l'échéance du mois de mai. Les entreprises d'Alsace-Moselle ne sont pas concernées."
+      en: "The balance of the apprenticeship tax is declared once a year in the April DSN, filed at the May deadline. Companies in Alsace-Moselle are not concerned."
+    source: "Entreprendre.Service-Public"
+    url: "https://entreprendre.service-public.gouv.fr/vosdroits/F22574"
+    checked: "2026-10-07"
+    page: "dsn"
+
+  - date: "2027-05-31"
+    title:
+      fr: "Participation : date limite de versement de la prime"
+      en: "Profit-sharing: deadline for paying the bonus"
+    text:
+      fr: "La prime de participation est versée au plus tard le dernier jour du 5e mois qui suit la clôture de l'exercice, soit le 31 mai pour un exercice clos le 31 décembre."
+      en: "The profit-sharing bonus is paid no later than the last day of the 5th month after the end of the financial year, that is 31 May for a year ending on 31 December."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2141"
+    checked: "2026-10-07"
+
+  - date: "2027-05-31"
+    title:
+      fr: "Congés payés : fin de la période de référence"
+      en: "Paid leave: end of the reference period"
+    text:
+      fr: "Sauf dates différentes prévues par accord, la période d'acquisition des congés va du 1er juin de l'année précédente au 31 mai de l'année en cours."
+      en: "Unless an agreement sets different dates, the period for earning leave runs from 1 June of the previous year to 31 May of the current year."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258"
+    checked: "2026-10-07"
+
+  - date: "2027-12-02"
+    title:
+      fr: "Règlement européen sur l'IA : règles des systèmes à haut risque"
+      en: "EU AI Act: rules for high-risk systems"
+    text:
+      fr: "Date d'application annoncée par la Commission européenne pour les systèmes à haut risque, dont les outils d'IA utilisés dans le recrutement."
+      en: "Application date announced by the European Commission for high-risk systems, including AI tools used in recruitment."
+    source: "Commission européenne"
+    url: "https://digital-strategy.ec.europa.eu/fr/policies/regulatory-framework-ai"
+    checked: "2026-10-04"
+    page: "ia"

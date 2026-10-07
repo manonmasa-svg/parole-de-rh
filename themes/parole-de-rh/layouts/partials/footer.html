@@ -1,0 +1,33 @@
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <p class="footer-title">Parole <em>de</em> RH<span aria-hidden="true">.</span></p>
+                <p>{{ .Site.Params.description }}</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label">{{ T "sections" }}</p>
+                <ul class="footer-list-2col">
+                    {{ range (where .Site.Pages "Kind" "term").ByWeight }}
+                    {{ if eq .Data.Plural "categories" }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label">{{ T "information" }}</p>
+                <nav aria-label="{{ T "navFooter" }}">
+                    <ul>
+                        {{ range .Site.Menus.footer }}
+                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} {{ .Site.Title }}. {{ T "allRights" }}</p>
+        </div>
+    </div>
+</footer>

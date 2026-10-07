@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manonmasa-svg.github.io/parole-de-rh/sitemap.xml

@@ -1,0 +1,30 @@
+{{/* Carte d'article.
+     dict "page" (article) "level" (h2|h3) "variant" (""|featured|compact) "image" (bool) */}}
+{{ $p := .page }}
+{{ $cat := false }}
+{{ with ($p.GetTerms "categories") }}{{ $cat = index . 0 }}{{ end }}
+{{ $tone := "blue" }}
+{{ with $cat }}{{ $tone = .Params.color | default "blue" }}{{ end }}
+<article class="card tone-{{ $tone }}{{ with .variant }} card-{{ . }}{{ end }}"{{ with $cat }} data-cat="{{ path.Base .RelPermalink }}"{{ end }}>
+    {{ if and .image $p.Params.image }}
+    <div class="card-image">
+        <img src="{{ strings.TrimPrefix "/" $p.Params.image | relURL }}" alt="" loading="lazy" width="800" height="500">
+    </div>
+    {{ end }}
+    <div class="card-body">
+        <div class="card-top">
+            {{ with $cat }}<a href="{{ .RelPermalink }}" class="pill">{{ .Title }}</a>{{ end }}
+            <span>{{ $p.ReadingTime }} {{ T "minRead" }}</span>
+        </div>
+        {{ if eq .level "h2" }}
+        <h2 class="card-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+        {{ else }}
+        <h3 class="card-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+        {{ end }}
+        {{ if ne .variant "compact" }}<p class="card-excerpt">{{ $p.Description }}</p>{{ end }}
+        <p class="card-foot">
+            {{ with $p.Params.author }}{{ with index hugo.Data.authors . }}<strong>{{ .name }}</strong> · {{ end }}{{ end }}
+            <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date | time.Format ":date_long" }}</time>
+        </p>
+    </div>
+</article>

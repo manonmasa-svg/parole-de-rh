@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{/* Page Agenda RH : toutes les echeances a venir (donnees : data/agenda.yaml) */}}
+
+<div class="container">
+    <header class="page-hero tone-rose">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </header>
+
+    <section class="list-content">
+        {{ partial "agenda.html" (dict "limit" 0) }}
+
+        {{ with .Content }}
+        <div class="article-content agenda-notes">
+            {{ . }}
+        </div>
+        {{ end }}
+    </section>
+</div>
+
+{{ end }}

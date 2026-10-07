@@ -1,0 +1,130 @@
+{{ define "main" }}
+{{ $articles := where .Site.RegularPages "Section" "blog" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $home := hugo.Data.home }}
+{{ $agenda := hugo.Data.agenda }}
+
+<div class="container">
+    <header class="home-intro">
+        <h1>{{ T "homeH1a" }} <span>{{ T "homeH1b" }}</span>{{ T "homeH1c" }}</h1>
+        <p>{{ .Site.Params.description }}</p>
+    </header>
+
+    <!-- Les articles du moment : 1 carte mise en avant + 3 cartes compactes -->
+    {{ with $articles }}
+    <section class="section" aria-labelledby="moment-title">
+        <div class="section-head">
+            <h2 class="section-title" id="moment-title">{{ T "momentTitle" }}</h2>
+            <a href="{{ "blog/" | relLangURL }}" class="section-more">{{ T "allArticles" }} →</a>
+        </div>
+        <div class="moment-grid">
+            {{ range first 1 . }}
+            {{ partial "card.html" (dict "page" . "level" "h3" "variant" "featured" "image" true) }}
+            {{ end }}
+            <div class="moment-side">
+                {{ range first 3 (after 1 .) }}
+                {{ partial "card.html" (dict "page" . "level" "h3" "variant" "compact" "image" false) }}
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ end }}
+</div>
+
+<!-- Explorer les rubriques : uniquement les entrees principales du menu -->
+<section class="section band" aria-labelledby="explore-title">
+    <div class="container">
+        <div class="section-head">
+            <h2 class="section-title" id="explore-title">{{ T "exploreTitle" }}</h2>
+        </div>
+        <div class="tiles">
+            {{ $tones := slice "rose" "blue" "yellow" "mint" "lilac" "peach" }}
+            {{ $i := 0 }}
+            {{ range .Site.Menus.main }}
+            {{ if and .Page (ne .Page.Section "blog") (ne .Params.tile false) }}
+            {{ $count := len .Page.Pages }}
+            {{ if .HasChildren }}
+                {{ $count = 0 }}
+                {{ range .Children }}{{ with .Page }}{{ $count = add $count (len .Pages) }}{{ end }}{{ end }}
+            {{ end }}
+            <a href="{{ .URL }}" class="tile tone-{{ index $tones (mod $i 6) }}">
+                {{ with index (site.Params.home_tiles | default slice) $i }}<img class="tile-image" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="" loading="lazy" width="900" height="520">{{ end }}
+                <span>
+                    <span class="tile-title">{{ .Name }}</span>
+                    {{ with .Page.Description }}<span class="tile-text">{{ . }}</span>{{ end }}
+                </span>
+                <span class="tile-count">{{ $count }} {{ if gt $count 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }} →</span>
+            </a>
+            {{ $i = add $i 1 }}
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ with site.Params.home_tiles_credit }}<p class="tiles-credit">{{ T "photo" }}s : {{ . }} ({{ T "onUnsplash" }})</p>{{ end }}
+    </div>
+</section>
+
+<!-- Agenda des echeances RH (bloc a part entiere) -->
+<section class="section" aria-labelledby="agenda-title">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <h2 class="section-title" id="agenda-title">{{ T "agendaTitle" }}</h2>
+                <p class="section-intro">{{ T "agendaIntro" }}</p>
+            </div>
+            {{ with site.GetPage (cond (eq $lang "en") "/hr-calendar" "/agenda-rh") }}<a href="{{ .RelPermalink }}" class="section-more">{{ T "allAgenda" }} →</a>{{ end }}
+        </div>
+
+        {{ partial "agenda.html" (dict "limit" 6) }}
+    </div>
+</section>
+
+<!-- Engagements editoriaux -->
+<section class="section commitments" aria-labelledby="commit-title">
+    <div class="container">
+        <div class="section-head">
+            <h2 class="section-title" id="commit-title">{{ T "commitTitle" }}</h2>
+            {{ with site.GetPage (cond (eq $lang "en") "/editorial-policy" "/ligne-editoriale") }}
+            <a href="{{ .RelPermalink }}" class="section-more">{{ .Title }} →</a>
+            {{ end }}
+        </div>
+        <div class="commit-grid">
+            {{ range $i, $c := $home.commitments }}
+            <div class="commit">
+                <span class="commit-num" aria-hidden="true">{{ add $i 1 }}</span>
+                <h3 class="commit-title">{{ index $c.title $lang }}</h3>
+                <p>{{ index $c.text $lang }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- Questions frequentes sur les RH (tout en bas de page, sans lien vers les articles) -->
+<section class="section home-faq" aria-labelledby="faq-title">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <h2 class="section-title" id="faq-title">{{ T "faqTitle" }}</h2>
+                <p class="section-intro">{{ T "faqIntro" }}</p>
+            </div>
+        </div>
+        <div class="article-content faq-columns">
+            {{ range $home.faq }}
+            <details>
+                <summary>{{ index .q $lang }}</summary>
+                <p>{{ index .a $lang }}</p>
+                <p class="faq-source">{{ T "sourceLabel" }} <a href="{{ .url }}" rel="noopener">{{ .source }}</a></p>
+            </details>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- JSON-LD : FAQPage de l'accueil -->
+{{ $questions := slice }}
+{{ range $home.faq }}
+    {{ $questions = $questions | append (dict "@type" "Question" "name" (index .q $lang) "acceptedAnswer" (dict "@type" "Answer" "text" (index .a $lang))) }}
+{{ end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $questions | jsonify | safeJS }}</script>
+
+{{ end }}

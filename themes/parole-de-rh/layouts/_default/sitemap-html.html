@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<section class="sitemap-page">
+    <div class="container container-narrow">
+        <header class="list-header">
+            <h1>{{ T "sitemapTitle" }}</h1>
+            <p class="list-description">{{ T "sitemapIntro" }} {{ .Site.Title }}</p>
+        </header>
+
+        <div class="sitemap-section">
+            <h2>{{ T "mainPages" }}</h2>
+            <ul class="sitemap-list">
+                <li><a href="{{ site.Home.RelPermalink }}">{{ T "home" }}</a></li>
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+                {{ range .Site.Menus.footer }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+
+        {{ range (where .Site.Pages "Kind" "term").ByWeight }}
+        {{ if and (eq .Data.Plural "categories") .Pages }}
+        <div class="sitemap-section">
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <ul class="sitemap-list">
+                {{ range .Pages.ByDate.Reverse }}
+                <li>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <span class="sitemap-date">{{ .Lastmod.Format "02/01/2006" }}</span>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}

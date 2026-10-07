@@ -1,0 +1,187 @@
+# Contenus de la page d'accueil : engagements editoriaux et questions frequentes.
+#
+# REGLES DE LA FAQ :
+# - Questions generales sur les RH, pas forcement liees a un article du site.
+# - Pas de lien vers les articles dans les reponses (demande de Manon, 7 octobre 2026).
+# - Chaque reponse vient d'une fiche officielle relevee pendant la session : `url` + `checked`.
+#   Les chiffres sont verifies dans le texte brut de la page, pas dans un resume.
+# - Pas de montant revalorise chaque annee (Smic, plafonds) pour limiter les erreurs de mise a jour.
+# - Si une regle change, corriger la reponse en FR et en EN, et l'article du site s'il en existe un.
+
+# Correspondance cle -> fichier d'article (FR et EN), utilisee par l'agenda (data/agenda.yaml)
+pages:
+  dsn: { fr: "dsn-definition", en: "dsn-definition-french-payroll-declaration" }
+  titres-restaurant: { fr: "titres-restaurant-regles", en: "meal-vouchers-rules-france" }
+  transparence: { fr: "transparence-des-salaires-directive-europeenne", en: "pay-transparency-eu-directive-france" }
+  ia: { fr: "ia-recrutement-reglement-europeen", en: "ai-recruitment-eu-ai-act" }
+
+commitments:
+  - title:
+      fr: "Des sources officielles"
+      en: "Official sources"
+    text:
+      fr: "Chaque article s'appuie sur Service-Public, Légifrance, la CNIL, l'Urssaf ou les institutions européennes. Les sources sont citées et liées en fin d'article."
+      en: "Every article relies on Service-Public, Légifrance, the CNIL, Urssaf or European institutions. Sources are cited and linked at the end of each article."
+  - title:
+      fr: "Aucune information inventée"
+      en: "No invented information"
+    text:
+      fr: "Pas de chiffre sans source consultable, pas de citation attribuée sans référence. Une information qui n'a pas pu être vérifiée n'est pas publiée."
+      en: "No figure without a source that can be consulted, no attributed quote without a reference. Information that could not be verified is not published."
+  - title:
+      fr: "Des articles datés et mis à jour"
+      en: "Dated and updated articles"
+    text:
+      fr: "Le droit du travail évolue. Chaque article affiche sa date de publication, sa date de mise à jour et la date de consultation de ses sources."
+      en: "Employment law changes. Each article shows its publication date, its update date and the date its sources were consulted."
+
+faq:
+  - q:
+      fr: "Combien de jours de congés payés un salarié acquiert-il par an ?"
+      en: "How many days of paid leave does an employee earn per year in France?"
+    a:
+      fr: "Qu'il travaille à temps plein ou à temps partiel, le salarié acquiert 2,5 jours ouvrables de congés payés par mois de travail effectif chez le même employeur, soit 30 jours ouvrables (5 semaines) pour une année complète."
+      en: "Whether working full-time or part-time, an employee earns 2.5 working days of paid leave per month of actual work with the same employer, that is 30 working days (5 weeks) for a full year."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258"
+    checked: "2026-10-07"
+
+  - q:
+      fr: "Quelle est la durée légale du travail ?"
+      en: "What is the legal working time in France?"
+    a:
+      fr: "La durée légale du travail pour un salarié à temps complet du secteur privé est fixée à 35 heures par semaine. Les heures effectuées au-delà sont des heures supplémentaires."
+      en: "The legal working time for a full-time private-sector employee is set at 35 hours per week. Hours worked beyond that are overtime."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F1911"
+    checked: "2026-10-07"
+
+  - q:
+      fr: "Quelle est la durée maximale d'une période d'essai en CDI ?"
+      en: "What is the maximum trial period for a French permanent contract?"
+    a:
+      fr: "2 mois pour les ouvriers et employés, 3 mois pour les agents de maîtrise et techniciens, 4 mois pour les cadres. Elle peut être renouvelée une fois sous conditions, soit 4, 6 et 8 mois au maximum."
+      en: "2 months for manual and clerical workers, 3 months for supervisors and technicians, 4 months for managers. It can be renewed once under conditions, giving a maximum of 4, 6 and 8 months."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643"
+    checked: "2026-10-04"
+
+  - q:
+      fr: "Quelles sont les formalités obligatoires pour embaucher un salarié ?"
+      en: "What formalities are mandatory when hiring an employee in France?"
+    a:
+      fr: "L'employeur effectue la déclaration préalable à l'embauche (DPAE), remet au salarié les informations essentielles sur la relation de travail, l'inscrit sur le registre unique du personnel, l'affilie à la retraite complémentaire et organise la visite d'information et de prévention."
+      en: "The employer files the pre-hiring declaration (DPAE), gives the employee the essential information about the employment relationship, enters the employee in the single staff register, registers the employee with a supplementary pension scheme and organises the information and prevention visit."
+    source: "Entreprendre.Service-Public"
+    url: "https://entreprendre.service-public.gouv.fr/vosdroits/F23107"
+    checked: "2026-10-04"
+
+  - q:
+      fr: "Quelles questions un recruteur n'a-t-il pas le droit de poser ?"
+      en: "Which questions is a recruiter not allowed to ask?"
+    a:
+      fr: "Les questions sans lien direct et nécessaire avec le poste sont interdites, notamment celles qui portent sur l'état de santé, la situation familiale, la religion, l'orientation sexuelle ou l'appartenance syndicale."
+      en: "Questions with no direct and necessary link to the job are prohibited, in particular those about health, family situation, religion, sexual orientation or trade union membership."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/actualites/A17894"
+    checked: "2026-10-04"
+
+  - q:
+      fr: "L'employeur peut-il refuser le télétravail ?"
+      en: "Can an employer refuse remote work?"
+    a:
+      fr: "Oui, dans certains cas. Lorsque le télétravail est mis en place par accord collectif ou par charte, l'employeur qui le refuse à un salarié dont le poste le permet doit expliquer les motifs de sa réponse. De son côté, le salarié peut refuser de passer en télétravail : ce refus n'est pas un motif de rupture du contrat."
+      en: "Yes, in some cases. When remote work is set up by a collective agreement or a charter, an employer refusing it to an employee whose job allows it must explain the reasons. For their part, employees can refuse to switch to remote work: this refusal is not a ground for ending the contract."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F13851"
+    checked: "2026-10-07"
+
+  - q:
+      fr: "Dans quel délai prévenir son employeur en cas d'arrêt maladie ?"
+      en: "How quickly must an employee inform the employer of sick leave?"
+    a:
+      fr: "Si la convention collective ou un accord d'entreprise ne fixe pas de délai, l'usage veut que l'employeur soit informé dans les 48 heures qui suivent le début de l'arrêt. Le salarié lui adresse le volet du certificat médical qui lui est destiné."
+      en: "If the collective agreement or a company agreement sets no time limit, custom requires the employer to be informed within 48 hours of the start of the leave. The employee sends the employer the relevant part of the medical certificate."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F303"
+    checked: "2026-10-07"
+
+  - q:
+      fr: "Combien de temps dure le congé de paternité ?"
+      en: "How long is paternity leave in France?"
+    a:
+      fr: "Pour la naissance d'un enfant, le congé de paternité et d'accueil de l'enfant comprend une période obligatoire de 4 jours calendaires, prise juste après le congé de naissance de 3 jours, puis une période facultative de 21 jours calendaires. La période facultative passe à 28 jours en cas de naissances multiples."
+      en: "For the birth of one child, paternity and childcare leave includes a mandatory period of 4 calendar days, taken right after the 3-day birth leave, then an optional period of 21 calendar days. The optional period rises to 28 days for multiple births."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156"
+    checked: "2026-10-07"
+
+  - q:
+      fr: "La mutuelle d'entreprise est-elle obligatoire ?"
+      en: "Is company health insurance mandatory in France?"
+    a:
+      fr: "L'employeur doit faire bénéficier tous ses salariés d'une couverture complémentaire santé, quelle que soit leur ancienneté. Le salarié peut toutefois être dispensé d'y adhérer dans certaines situations."
+      en: "The employer must provide all employees with supplementary health cover, whatever their length of service. Employees can nevertheless be exempted from joining in certain situations."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F20739"
+    checked: "2026-10-07"
+
+  - q:
+      fr: "À partir de combien de salariés le CSE est-il obligatoire ?"
+      en: "From how many employees is a CSE mandatory?"
+    a:
+      fr: "Le comité social et économique (CSE) est l'instance de représentation du personnel dans l'entreprise. Il doit être mis en place dans les entreprises de 11 salariés et plus. Ses missions et sa composition varient selon l'effectif."
+      en: "The social and economic committee (CSE) is the staff representation body in the company. It must be set up in companies with 11 or more employees. Its duties and composition vary with headcount."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F34474"
+    checked: "2026-10-07"
+
+  - q:
+      fr: "Quelle différence entre une rupture conventionnelle et une démission ?"
+      en: "What is the difference between mutual termination and resignation?"
+    a:
+      fr: "La démission est décidée par le seul salarié, sans indemnité de rupture et en principe sans droit au chômage. La rupture conventionnelle se décide d'un commun accord avec l'employeur, donne droit à une indemnité et ouvre droit au chômage sous conditions."
+      en: "Resignation is decided by the employee alone, with no severance pay and in principle no unemployment benefits. Mutual termination is agreed jointly with the employer, gives entitlement to severance pay and to unemployment benefits under conditions."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F19030"
+    checked: "2026-10-04"
+
+  - q:
+      fr: "L'entretien professionnel est-il toujours obligatoire ?"
+      en: "Is the professional review still mandatory in France?"
+    a:
+      fr: "Il a été remplacé par l'entretien de parcours professionnel, obligatoire dans toutes les entreprises privées. Il a lieu dans l'année qui suit l'embauche, puis tous les 4 ans, et ne porte pas sur l'évaluation du travail."
+      en: "It has been replaced by the career path review, mandatory in all private companies. It takes place within the year following hiring, then every 4 years, and does not assess the employee's work."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F32040"
+    checked: "2026-10-04"
+
+  - q:
+      fr: "Comment fonctionne le compte personnel de formation (CPF) ?"
+      en: "How does the CPF personal training account work?"
+    a:
+      fr: "Le CPF est un compte en euros qui suit chaque personne pendant toute sa vie professionnelle. Il est alimenté de 500 euros par année de travail, dans la limite de 5 000 euros, et finance des formations éligibles."
+      en: "The CPF is an account in euros that follows each person throughout their working life. It is credited with 500 euros per year of work, up to a cap of 5,000 euros, and funds eligible training."
+    source: "Service-Public"
+    url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F10705"
+    checked: "2026-10-04"
+
+  - q:
+      fr: "Qu'est-ce que la DSN ?"
+      en: "What is the DSN?"
+    a:
+      fr: "La déclaration sociale nominative est un fichier mensuel produit à partir de la paie. Elle doit être transmise au plus tard le 5 du mois suivant pour les entreprises de 50 salariés et plus, et le 15 pour les autres."
+      en: "The nominative social declaration is a monthly file produced from payroll. It must be sent no later than the 5th of the following month for companies with 50 or more employees, and the 15th for the others."
+    source: "Entreprendre.Service-Public"
+    url: "https://entreprendre.service-public.gouv.fr/vosdroits/F34059"
+    checked: "2026-10-07"
+
+  - q:
+      fr: "Que signifie QVCT ?"
+      en: "What does QVCT mean?"
+    a:
+      fr: "QVCT signifie qualité de vie et des conditions de travail. La notion vient de l'accord national interprofessionnel du 9 décembre 2020 et prolonge la QVT en y intégrant explicitement les conditions de travail."
+      en: "QVCT stands for quality of life and working conditions. The concept comes from the French national interprofessional agreement of 9 December 2020 and extends QVT by explicitly including working conditions."
+    source: "Légifrance"
+    url: "https://www.legifrance.gouv.fr/conv_coll/id/KALISCTA000043561907/?idConteneur=KALICONT000047187258"
+    checked: "2026-10-04"

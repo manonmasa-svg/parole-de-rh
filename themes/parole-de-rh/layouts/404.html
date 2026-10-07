@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section class="error-page">
+    <div class="container">
+        <span class="error-code">404</span>
+        <h1>{{ T "notFoundTitle" }}</h1>
+        <p>{{ T "notFoundText" }}</p>
+        <div class="error-links">
+            <a href="{{ site.Home.RelPermalink }}" class="btn-primary">{{ T "backHome" }}</a>
+            <a href="{{ "blog/" | relLangURL }}" class="btn-outline">{{ T "seeArticles" }}</a>
+        </div>
+    </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{/* Pages fixes (A propos, Ligne editoriale, Contact, Mentions legales) : ni date ni sommaire */}}
+
+<article class="static-page">
+    <div class="container container-narrow">
+        <header class="page-hero">
+            <h1>{{ .Title }}</h1>
+            {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        </header>
+        <div class="prose article-content">
+            {{ .Content }}
+        </div>
+
+        {{ if .Params.showAuthors }}
+        {{ $lang := .Site.Language.Lang }}
+        {{ $tones := slice "blue" "mint" "peach" "lilac" "yellow" "rose" }}
+        {{ $i := 0 }}
+        <section class="team">
+            <h2 class="team-title">{{ T "team" }}</h2>
+            {{ range hugo.Data.authors }}
+            <div class="author-box tone-{{ index $tones (mod $i 6) }}">
+                <div class="avatar" aria-hidden="true">{{ slicestr .name 0 1 }}</div>
+                <div class="author-box-content">
+                    <h3 class="author-box-name">{{ .name }}</h3>
+                    {{ with index .role $lang }}<span class="author-box-role">{{ . }}</span>{{ end }}
+                    {{ with index .bio $lang }}<p class="author-box-bio">{{ . }}</p>{{ end }}
+                </div>
+            </div>
+            {{ $i = add $i 1 }}
+            {{ end }}
+        </section>
+        {{ end }}
+    </div>
+</article>
+
+{{ end }}

@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{/* Page Actualites RH : toutes les sous-rubriques du groupe "actualites" */}}
+{{ $terms := slice }}
+{{ $pages := slice }}
+{{ range (where .Site.Pages "Kind" "term").ByWeight }}
+    {{ if and (eq .Data.Plural "categories") (eq .Params.group "actualites") .Pages }}
+        {{ $terms = $terms | append . }}
+        {{ $pages = $pages | append .Pages }}
+    {{ end }}
+{{ end }}
+
+<div class="container">
+    <header class="page-hero">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </header>
+
+    <section class="list-content">
+        {{ partial "filter-grid.html" (dict "pages" (sort $pages "Date" "desc") "terms" $terms "level" "h2") }}
+    </section>
+</div>
+
+{{ end }}

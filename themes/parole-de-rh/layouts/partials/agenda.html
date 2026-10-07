@@ -1,0 +1,58 @@
+{{/* Agenda des echeances RH.
+     dict "limit" (nombre d'echeances a afficher, 0 = toutes) */}}
+{{ $lang := site.Language.Lang }}
+{{ $home := hugo.Data.home }}
+{{ $agenda := hugo.Data.agenda }}
+{{ $limit := .limit | default 0 }}
+
+{{ with $agenda.recurring }}
+<div class="agenda-recurring">
+    <p class="agenda-item-title">{{ index .title $lang }}</p>
+    <p class="agenda-item-text">{{ index .text $lang }}</p>
+    <p class="agenda-item-source">{{ T "sourceLabel" }} <a href="{{ .url }}" rel="noopener">{{ .source }}</a>{{ with .page }}{{ with index $home.pages . }}{{ with site.GetPage (printf "/blog/%s" (index . $lang)) }} · <a href="{{ .RelPermalink }}">{{ T "readArticle" }}</a>{{ end }}{{ end }}{{ end }}</p>
+</div>
+{{ end }}
+
+{{ $today := now.Format "2006-01-02" }}
+{{ $upcoming := slice }}
+{{ range sort $agenda.events "date" }}
+    {{ if ge .date $today }}{{ $upcoming = $upcoming | append . }}{{ end }}
+{{ end }}
+
+{{ $tones := slice "rose" "yellow" "mint" "lilac" "blue" "peach" }}
+<ol class="agenda-list" data-limit="{{ $limit }}">
+    {{ range $n, $e := $upcoming }}
+    {{ $d := time.AsTime $e.date }}
+    <li class="agenda-item tone-{{ index $tones (mod $n 6) }}" data-date="{{ $e.date }}"{{ if and (gt $limit 0) (ge $n $limit) }} hidden{{ end }}>
+        <div class="agenda-date">
+            {{ if $e.label }}
+            <span class="agenda-month">{{ index $e.label $lang }}</span>
+            {{ else }}
+            <span class="agenda-day">{{ $d.Day }}</span>
+            <span class="agenda-month">{{ $d | time.Format "January 2006" }}</span>
+            {{ end }}
+        </div>
+        <p class="agenda-item-title">{{ index $e.title $lang }}</p>
+        <p class="agenda-item-text">{{ index $e.text $lang }}</p>
+        <p class="agenda-item-source">{{ T "sourceLabel" }} <a href="{{ $e.url }}" rel="noopener">{{ $e.source }}</a>{{ with $e.page }}{{ with index $home.pages . }}{{ with site.GetPage (printf "/blog/%s" (index . $lang)) }} · <a href="{{ .RelPermalink }}">{{ T "readArticle" }}</a>{{ end }}{{ end }}{{ end }}</p>
+    </li>
+    {{ end }}
+</ol>
+
+<!-- Affichage calcule dans le navigateur : les echeances passees sont masquees et les suivantes
+     prennent leur place, meme si le site n a pas ete regenere -->
+<script>
+(function() {
+    var d = new Date();
+    var today = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+    document.querySelectorAll(".agenda-list").forEach(function(list) {
+        var limit = parseInt(list.dataset.limit, 10) || 0;
+        var shown = 0;
+        list.querySelectorAll(".agenda-item[data-date]").forEach(function(li) {
+            var keep = li.dataset.date >= today && (limit === 0 || shown < limit);
+            li.hidden = !keep;
+            if (keep) shown++;
+        });
+    });
+})();
+</script>

@@ -1,0 +1,153 @@
+# Auteurs de Parole de RH (bilingue FR/EN)
+# Hugo lit ce fichier via `.Site.Data.authors`.
+#
+# Ce sont des NOMS DE PLUME de la redaction, un par perimetre editorial.
+# Regle : les bios decrivent uniquement le perimetre couvert sur le site.
+# Ne JAMAIS y ajouter de diplome, d'annees d'experience, d'ancien employeur
+# ou de profil LinkedIn : ce seraient des inventions.
+#
+# L'ID est utilise dans le frontmatter des articles (`author: camille-lefort`).
+# `topics` sert a la selection automatique de l'auteur dans /create-article.
+# `expertise` alimente le bloc auteur et le schema.org Person -> knowsAbout.
+# Pas d'avatar : le theme affiche un carre avec l'initiale.
+
+camille-lefort:
+  id: camille-lefort
+  name: Camille Lefort
+  type: person
+  avatar: ""
+  linkedinUrl: ""
+  jobTitle:
+    fr: Rédaction recrutement et marque employeur
+    en: Recruitment and employer branding desk
+  role:
+    fr: Recrutement, onboarding et marque employeur
+    en: Recruitment, onboarding and employer branding
+  bio:
+    fr: "Camille Lefort est un nom de plume de la rédaction de Parole de RH. Cette signature couvre le recrutement, l'intégration des nouveaux salariés et la marque employeur, à partir des textes et des fiches officielles."
+    en: "Camille Lefort is a pen name used by the Parole de RH editorial team. This byline covers recruitment, new hire onboarding and employer branding, based on official texts and government guidance."
+  expertise:
+    fr: ["Recrutement", "Onboarding", "Marque employeur"]
+    en: ["Recruitment", "Onboarding", "Employer branding"]
+  topics:
+    - recrutement
+    - embauche
+    - candidat
+    - offre d'emploi
+    - entretien d'embauche
+    - onboarding
+    - integration
+    - dpae
+    - marque employeur
+    - recruitment
+    - hiring
+    - employer branding
+
+helene-marchal:
+  id: helene-marchal
+  name: Hélène Marchal
+  type: person
+  avatar: ""
+  linkedinUrl: ""
+  jobTitle:
+    fr: Rédaction paie et droit social
+    en: Payroll and employment law desk
+  role:
+    fr: Paie, droit social et rémunération
+    en: Payroll, employment law and compensation
+  bio:
+    fr: "Hélène Marchal est un nom de plume de la rédaction de Parole de RH. Cette signature couvre la paie, le droit social et la rémunération, à partir du Code du travail et des fiches officielles de l'administration."
+    en: "Hélène Marchal is a pen name used by the Parole de RH editorial team. This byline covers payroll, employment law and compensation, based on the French Labour Code and official government guidance."
+  expertise:
+    fr: ["Paie", "Droit social", "Rémunération et avantages sociaux"]
+    en: ["Payroll", "Employment law", "Compensation and benefits"]
+  topics:
+    - paie
+    - bulletin de paie
+    - fiche de paie
+    - cotisations
+    - dsn
+    - droit social
+    - droit du travail
+    - contrat de travail
+    - periode d'essai
+    - rupture conventionnelle
+    - demission
+    - licenciement
+    - remuneration
+    - salaire
+    - avantages sociaux
+    - titres-restaurant
+    - payroll
+    - employment law
+    - compensation
+
+julien-carrel:
+  id: julien-carrel
+  name: Julien Carrel
+  type: person
+  avatar: ""
+  linkedinUrl: ""
+  jobTitle:
+    fr: Rédaction SIRH et outils RH
+    en: HRIS and HR tools desk
+  role:
+    fr: Logiciels RH, SIRH et intelligence artificielle
+    en: HR software, HRIS and artificial intelligence
+  bio:
+    fr: "Julien Carrel est un nom de plume de la rédaction de Parole de RH. Cette signature couvre les logiciels RH, les SIRH, l'intelligence artificielle appliquée aux RH et la protection des données du personnel."
+    en: "Julien Carrel is a pen name used by the Parole de RH editorial team. This byline covers HR software, HRIS, artificial intelligence applied to HR and employee data protection."
+  expertise:
+    fr: ["Logiciels RH", "SIRH", "Intelligence artificielle", "Données personnelles"]
+    en: ["HR software", "HRIS", "Artificial intelligence", "Personal data"]
+  topics:
+    - logiciel rh
+    - sirh
+    - outil rh
+    - ats
+    - logiciel de paie
+    - comparatif
+    - ia
+    - intelligence artificielle
+    - rgpd
+    - cnil
+    - donnees personnelles
+    - hr software
+    - hris
+    - ai
+
+nora-bellamy:
+  id: nora-bellamy
+  name: Nora Bellamy
+  type: person
+  avatar: ""
+  linkedinUrl: ""
+  jobTitle:
+    fr: Rédaction management et QVCT
+    en: Management and workplace wellbeing desk
+  role:
+    fr: Management, formation et QVCT
+    en: Management, training and workplace wellbeing
+  bio:
+    fr: "Nora Bellamy est un nom de plume de la rédaction de Parole de RH. Cette signature couvre le management, la formation professionnelle, la qualité de vie et des conditions de travail et les tendances RH."
+    en: "Nora Bellamy is a pen name used by the Parole de RH editorial team. This byline covers management, vocational training, quality of life and working conditions, and HR trends."
+  expertise:
+    fr: ["Management", "Formation professionnelle", "QVCT", "Tendances RH"]
+    en: ["Management", "Vocational training", "Workplace wellbeing", "HR trends"]
+  topics:
+    - management
+    - manager
+    - entretien professionnel
+    - entretien annuel
+    - formation
+    - cpf
+    - competences
+    - qvct
+    - qvt
+    - conditions de travail
+    - sante au travail
+    - teletravail
+    - tendances rh
+    - training
+    - wellbeing
+    - hr trends

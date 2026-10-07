@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $isCategory := and (eq .Kind "term") (eq .Data.Plural "categories") }}
+
+<div class="container">
+    <header class="page-hero{{ if $isCategory }} tone-{{ .Params.color | default "blue" }}{{ end }}">
+        {{ if $isCategory }}<p class="kicker">{{ T "sections" }}</p>{{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </header>
+
+    <section class="list-content">
+        {{ if eq .Kind "taxonomy" }}
+        <ul class="term-list">
+            {{ range .Pages.ByWeight }}
+            <li><a href="{{ .RelPermalink }}" class="pill tone-{{ .Params.color | default "blue" }}">{{ .Title }} ({{ len .Pages }})</a></li>
+            {{ end }}
+        </ul>
+        {{ else if eq .Section "blog" }}
+        {{ $terms := slice }}
+        {{ range (where .Site.Pages "Kind" "term").ByWeight }}
+            {{ if and (eq .Data.Plural "categories") .Pages }}{{ $terms = $terms | append . }}{{ end }}
+        {{ end }}
+        {{ partial "filter-grid.html" (dict "pages" .Pages.ByDate.Reverse "terms" $terms "level" "h2") }}
+        {{ else }}
+        <div class="card-grid">
+            {{ range .Pages.ByDate.Reverse }}
+            {{ partial "card.html" (dict "page" . "level" "h2" "image" true) }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </section>
+</div>
+
+{{ end }}
