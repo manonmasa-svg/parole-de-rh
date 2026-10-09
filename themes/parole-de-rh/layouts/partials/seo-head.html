@@ -65,7 +65,15 @@
 {{ end }}
 
 <!-- Favicon -->
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="48x48">
+<link rel="icon" href="{{ "favicon-192.png" | relURL }}" type="image/png" sizes="192x192">
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+
+<!-- Pages de liste sans contenu propre (index des categories, etiquettes) : hors index Google -->
+{{ if or (eq .Kind "taxonomy") (and (eq .Kind "term") (eq .Data.Plural "tags")) }}
+<meta name="robots" content="noindex, follow">
+{{ end }}
 
 <!-- JSON-LD : Organization (toutes les pages) -->
 {{ $org := dict "@context" "https://schema.org" "@type" "Organization" "@id" $orgId "name" .Site.Title "url" .Site.Home.Permalink "description" .Site.Params.description }}

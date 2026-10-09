@@ -242,7 +242,7 @@ enableRobotsTXT = false
 
 [params]
   default_og_image = "/images/og-default.jpg"
-  logo = "/images/logo.svg"
+  logo = "/favicon-512.png"
   founding_year = "2026"
   contact_email = "contact@parole-de-rh.fr"
   expertise = ["Ressources humaines", "Recrutement", "Paie", "Droit social", "Formation professionnelle", "Management", "QVCT", "SIRH"]
