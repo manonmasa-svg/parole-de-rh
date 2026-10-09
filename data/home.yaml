@@ -14,6 +14,7 @@ pages:
   titres-restaurant: { fr: "titres-restaurant-regles", en: "meal-vouchers-rules-france" }
   transparence: { fr: "transparence-des-salaires-directive-europeenne", en: "pay-transparency-eu-directive-france" }
   ia: { fr: "ia-recrutement-reglement-europeen", en: "ai-recruitment-eu-ai-act" }
+  conges: { fr: "conges-payes-calcul-prise", en: "paid-leave-france-calculation-rules" }
 
 commitments:
   - title:

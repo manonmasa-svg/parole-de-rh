@@ -114,6 +114,7 @@ events:
     source: "Service-Public"
     url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258"
     checked: "2026-10-07"
+    page: "conges"
 
   - date: "2027-05-05"
     label:
@@ -166,6 +167,7 @@ events:
     source: "Service-Public"
     url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258"
     checked: "2026-10-07"
+    page: "conges"
 
   - date: "2027-12-02"
     title:
