@@ -4,8 +4,8 @@
 <div class="container">
     <header class="page-hero{{ if $isCategory }} tone-{{ .Params.color | default "blue" }}{{ end }}">
         {{ if $isCategory }}<p class="kicker">{{ T "sections" }}</p>{{ end }}
-        <h1>{{ .Title }}</h1>
-        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        <h1>{{ partial "typo.html" .Title }}</h1>
+        {{ with .Description }}<p>{{ partial "typo.html" . }}</p>{{ end }}
     </header>
 
     <section class="list-content">

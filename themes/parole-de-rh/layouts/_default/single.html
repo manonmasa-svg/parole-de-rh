@@ -4,11 +4,11 @@
 <article class="static-page">
     <div class="container container-narrow">
         <header class="page-hero">
-            <h1>{{ .Title }}</h1>
-            {{ with .Description }}<p>{{ . }}</p>{{ end }}
+            <h1>{{ partial "typo.html" .Title }}</h1>
+            {{ with .Description }}<p>{{ partial "typo.html" . }}</p>{{ end }}
         </header>
         <div class="prose article-content">
-            {{ .Content }}
+            {{ partial "typo.html" .Content | safeHTML }}
         </div>
 
         {{ if .Params.showAuthors }}

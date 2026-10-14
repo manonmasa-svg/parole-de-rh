@@ -1,13 +1,13 @@
 <header class="site-header">
     <div class="header-container">
-        <a href="{{ site.Home.RelPermalink }}" class="site-logo" aria-label="{{ .Site.Title }}">Parole <em>de</em> RH<span class="site-logo-dot" aria-hidden="true">.</span></a>
+        <a href="{{ site.Home.RelPermalink }}" class="site-logo" translate="no" aria-label="{{ .Site.Title }}">Parole <em>de</em> RH<span class="site-logo-dot" aria-hidden="true">.</span></a>
 
         <p class="site-tagline">{{ .Site.Params.tagline }}</p>
 
         {{ partial "lang-switcher.html" (dict "page" . "class" "lang-switcher") }}
 
-        <button class="menu-toggle" aria-label="{{ T "menu" }}" aria-expanded="false" aria-controls="nav-mobile">
-            <span class="hamburger"></span>
+        <button class="menu-toggle" aria-label="{{ T "menu" }}" data-label-close="{{ T "menuClose" }}" aria-expanded="false" aria-controls="nav-mobile">
+            <span class="hamburger" aria-hidden="true"></span>
         </button>
     </div>
 
@@ -16,7 +16,7 @@
             {{ $current := . }}
             {{ range .Site.Menus.main }}
             <li class="nav-item{{ if .HasChildren }} has-children{{ end }}">
-                <a href="{{ .URL }}" class="nav-link{{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }} active{{ end }}"{{ if .HasChildren }} aria-haspopup="true"{{ end }}>{{ .Name }}</a>
+                <a href="{{ .URL }}" class="nav-link{{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }} active{{ end }}">{{ .Name }}</a>
                 {{ if .HasChildren }}
                 <ul class="nav-sub">
                     {{ range .Children }}
@@ -45,9 +45,25 @@
     var toggle = document.querySelector('.menu-toggle');
     var mobileNav = document.querySelector('.nav-mobile');
     if (toggle && mobileNav) {
-        toggle.addEventListener('click', function() {
-            var isOpen = mobileNav.classList.toggle('open');
+        var labelOpen = toggle.getAttribute('aria-label');
+        var labelClose = toggle.dataset.labelClose;
+        function setOpen(isOpen, moveFocus) {
+            mobileNav.classList.toggle('open', isOpen);
             toggle.setAttribute('aria-expanded', String(isOpen));
+            toggle.setAttribute('aria-label', isOpen ? labelClose : labelOpen);
+            if (moveFocus) {
+                var first = isOpen ? mobileNav.querySelector('a') : toggle;
+                if (first) { first.focus(); }
+            }
+        }
+        toggle.addEventListener('click', function(e) {
+            /* e.detail vaut 0 pour une activation au clavier : on deplace alors le focus dans le menu */
+            setOpen(!mobileNav.classList.contains('open'), e.detail === 0);
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+                setOpen(false, true);
+            }
         });
     }
 })();

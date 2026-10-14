@@ -1,0 +1,9 @@
+{{- /* Typographie francaise : espace insecable avant : ; ! ? » et apres «.
+     S'applique seulement aux pages en francais. Usage : partial "typo.html" .Title
+     Pour du HTML (.Content, .TableOfContents), ajouter | safeHTML. */ -}}
+{{- $s := string . -}}
+{{- if eq site.Language.Lang "fr" -}}
+  {{- $s = replaceRE ` ([:;!?»])` " $1" $s -}}
+  {{- $s = replaceRE `« ` "« " $s -}}
+{{- end -}}
+{{- return $s -}}

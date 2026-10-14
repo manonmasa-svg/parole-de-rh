@@ -7,8 +7,8 @@
 
 {{ with $agenda.recurring }}
 <div class="agenda-recurring">
-    <p class="agenda-item-title">{{ index .title $lang }}</p>
-    <p class="agenda-item-text">{{ index .text $lang }}</p>
+    <p class="agenda-item-title">{{ partial "typo.html" (index .title $lang) }}</p>
+    <p class="agenda-item-text">{{ partial "typo.html" (index .text $lang) }}</p>
     <p class="agenda-item-source">{{ T "sourceLabel" }} <a href="{{ .url }}" rel="noopener">{{ .source }}</a>{{ with .page }}{{ with index $home.pages . }}{{ with site.GetPage (printf "/blog/%s" (index . $lang)) }} · <a href="{{ .RelPermalink }}">{{ T "readArticle" }}</a>{{ end }}{{ end }}{{ end }}</p>
 </div>
 {{ end }}
@@ -32,8 +32,8 @@
             <span class="agenda-month">{{ $d | time.Format "January 2006" }}</span>
             {{ end }}
         </div>
-        <p class="agenda-item-title">{{ index $e.title $lang }}</p>
-        <p class="agenda-item-text">{{ index $e.text $lang }}</p>
+        <p class="agenda-item-title">{{ partial "typo.html" (index $e.title $lang) }}</p>
+        <p class="agenda-item-text">{{ partial "typo.html" (index $e.text $lang) }}</p>
         <p class="agenda-item-source">{{ T "sourceLabel" }} <a href="{{ $e.url }}" rel="noopener">{{ $e.source }}</a>{{ with $e.page }}{{ with index $home.pages . }}{{ with site.GetPage (printf "/blog/%s" (index . $lang)) }} · <a href="{{ .RelPermalink }}">{{ T "readArticle" }}</a>{{ end }}{{ end }}{{ end }}</p>
     </li>
     {{ end }}

@@ -8,13 +8,11 @@
 
     {{ partial "seo-head.html" . }}
 
-    <!-- Google Fonts (chargement non bloquant) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    {{ $fonts := "https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Newsreader:ital,opsz,wght@0,6..72,700;1,6..72,400&display=swap" }}
-    <link href="{{ $fonts }}" rel="stylesheet" media="print" data-media="all">
-    <script>document.querySelectorAll('link[data-media]').forEach(function(l){l.addEventListener('load',function(){l.media=l.dataset.media})});</script>
-    <noscript><link href="{{ $fonts }}" rel="stylesheet"></noscript>
+    <meta name="theme-color" content="#FFFFFF">
+
+    <!-- Polices hebergees sur le site (aucun appel a Google) : precharge des deux polices principales -->
+    <link rel="preload" href="{{ "fonts/dmsans-normal-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ "fonts/outfit-normal-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 
     {{ with resources.Get "css/main.css" }}
     {{ $css := . | minify | fingerprint }}
@@ -31,5 +29,20 @@
     </main>
 
     {{ partial "footer.html" . }}
+
+    <script>
+    /* Tableaux plus larges que l'ecran : affiche l'indication de defilement */
+    (function() {
+        function mark() {
+            document.querySelectorAll('.table-scroll').forEach(function(w) {
+                var t = w.querySelector('table');
+                w.classList.toggle('is-wide', t.scrollWidth > t.clientWidth + 1);
+            });
+        }
+        mark();
+        window.addEventListener('load', mark);
+        window.addEventListener('resize', mark);
+    })();
+    </script>
 </body>
 </html>

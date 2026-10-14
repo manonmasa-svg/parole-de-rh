@@ -11,8 +11,8 @@
 
 <div class="container">
     <header class="page-hero">
-        <h1>{{ .Title }}</h1>
-        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        <h1>{{ partial "typo.html" .Title }}</h1>
+        {{ with .Description }}<p>{{ partial "typo.html" . }}</p>{{ end }}
     </header>
 
     <section class="list-content">

@@ -17,11 +17,11 @@
             <span>{{ $p.ReadingTime }} {{ T "minRead" }}</span>
         </div>
         {{ if eq .level "h2" }}
-        <h2 class="card-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+        <h2 class="card-title"><a href="{{ $p.RelPermalink }}">{{ partial "typo.html" $p.Title }}</a></h2>
         {{ else }}
-        <h3 class="card-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+        <h3 class="card-title"><a href="{{ $p.RelPermalink }}">{{ partial "typo.html" $p.Title }}</a></h3>
         {{ end }}
-        {{ if ne .variant "compact" }}<p class="card-excerpt">{{ $p.Description }}</p>{{ end }}
+        {{ if ne .variant "compact" }}<p class="card-excerpt">{{ partial "typo.html" $p.Description }}</p>{{ end }}
         <p class="card-foot">
             {{ with $p.Params.author }}{{ with index hugo.Data.authors . }}<strong>{{ .name }}</strong> · {{ end }}{{ end }}
             <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date | time.Format ":date_long" }}</time>

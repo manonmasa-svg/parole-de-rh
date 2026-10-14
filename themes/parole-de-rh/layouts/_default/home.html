@@ -51,7 +51,7 @@
                 {{ with index (site.Params.home_tiles | default slice) $i }}<img class="tile-image" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="" loading="lazy" width="900" height="520">{{ end }}
                 <span>
                     <span class="tile-title">{{ .Name }}</span>
-                    {{ with .Page.Description }}<span class="tile-text">{{ . }}</span>{{ end }}
+                    {{ with .Page.Description }}<span class="tile-text">{{ partial "typo.html" . }}</span>{{ end }}
                 </span>
                 <span class="tile-count">{{ $count }} {{ if gt $count 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }} →</span>
             </a>
@@ -91,8 +91,8 @@
             {{ range $i, $c := $home.commitments }}
             <div class="commit">
                 <span class="commit-num" aria-hidden="true">{{ add $i 1 }}</span>
-                <h3 class="commit-title">{{ index $c.title $lang }}</h3>
-                <p>{{ index $c.text $lang }}</p>
+                <h3 class="commit-title">{{ partial "typo.html" (index $c.title $lang) }}</h3>
+                <p>{{ partial "typo.html" (index $c.text $lang) }}</p>
             </div>
             {{ end }}
         </div>
@@ -111,8 +111,8 @@
         <div class="article-content faq-columns">
             {{ range $home.faq }}
             <details>
-                <summary>{{ index .q $lang }}</summary>
-                <p>{{ index .a $lang }}</p>
+                <summary>{{ partial "typo.html" (index .q $lang) }}</summary>
+                <p>{{ partial "typo.html" (index .a $lang) }}</p>
                 <p class="faq-source">{{ T "sourceLabel" }} <a href="{{ .url }}" rel="noopener">{{ .source }}</a></p>
             </details>
             {{ end }}
