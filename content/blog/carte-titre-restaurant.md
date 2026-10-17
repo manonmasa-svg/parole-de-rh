@@ -123,7 +123,7 @@ Quel que soit l'émetteur, les règles viennent de la réglementation, détaill�
 | Produits | Aliments immédiatement consommables ou servant à la préparation du repas. Tout produit alimentaire jusqu'au 31 décembre 2026 |
 | Solde | Consultable gratuitement par le salarié qui a une carte ou une application |
 
-La fiche précise aussi que l'émetteur rembourse les commerçants dans un délai maximal de 21 jours. De son côté, l'employeur règle sa commande de titres au plus tard à leur livraison, et pour la totalité de leur valeur. Elle rappelle que les restaurants et commerçants ne sont pas obligés d'accepter les titres-restaurant.
+La fiche précise aussi que l'émetteur rembourse les commerçants dans un délai maximal de 21 jours. De son côté, l'employeur règle sa commande de titres au plus tard à leur livraison, et pour la totalité de leur valeur. L'entreprise qui met en place des titres-restaurant doit se les procurer auprès d'une des sociétés privées spécialisées dans leur émission, comme les quatre comparées ici. La fiche rappelle enfin que les restaurants et commerçants ne sont pas obligés d'accepter les titres-restaurant.
 
 ## Carte ou chèques papier : ce qui change
 

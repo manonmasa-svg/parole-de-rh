@@ -123,7 +123,7 @@ Whatever the issuer, the rules come from French regulations, detailed in the art
 | Products | Food ready to eat or used to prepare the meal. Any food product until 31 December 2026 |
 | Balance | Free access for employees with a card or an app |
 
-The guide also states that the issuer reimburses shops within a maximum of 21 days. For its part, the employer pays for its voucher order no later than delivery, and for their full face value. An employer that offers meal vouchers must buy them from one of the specialised private issuers, such as the four compared here. It points out that restaurants and shops are not required to accept meal vouchers.
+The guide also states that the issuer reimburses shops within a maximum of 21 days. For its part, the employer pays for its voucher order no later than delivery, and for their full face value. An employer that offers meal vouchers must buy them from one of the specialised private issuers, such as the four compared here. The guide also points out that restaurants and shops are not required to accept meal vouchers.
 
 ## Card or paper vouchers: what changes
 
