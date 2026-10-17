@@ -20,7 +20,7 @@
 {{ end }}
 
 {{ $tones := slice "rose" "yellow" "mint" "lilac" "blue" "peach" }}
-<ol class="agenda-list" data-limit="{{ $limit }}">
+<ol class="agenda-list" data-limit="{{ $limit }}" data-today="{{ T "countdownToday" }}" data-tomorrow="{{ T "countdownTomorrow" }}" data-days="{{ T "countdownDays" }}">
     {{ range $n, $e := $upcoming }}
     {{ $d := time.AsTime $e.date }}
     <li class="agenda-item tone-{{ index $tones (mod $n 6) }}" data-date="{{ $e.date }}"{{ if and (gt $limit 0) (ge $n $limit) }} hidden{{ end }}>
@@ -30,6 +30,7 @@
             {{ else }}
             <span class="agenda-day">{{ $d.Day }}</span>
             <span class="agenda-month">{{ $d | time.Format "January 2006" }}</span>
+            <span class="agenda-countdown"></span>
             {{ end }}
         </div>
         <p class="agenda-item-title">{{ partial "typo.html" (index $e.title $lang) }}</p>
@@ -52,6 +53,15 @@
             var keep = li.dataset.date >= today && (limit === 0 || shown < limit);
             li.hidden = !keep;
             if (keep) shown++;
+            /* Compte a rebours : nombre de jours avant l'echeance */
+            var cd = li.querySelector(".agenda-countdown");
+            if (cd && keep) {
+                var p = li.dataset.date.split("-");
+                var target = new Date(+p[0], +p[1] - 1, +p[2]);
+                var start = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+                var n = Math.round((target - start) / 86400000);
+                cd.textContent = n === 0 ? list.dataset.today : (n === 1 ? list.dataset.tomorrow : list.dataset.days.replace("{n}", n));
+            }
         });
     });
 })();

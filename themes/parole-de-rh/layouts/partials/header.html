@@ -1,10 +1,13 @@
 <header class="site-header">
+    <!-- Ligne du haut facon journal : date du jour (calculee dans le navigateur) et choix de la langue -->
+    <div class="masthead-top">
+        <span class="masthead-date" data-lang="{{ site.Language.Locale | default site.Language.Lang }}"></span>
+        {{ if not .IsHome }}<span class="masthead-motto">{{ .Site.Params.tagline }}</span>{{ end }}
+        {{ partial "lang-switcher.html" (dict "page" . "class" "lang-switcher") }}
+    </div>
+
     <div class="header-container">
         <a href="{{ site.Home.RelPermalink }}" class="site-logo" translate="no" aria-label="{{ .Site.Title }}">Parole <em>de</em> RH<span class="site-logo-dot" aria-hidden="true">.</span></a>
-
-        <p class="site-tagline">{{ .Site.Params.tagline }}</p>
-
-        {{ partial "lang-switcher.html" (dict "page" . "class" "lang-switcher") }}
 
         <button class="menu-toggle" aria-label="{{ T "menu" }}" data-label-close="{{ T "menuClose" }}" aria-expanded="false" aria-controls="nav-mobile">
             <span class="hamburger" aria-hidden="true"></span>
@@ -42,6 +45,15 @@
 
 <script>
 (function() {
+    /* Date du jour dans le bandeau, au format de la langue de la page */
+    var dateEl = document.querySelector('.masthead-date');
+    if (dateEl && window.Intl) {
+        try {
+            var txt = new Intl.DateTimeFormat(dateEl.dataset.lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date());
+            dateEl.textContent = txt.charAt(0).toUpperCase() + txt.slice(1);
+        } catch (e) {}
+    }
+
     var toggle = document.querySelector('.menu-toggle');
     var mobileNav = document.querySelector('.nav-mobile');
     if (toggle && mobileNav) {

@@ -1,44 +1,133 @@
 {{ define "main" }}
+{{/* Accueil, direction editoriale (refonte du 17 octobre 2026, inspiree de la presse ecrite) :
+     a la une + a lire aussi, dernieres parutions, simulateur RH, agenda, index des rubriques,
+     engagements, FAQ. Le simulateur RH remplace le quiz (demande de Manon). Les animations au defilement sont desactivees si l'utilisateur le demande. */}}
 {{ $articles := where .Site.RegularPages "Section" "blog" }}
 {{ $lang := .Site.Language.Lang }}
 {{ $home := hugo.Data.home }}
-{{ $agenda := hugo.Data.agenda }}
 
 <div class="container">
-    <header class="home-intro">
-        <h1>{{ T "homeH1a" }} <span>{{ T "homeH1b" }}</span>{{ T "homeH1c" }}</h1>
-        <p>{{ .Site.Params.description }}</p>
-    </header>
+    <h1 class="home-strap">{{ T "homeStrap" }}</h1>
 
-    <!-- Les articles du moment : 1 carte mise en avant + 3 cartes compactes -->
     {{ with $articles }}
-    <section class="section" aria-labelledby="moment-title">
+    <!-- A la une : grand article a gauche, trois articles numerotes a droite -->
+    <section class="une" aria-label="{{ T "featured" }}">
+        {{ range first 1 . }}
+        {{ $cat := false }}{{ with .GetTerms "categories" }}{{ $cat = index . 0 }}{{ end }}
+        <article class="une-main">
+            <a href="{{ .RelPermalink }}" class="une-image" tabindex="-1" aria-hidden="true">
+                {{ with .Params.image }}<img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="" width="1600" height="1000" fetchpriority="high">{{ end }}
+            </a>
+            {{ with $cat }}<a href="{{ .RelPermalink }}" class="kicker">{{ .Title }}</a>{{ end }}
+            <h2 class="une-title"><a href="{{ .RelPermalink }}">{{ partial "typo.html" .Title }}</a></h2>
+            <p class="une-chapo">{{ partial "typo.html" .Description }}</p>
+            <p class="card-foot">
+                {{ with .Params.author }}{{ with index hugo.Data.authors . }}{{ T "by" }} <strong>{{ .name }}</strong> · {{ end }}{{ end }}
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time> · {{ .ReadingTime }} {{ T "minRead" }}
+            </p>
+        </article>
+        {{ end }}
+
+        <aside class="une-side" aria-labelledby="also-title">
+            <h2 class="side-title" id="also-title">{{ T "alsoRead" }}</h2>
+            <ol class="side-list">
+                {{ range first 3 (after 1 .) }}
+                {{ $cat := false }}{{ with .GetTerms "categories" }}{{ $cat = index . 0 }}{{ end }}
+                <li class="side-item">
+                    {{ with $cat }}<span class="kicker">{{ .Title }}</span>{{ end }}
+                    <h3 class="side-item-title"><a href="{{ .RelPermalink }}">{{ partial "typo.html" .Title }}</a></h3>
+                </li>
+                {{ end }}
+            </ol>
+        </aside>
+    </section>
+
+    <!-- Dernieres parutions : trois articles en colonnes separees par des filets -->
+    {{ if gt (len .) 4 }}
+    <section class="section reveal" aria-labelledby="latest-title">
         <div class="section-head">
-            <h2 class="section-title" id="moment-title">{{ T "momentTitle" }}</h2>
+            <h2 class="section-title" id="latest-title">{{ T "latestTitle" }}</h2>
             <a href="{{ "blog/" | relLangURL }}" class="section-more">{{ T "allArticles" }} →</a>
         </div>
-        <div class="moment-grid">
-            {{ range first 1 . }}
-            {{ partial "card.html" (dict "page" . "level" "h3" "variant" "featured" "image" true) }}
+        <div class="cols">
+            {{ range first 3 (after 4 .) }}
+            {{ partial "card.html" (dict "page" . "level" "h3" "image" true) }}
             {{ end }}
-            <div class="moment-side">
-                {{ range first 3 (after 1 .) }}
-                {{ partial "card.html" (dict "page" . "level" "h3" "variant" "compact" "image" false) }}
-                {{ end }}
-            </div>
         </div>
     </section>
     {{ end }}
-</div>
+    {{ end }}
 
-<!-- Explorer les rubriques : uniquement les entrees principales du menu -->
-<section class="section band" aria-labelledby="explore-title">
-    <div class="container">
-        <div class="section-head">
-            <h2 class="section-title" id="explore-title">{{ T "exploreTitle" }}</h2>
+    <!-- Simulateur RH : trois onglets, un curseur, des resultats en direct sur des lignes pointillees.
+         Parametres et sources dans data/home.yaml (simulator). -->
+    {{ with $home.simulator }}
+    {{ $rows := dict "conges" (slice "calc" "result" "max") "titres" (slice "employer" "employee" "exempt") "ij" (slice "base" "ij" "cap" "waiting") }}
+    {{ $total := len .tabs }}
+    <section class="section sim reveal" id="simulateur" aria-labelledby="sim-title" data-locale="{{ site.Language.Locale | default $lang }}">
+        <div class="sim-head">
+            <div>
+                <h2 class="section-title" id="sim-title">{{ index .title $lang }}</h2>
+                <p class="section-intro">{{ partial "typo.html" (index .intro $lang) }}</p>
+            </div>
+            <p class="sim-step" aria-hidden="true"><span class="sim-step-n">1</span><span class="sim-step-t">/{{ $total }}</span></p>
         </div>
-        <div class="tiles">
-            {{ $tones := slice "rose" "blue" "yellow" "mint" "lilac" "peach" }}
+
+        <div class="sim-tabs" role="tablist" aria-label="{{ index .title $lang }}">
+            {{ range $i, $t := .tabs }}
+            <button type="button" class="sim-tab" role="tab" id="sim-tab-{{ $t.key }}" aria-controls="sim-panel-{{ $t.key }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}">
+                <span class="sim-tab-n" aria-hidden="true">0{{ add $i 1 }}</span>
+                <span class="sim-tab-label">{{ index $t.label $lang }}</span>
+            </button>
+            {{ end }}
+        </div>
+
+        {{ range $i, $t := .tabs }}
+        {{ $labels := dict }}
+        {{ range $k, $v := $t.lines }}{{ $labels = merge $labels (dict $k (index $v $lang)) }}{{ end }}
+        <div class="sim-panel" role="tabpanel" id="sim-panel-{{ $t.key }}" aria-labelledby="sim-tab-{{ $t.key }}" data-key="{{ $t.key }}" data-params="{{ $t.params | jsonify }}" data-labels="{{ $labels | jsonify }}" data-unit="{{ index $t.unit $lang }}"{{ if gt $i 0 }} hidden{{ end }}>
+            <div class="sim-grid">
+                <div class="sim-control">
+                    <label for="sim-in-{{ $t.key }}" class="sim-label">{{ index $t.input $lang }}</label>
+                    <p class="sim-value"><output for="sim-in-{{ $t.key }}" class="sim-out">{{ $t.value }}</output> <span class="sim-unit">{{ index $t.unit $lang }}</span></p>
+                    <input type="range" class="sim-range" id="sim-in-{{ $t.key }}" min="{{ $t.min }}" max="{{ $t.max }}" step="{{ $t.step }}" value="{{ $t.value }}">
+                    <p class="sim-scale" aria-hidden="true"><span>{{ $t.min }} {{ index $t.unit $lang }}</span><span>{{ $t.max }} {{ index $t.unit $lang }}</span></p>
+                </div>
+                <div class="sim-readout" aria-live="polite">
+                    <p class="sim-big"><span class="sim-big-n">…</span> <span class="sim-big-u">{{ index $t.big $lang }}</span></p>
+                    <dl class="sim-lines">
+                        {{ range index $rows $t.key }}
+                        <div class="sim-line"><dt>{{ index $labels . }}</dt><dd data-line="{{ . }}">…</dd></div>
+                        {{ end }}
+                    </dl>
+                </div>
+            </div>
+            <p class="sim-note">{{ partial "typo.html" (index $t.note $lang) }}</p>
+            <p class="sim-source">{{ T "sourceLabel" }} <a href="{{ $t.url }}" rel="noopener">{{ $t.source }}</a>{{ with $t.page }}{{ with index $home.pages . }}{{ with site.GetPage (printf "/blog/%s" (index . $lang)) }} · <a href="{{ .RelPermalink }}">{{ T "readArticle" }}</a>{{ end }}{{ end }}{{ end }}</p>
+        </div>
+        {{ end }}
+        <noscript><p class="sim-note">{{ T "simNoScript" }}</p></noscript>
+    </section>
+    {{ end }}
+
+    <!-- Agenda des echeances RH -->
+    <section class="section reveal" aria-labelledby="agenda-title">
+        <div class="section-head">
+            <div>
+                <h2 class="section-title" id="agenda-title">{{ T "agendaTitle" }}</h2>
+                <p class="section-intro">{{ T "agendaIntro" }}</p>
+            </div>
+            {{ with site.GetPage (cond (eq $lang "en") "/hr-calendar" "/agenda-rh") }}<a href="{{ .RelPermalink }}" class="section-more">{{ T "allAgenda" }} →</a>{{ end }}
+        </div>
+        {{ partial "agenda.html" (dict "limit" 6) }}
+    </section>
+
+    <!-- Index typographique des rubriques principales du menu -->
+    <section class="section reveal" aria-labelledby="explore-title">
+        <div class="section-head">
+            <h2 class="section-title" id="explore-title">{{ T "sectionsIndex" }}</h2>
+        </div>
+        <div class="rub-index">
+            {{ $roman := slice "I" "II" "III" "IV" "V" "VI" }}
             {{ $i := 0 }}
             {{ range .Site.Menus.main }}
             {{ if and .Page (ne .Page.Section "blog") (ne .Params.tile false) }}
@@ -47,46 +136,26 @@
                 {{ $count = 0 }}
                 {{ range .Children }}{{ with .Page }}{{ $count = add $count (len .Pages) }}{{ end }}{{ end }}
             {{ end }}
-            <a href="{{ .URL }}" class="tile tone-{{ index $tones (mod $i 6) }}">
-                {{ with index (site.Params.home_tiles | default slice) $i }}<img class="tile-image" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="" loading="lazy" width="900" height="520">{{ end }}
-                <span>
-                    <span class="tile-title">{{ .Name }}</span>
-                    {{ with .Page.Description }}<span class="tile-text">{{ partial "typo.html" . }}</span>{{ end }}
-                </span>
-                <span class="tile-count">{{ $count }} {{ if gt $count 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }} →</span>
+            <a href="{{ .URL }}" class="rub">
+                {{ with index (site.Params.home_tiles | default slice) $i }}<span class="rub-image"><img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="" loading="lazy" width="900" height="520"></span>{{ end }}
+                <span class="rub-num" aria-hidden="true">{{ index $roman (mod $i 6) }}.</span>
+                <span class="rub-title">{{ .Name }}</span>
+                {{ with .Page.Description }}<span class="rub-text">{{ partial "typo.html" . }}</span>{{ end }}
+                <span class="rub-count">{{ $count }} {{ if gt $count 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }}</span>
             </a>
             {{ $i = add $i 1 }}
             {{ end }}
             {{ end }}
         </div>
         {{ with site.Params.home_tiles_credit }}<p class="tiles-credit">{{ T "photo" }}s : {{ . }} ({{ T "onUnsplash" }})</p>{{ end }}
-    </div>
-</section>
+    </section>
+</div>
 
-<!-- Agenda des echeances RH (bloc a part entiere) -->
-<section class="section" aria-labelledby="agenda-title">
+<!-- Engagements editoriaux : bandeau creme pleine largeur -->
+<section class="commitments reveal" aria-labelledby="commit-title">
     <div class="container">
-        <div class="section-head">
-            <div>
-                <h2 class="section-title" id="agenda-title">{{ T "agendaTitle" }}</h2>
-                <p class="section-intro">{{ T "agendaIntro" }}</p>
-            </div>
-            {{ with site.GetPage (cond (eq $lang "en") "/hr-calendar" "/agenda-rh") }}<a href="{{ .RelPermalink }}" class="section-more">{{ T "allAgenda" }} →</a>{{ end }}
-        </div>
-
-        {{ partial "agenda.html" (dict "limit" 6) }}
-    </div>
-</section>
-
-<!-- Engagements editoriaux -->
-<section class="section commitments" aria-labelledby="commit-title">
-    <div class="container">
-        <div class="section-head">
-            <h2 class="section-title" id="commit-title">{{ T "commitTitle" }}</h2>
-            {{ with site.GetPage (cond (eq $lang "en") "/editorial-policy" "/ligne-editoriale") }}
-            <a href="{{ .RelPermalink }}" class="section-more">{{ .Title }} →</a>
-            {{ end }}
-        </div>
+        <h2 class="visually-hidden" id="commit-title">{{ T "commitTitle" }}</h2>
+        <p class="commit-quote">« {{ partial "typo.html" (T "commitQuote") }} »</p>
         <div class="commit-grid">
             {{ range $i, $c := $home.commitments }}
             <div class="commit">
@@ -96,6 +165,9 @@
             </div>
             {{ end }}
         </div>
+        {{ with site.GetPage (cond (eq $lang "en") "/editorial-policy" "/ligne-editoriale") }}
+        <p class="commit-more"><a href="{{ .RelPermalink }}" class="section-more">{{ .Title }} →</a></p>
+        {{ end }}
     </div>
 </section>
 
@@ -127,4 +199,92 @@
 {{ end }}
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $questions | jsonify | safeJS }}</script>
 
+<script>
+/* Simulateur RH : onglets accessibles au clavier et calculs en direct */
+(function() {
+    var sim = document.getElementById('simulateur');
+    if (!sim) { return; }
+    var locale = sim.dataset.locale || 'fr';
+    var tabs = [].slice.call(sim.querySelectorAll('.sim-tab'));
+    var panels = [].slice.call(sim.querySelectorAll('.sim-panel'));
+    var stepN = sim.querySelector('.sim-step-n');
+    var money = new Intl.NumberFormat(locale, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    var dec = new Intl.NumberFormat(locale, { maximumFractionDigits: 2 });
+    function eur(x) { return money.format(x) + ' €'; }
+    function trunc2(x) { return Math.floor(x * 100 + 1e-9) / 100; }
+    function round2(x) { return Math.round(x * 100) / 100; }
+
+    var compute = {
+        conges: function(v, p, L, set) {
+            var raw = p.per_month * v;
+            var days = Math.min(p.max_days, Math.ceil(raw - 1e-9));
+            set('calc', dec.format(p.per_month) + ' × ' + v + ' = ' + dec.format(raw));
+            set('result', String(days));
+            set('max', String(p.max_days));
+            return String(days);
+        },
+        titres: function(v, p, L, set) {
+            var emin = v * p.min_share, emax = v * p.max_share;
+            set('employer', eur(emin) +' ' + L.to + ' '+ eur(emax));
+            set('employee', eur(v - emax) +' ' + L.to + ' '+ eur(v - emin));
+            set('exempt', emax <= p.exempt_cap + 1e-9 ? L.full : (emin <= p.exempt_cap + 1e-9 ? L.partial : L.none));
+            return money.format(emin) +' ' + L.to + ' '+ eur(emax);
+        },
+        ij: function(v, p, L, set) {
+            var capped = v >= p.salary_cap;
+            var base = round2(3 * Math.min(v, p.salary_cap) / p.divisor);
+            var ij = capped ? p.max_ij : Math.min(p.max_ij, trunc2(base * p.rate));
+            set('base', eur(base));
+            set('ij', eur(ij));
+            set('cap', capped ? L.capped : L.notcapped);
+            set('waiting', p.waiting_days + ' ' + L.days);
+            return eur(ij);
+        }
+    };
+
+    panels.forEach(function(panel) {
+        var key = panel.dataset.key;
+        var p = JSON.parse(panel.dataset.params);
+        var L = JSON.parse(panel.dataset.labels);
+        var input = panel.querySelector('.sim-range');
+        var out = panel.querySelector('.sim-out');
+        var big = panel.querySelector('.sim-big-n');
+        function set(name, txt) {
+            var el = panel.querySelector('[data-line="' + name + '"]');
+            if (el) { el.textContent = txt; }
+        }
+        function update() {
+            var v = parseFloat(input.value);
+            out.textContent = panel.dataset.unit === '€' ? dec.format(v) : String(v);
+            var pct = (v - input.min) / (input.max - input.min) * 100;
+            input.style.setProperty('--fill', pct + '%');
+            big.textContent = compute[key](v, p, L, set);
+        }
+        input.addEventListener('input', update);
+        update();
+    });
+
+    function select(i, focus) {
+        tabs.forEach(function(t, j) {
+            var on = i === j;
+            t.setAttribute('aria-selected', String(on));
+            t.tabIndex = on ? 0 : -1;
+            panels[j].hidden = !on;
+        });
+        stepN.textContent = i + 1;
+        if (focus) { tabs[i].focus(); }
+    }
+    tabs.forEach(function(t, i) {
+        t.addEventListener('click', function() { select(i, false); });
+        t.addEventListener('keydown', function(e) {
+            var n = null;
+            if (e.key === 'ArrowRight') { n = (i + 1) % tabs.length; }
+            if (e.key === 'ArrowLeft') { n = (i - 1 + tabs.length) % tabs.length; }
+            if (e.key === 'Home') { n = 0; }
+            if (e.key === 'End') { n = tabs.length - 1; }
+            if (n !== null) { e.preventDefault(); select(n, true); }
+        });
+    });
+})();
+</script>
 {{ end }}

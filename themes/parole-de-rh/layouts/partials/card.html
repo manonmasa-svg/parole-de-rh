@@ -1,5 +1,6 @@
-{{/* Carte d'article.
-     dict "page" (article) "level" (h2|h3) "variant" (""|featured|compact) "image" (bool) */}}
+{{/* Carte d'article, style editorial (refonte du 17 octobre 2026) : pas de boite,
+     surtitre de rubrique en petites capitales, titre en serif, filet au-dessus.
+     dict "page" (article) "level" (h2|h3) "variant" (""|featured|compact|text) "image" (bool) */}}
 {{ $p := .page }}
 {{ $cat := false }}
 {{ with ($p.GetTerms "categories") }}{{ $cat = index . 0 }}{{ end }}
@@ -7,15 +8,12 @@
 {{ with $cat }}{{ $tone = .Params.color | default "blue" }}{{ end }}
 <article class="card tone-{{ $tone }}{{ with .variant }} card-{{ . }}{{ end }}"{{ with $cat }} data-cat="{{ path.Base .RelPermalink }}"{{ end }}>
     {{ if and .image $p.Params.image }}
-    <div class="card-image">
-        <img src="{{ strings.TrimPrefix "/" $p.Params.image | relURL }}" alt="" loading="lazy" width="800" height="500">
-    </div>
+    <a href="{{ $p.RelPermalink }}" class="card-image" tabindex="-1" aria-hidden="true">
+        <img src="{{ strings.TrimPrefix "/" $p.Params.image | relURL }}" alt="" loading="lazy" width="800" height="533">
+    </a>
     {{ end }}
     <div class="card-body">
-        <div class="card-top">
-            {{ with $cat }}<a href="{{ .RelPermalink }}" class="pill">{{ .Title }}</a>{{ end }}
-            <span>{{ $p.ReadingTime }} {{ T "minRead" }}</span>
-        </div>
+        {{ with $cat }}<a href="{{ .RelPermalink }}" class="kicker">{{ .Title }}</a>{{ end }}
         {{ if eq .level "h2" }}
         <h2 class="card-title"><a href="{{ $p.RelPermalink }}">{{ partial "typo.html" $p.Title }}</a></h2>
         {{ else }}
@@ -23,8 +21,8 @@
         {{ end }}
         {{ if ne .variant "compact" }}<p class="card-excerpt">{{ partial "typo.html" $p.Description }}</p>{{ end }}
         <p class="card-foot">
-            {{ with $p.Params.author }}{{ with index hugo.Data.authors . }}<strong>{{ .name }}</strong> · {{ end }}{{ end }}
-            <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date | time.Format ":date_long" }}</time>
+            {{ with $p.Params.author }}{{ with index hugo.Data.authors . }}{{ T "by" }} <strong>{{ .name }}</strong> · {{ end }}{{ end }}
+            <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date | time.Format ":date_medium" }}</time> · {{ $p.ReadingTime }} {{ T "minRead" }}
         </p>
     </div>
 </article>
