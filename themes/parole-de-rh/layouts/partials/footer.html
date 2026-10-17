@@ -26,8 +26,17 @@
                 </nav>
             </div>
         </div>
+        <!-- Ligne legale (17 octobre 2026) : copyright, liens legaux, avertissement -->
         <div class="footer-bottom">
-            <p>&copy; {{ now.Year }} {{ .Site.Title }}. {{ T "allRights" }}</p>
+            <p class="footer-copy">&copy; {{ now.Year }} <span translate="no">{{ .Site.Title }}</span>. {{ T "allRights" }}</p>
+            <nav class="footer-legal" aria-label="{{ T "navLegal" }}">
+                <ul>
+                    {{ range .Site.Menus.legal }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+            <p class="footer-disclaimer">{{ T "footerDisclaimer" }}</p>
         </div>
     </div>
 </footer>

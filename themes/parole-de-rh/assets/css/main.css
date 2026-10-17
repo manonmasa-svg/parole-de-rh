@@ -2978,3 +2978,26 @@ h1, h2, h3, .section-title, .card-title, .article-title, .page-hero h1 {
 @media (prefers-reduced-motion: reduce) {
     .search-panel { animation: none; }
 }
+
+/* Pied de page : ligne legale (17 octobre 2026) */
+.footer-bottom {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: baseline;
+    gap: 0.6rem 2rem;
+    padding-top: 1.1rem;
+    margin-top: 2rem;
+}
+
+.footer-bottom p { margin: 0; }
+.footer-copy { font-size: 0.82rem; }
+.footer-legal ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.3rem 1.4rem; }
+.footer-legal a { font-size: 0.82rem; color: inherit; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.35); text-underline-offset: 3px; }
+.footer-legal a:hover { color: #F0A493; text-decoration-color: currentColor; }
+.footer-disclaimer { grid-column: 1 / -1; font-size: 0.78rem; opacity: 0.75; font-style: italic; font-family: var(--serif); }
+
+@media (max-width: 720px) {
+    .footer-bottom { grid-template-columns: minmax(0, 1fr); }
+    .footer-legal ul { justify-content: flex-start; }
+    .footer-legal a { display: inline-block; padding: 0.35rem 0; }
+}

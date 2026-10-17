@@ -24,7 +24,7 @@ Les photographies sont publiées sous licence libre. Le crédit et la licence de
 
 Le site ne propose ni création de compte ni formulaire. Aucune donnée personnelle n'est collectée par l'éditeur lors de la navigation. Les messages envoyés à l'adresse de contact sont utilisés uniquement pour y répondre.
 
-Les polices de caractères sont hébergées sur le site lui-même : aucune connexion n'est établie avec les serveurs de Google. L'hébergeur peut par ailleurs enregistrer des données techniques de connexion, dont l'adresse IP, à des fins de sécurité.
+Les polices de caractères sont hébergées sur le site lui-même : aucune connexion n'est établie avec les serveurs de Google. L'hébergeur peut par ailleurs enregistrer des données techniques de connexion, dont l'adresse IP, à des fins de sécurité. Le détail figure dans la [politique de confidentialité]({{< relref "politique-de-confidentialite.md" >}}) et sur la page [Cookies]({{< relref "cookies.md" >}}).
 
 ## Responsabilité
 

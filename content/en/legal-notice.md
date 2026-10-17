@@ -24,7 +24,7 @@ Photographs are published under free licences. The credit and licence of each im
 
 The site offers no account creation and no form. The publisher collects no personal data during browsing. Messages sent to the contact address are used only to reply to them.
 
-Fonts are hosted on the site itself: no connection is made to Google servers. The host may also record technical connection data, including the IP address, for security purposes.
+Fonts are hosted on the site itself: no connection is made to Google servers. The host may also record technical connection data, including the IP address, for security purposes. Details are given in the [privacy policy]({{< relref "privacy-policy.md" >}}) and on the [Cookies]({{< relref "cookies.md" >}}) page.
 
 ## Liability
 

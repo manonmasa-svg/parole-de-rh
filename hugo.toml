@@ -126,11 +126,24 @@ enableRobotsTXT = false
   name = "Contact"
   pageRef = "/contact"
   weight = 3
-[[languages.fr.menus.footer]]
+# Ligne legale en bas de page (17 octobre 2026)
+[[languages.fr.menus.legal]]
   name = "Mentions légales"
   pageRef = "/mentions-legales"
+  weight = 1
+[[languages.fr.menus.legal]]
+  name = "Politique de confidentialité"
+  pageRef = "/politique-de-confidentialite"
+  weight = 2
+[[languages.fr.menus.legal]]
+  name = "Conditions d'utilisation"
+  pageRef = "/conditions-utilisation"
+  weight = 3
+[[languages.fr.menus.legal]]
+  name = "Cookies"
+  pageRef = "/cookies"
   weight = 4
-[[languages.fr.menus.footer]]
+[[languages.fr.menus.legal]]
   name = "Plan du site"
   pageRef = "/plan-du-site"
   weight = 5
@@ -231,11 +244,24 @@ enableRobotsTXT = false
   name = "Contact"
   pageRef = "/contact"
   weight = 3
-[[languages.en.menus.footer]]
+# Legal line at the bottom of the page (17 October 2026)
+[[languages.en.menus.legal]]
   name = "Legal notice"
   pageRef = "/legal-notice"
+  weight = 1
+[[languages.en.menus.legal]]
+  name = "Privacy policy"
+  pageRef = "/privacy-policy"
+  weight = 2
+[[languages.en.menus.legal]]
+  name = "Terms of use"
+  pageRef = "/terms-of-use"
+  weight = 3
+[[languages.en.menus.legal]]
+  name = "Cookies"
+  pageRef = "/cookies"
   weight = 4
-[[languages.en.menus.footer]]
+[[languages.en.menus.legal]]
   name = "Site map"
   pageRef = "/site-map"
   weight = 5
