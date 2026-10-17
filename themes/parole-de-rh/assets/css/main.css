@@ -2873,3 +2873,14 @@ h1, h2, h3, .section-title, .card-title, .article-title, .page-hero h1 {
 /* Engagements : numeros sans pastille de couleur (fin du ton sur ton signale par Manon) */
 .commitments .commit:nth-child(n) .commit-num { display: block; width: auto; height: auto; background: none; border-radius: 0; text-align: left; margin-bottom: 0.4rem; line-height: 1; }
 .commitments .commit { border-top: 1px solid rgba(255, 255, 255, 0.3); padding-top: 1rem; }
+
+/* Accueil : une bande sur deux sur fond creme (demande de Manon, 17 octobre 2026) */
+.home-band > .container > section { margin: 0; padding-top: 2.8rem; padding-bottom: 3rem; }
+.home-band-alt { background: var(--paper-2); border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair); }
+.home-band + .home-band-alt, .home-band-alt + .home-band { border-top: 0; }
+.home-band .sim { border-top: 0; }
+.home-band .sim .sim-head { border-top: 2px solid var(--text); padding-top: 0.6rem; }
+.home-band-alt .sim-range::-webkit-slider-runnable-track { background: linear-gradient(to right, var(--accent) 0 var(--fill), #CFC7B8 var(--fill) 100%); }
+.home-band-alt .sim-range::-moz-range-track { background: #CFC7B8; }
+.une + .section, .home-band + .commitments { margin-top: 0; }
+.commitments { margin-top: 0; }
