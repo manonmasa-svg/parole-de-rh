@@ -1,0 +1,17 @@
+{{- /* Index de recherche interne (17 octobre 2026) : un fichier par langue (/index.json et /en/index.json),
+     lu par le moteur de recherche de l'en-tete. Articles uniquement, texte brut tronque pour rester leger. */ -}}
+{{- $items := slice -}}
+{{- range where site.RegularPages "Section" "blog" -}}
+  {{- $cat := "" -}}
+  {{- with .GetTerms "categories" }}{{ $cat = (index . 0).Title }}{{ end -}}
+  {{- $items = $items | append (dict
+      "t" .Title
+      "u" .RelPermalink
+      "d" .Description
+      "c" $cat
+      "g" (delimit (.Params.tags | default slice) " ")
+      "b" (.Plain | truncate 3000 "")
+      "dt" (.Date.Format "2006-01-02")
+  ) -}}
+{{- end -}}
+{{- $items | jsonify -}}

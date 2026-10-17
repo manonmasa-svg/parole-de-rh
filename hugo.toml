@@ -257,7 +257,7 @@ enableRobotsTXT = false
   priority = 0.5
 
 [outputs]
-  home = ["html", "rss"]
+  home = ["html", "rss", "json"]
   section = ["html", "rss"]
 
 [related]

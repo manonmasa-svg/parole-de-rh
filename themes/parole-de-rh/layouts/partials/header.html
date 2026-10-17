@@ -3,11 +3,16 @@
     <div class="masthead-top">
         <span class="masthead-date" data-lang="{{ site.Language.Locale | default site.Language.Lang }}"></span>
         {{ if not .IsHome }}<span class="masthead-motto">{{ .Site.Params.tagline }}</span>{{ end }}
-        {{ partial "lang-switcher.html" (dict "page" . "class" "lang-switcher") }}
+        <div class="masthead-tools">
+            <button type="button" class="search-toggle search-toggle-desk" aria-controls="search-panel" aria-expanded="false"><svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>{{ T "searchOpen" }}</span></button>
+            {{ partial "lang-switcher.html" (dict "page" . "class" "lang-switcher") }}
+        </div>
     </div>
 
     <div class="header-container">
         <a href="{{ site.Home.RelPermalink }}" class="site-logo" translate="no" aria-label="{{ .Site.Title }}">Parole <em>de</em> RH<span class="site-logo-dot" aria-hidden="true">.</span></a>
+
+        <button type="button" class="search-toggle search-toggle-mob" aria-controls="search-panel" aria-expanded="false"><svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="visually-hidden">{{ T "searchOpen" }}</span></button>
 
         <button class="menu-toggle" aria-label="{{ T "menu" }}" data-label-close="{{ T "menuClose" }}" aria-expanded="false" aria-controls="nav-mobile">
             <span class="hamburger" aria-hidden="true"></span>
@@ -32,6 +37,8 @@
         </ul>
     </nav>
 
+    {{ partial "search.html" . }}
+
     <nav class="nav-mobile" id="nav-mobile" aria-label="{{ T "navMobile" }}">
         {{ range .Site.Menus.main }}
         <a href="{{ .URL }}" class="nav-link-mobile">{{ .Name }}</a>
@@ -45,6 +52,117 @@
 
 <script>
 (function() {
+    /* Moteur de recherche interne : ouverture du panneau, chargement de l'index, resultats en direct */
+    var panel = document.getElementById('search-panel');
+    var toggles = document.querySelectorAll('.search-toggle');
+    if (panel && toggles.length) {
+        var input = panel.querySelector('.search-input');
+        var status = panel.querySelector('.search-status');
+        var list = panel.querySelector('.search-results');
+        var hint = status.textContent;
+        var index = null, loading = null, lastToggle = null, timer = null;
+
+        function norm(s) {
+            return (s || '').toString().normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+        }
+        function load() {
+            if (loading) { return loading; }
+            loading = fetch(panel.dataset.index).then(function(r) {
+                if (!r.ok) { throw new Error(r.status); }
+                return r.json();
+            }).then(function(items) {
+                index = items.map(function(it) {
+                    return { it: it, t: norm(it.t), c: norm(it.c + ' ' + it.g), d: norm(it.d), b: norm(it.b) };
+                });
+                return index;
+            });
+            return loading;
+        }
+        function render(q) {
+            var words = norm(q).split(/[^a-z0-9]+/).filter(function(w) { return w.length >= 2; });
+            list.innerHTML = '';
+            if (!words.length) { status.textContent = hint; return; }
+            var hits = [];
+            index.forEach(function(e) {
+                var score = 0, all = true;
+                words.forEach(function(w) {
+                    var s = (e.t.indexOf(w) > -1 ? 10 : 0) + (e.c.indexOf(w) > -1 ? 5 : 0) + (e.d.indexOf(w) > -1 ? 3 : 0) + (e.b.indexOf(w) > -1 ? 1 : 0);
+                    if (!s) { all = false; }
+                    score += s;
+                });
+                if (all) { hits.push({ e: e, s: score }); }
+            });
+            hits.sort(function(a, b) { return b.s - a.s || (a.e.it.dt < b.e.it.dt ? 1 : -1); });
+            status.textContent = !hits.length ? panel.dataset.none : (hits.length === 1 ? panel.dataset.single : panel.dataset.other.replace('{n}', hits.length));
+            hits.slice(0, 8).forEach(function(h) {
+                var li = document.createElement('li');
+                var a = document.createElement('a');
+                a.href = h.e.it.u;
+                a.className = 'search-hit';
+                if (h.e.it.c) {
+                    var k = document.createElement('span');
+                    k.className = 'kicker';
+                    k.textContent = h.e.it.c;
+                    a.appendChild(k);
+                }
+                var t = document.createElement('span');
+                t.className = 'search-hit-title';
+                t.textContent = h.e.it.t;
+                a.appendChild(t);
+                var d = document.createElement('span');
+                d.className = 'search-hit-desc';
+                d.textContent = h.e.it.d;
+                a.appendChild(d);
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+        }
+        function open(fromBtn) {
+            lastToggle = fromBtn || toggles[0];
+            panel.hidden = false;
+            toggles.forEach(function(b) { b.setAttribute('aria-expanded', 'true'); });
+            input.focus();
+            load().then(function() { if (input.value) { render(input.value); } })
+                .catch(function() { status.textContent = panel.dataset.error; });
+        }
+        function close() {
+            panel.hidden = true;
+            toggles.forEach(function(b) { b.setAttribute('aria-expanded', 'false'); });
+            if (lastToggle && lastToggle.offsetParent !== null) { lastToggle.focus(); }
+        }
+        toggles.forEach(function(b) {
+            b.addEventListener('click', function() { panel.hidden ? open(b) : close(); });
+        });
+        panel.querySelector('.search-close').addEventListener('click', close);
+        input.addEventListener('input', function() {
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+                if (index) { render(input.value); } else { load().then(function() { render(input.value); }); }
+            }, 120);
+        });
+        input.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowDown') {
+                var first = list.querySelector('a');
+                if (first) { e.preventDefault(); first.focus(); }
+            }
+        });
+        list.addEventListener('keydown', function(e) {
+            var links = [].slice.call(list.querySelectorAll('a'));
+            var i = links.indexOf(document.activeElement);
+            if (e.key === 'ArrowDown' && i < links.length - 1) { e.preventDefault(); links[i + 1].focus(); }
+            if (e.key === 'ArrowUp') { e.preventDefault(); (i > 0 ? links[i - 1] : input).focus(); }
+        });
+        document.addEventListener('keydown', function(e) {
+            var tag = (e.target.tagName || '').toLowerCase();
+            var typing = tag === 'input' || tag === 'textarea' || e.target.isContentEditable;
+            if (e.key === 'Escape' && !panel.hidden) { close(); }
+            else if (e.key === '/' && !typing && panel.hidden) { e.preventDefault(); open(); }
+        });
+        document.addEventListener('click', function(e) {
+            if (!panel.hidden && !panel.contains(e.target) && !e.target.closest('.search-toggle')) { close(); }
+        });
+    }
+
     /* Date du jour dans le bandeau, au format de la langue de la page */
     var dateEl = document.querySelector('.masthead-date');
     if (dateEl && window.Intl) {
