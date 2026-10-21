@@ -2,14 +2,14 @@
 title: "What is the best recruitment software in France?"
 translationKey: "article-meilleur-logiciel-de-recrutement"
 date: 2026-10-21T15:00:00+02:00
-lastmod: 2026-10-21T15:00:00+02:00
+lastmod: 2026-10-21T16:10:00+02:00
 description: "Best recruitment software (ATS) in France: We Recruit, Flatchr, Lucca, Teamtailor, Taleez and Recruitee compared on published offers."
 categories: ["Comparisons"]
 tags: ["recruitment software", "ATS", "comparison", "recruitment", "Flatchr", "Teamtailor", "Taleez"]
 author: "julien-carrel"
 image: "/images/blog/meilleur-logiciel-de-recrutement.jpg"
-imageAlt: "Clipboard with a sheet titled My Resume, a pen and a laptop on a marble desk"
-imageCredit: "Photo: Markus Winkler on Unsplash"
+imageAlt: "Recruitment software screen showing active jobs, new applicants and average time to hire"
+imageCredit: "Photo: prashant hiremath on Unsplash"
 faq:
   - question: "What is the best recruitment software in France?"
     answer: "There is no single best recruitment software: it depends on hiring volume, company size and the tools already in place. On the verifiable criteria used here (published price, trial and commitment, announced features, companies targeted), We Recruit comes first, ahead of Flatchr, Lucca, Teamtailor, Taleez and Recruitee. This ranking is based on the vendors' pages consulted on 21 October 2026, not on a test of the tools."

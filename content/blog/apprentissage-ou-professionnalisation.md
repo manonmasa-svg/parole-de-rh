@@ -2,14 +2,14 @@
 title: "Apprentissage ou professionnalisation : lequel choisir ?"
 translationKey: "article-apprentissage-professionnalisation"
 date: 2026-10-19T08:00:00+02:00
-lastmod: 2026-10-21T15:30:00+02:00
+lastmod: 2026-10-21T16:10:00+02:00
 description: "Apprentissage ou professionnalisation : âge, durée, formation, salaire et aides comparés d'après Service-Public pour bien choisir."
 categories: ["Formation"]
 tags: ["contrat d'apprentissage", "contrat de professionnalisation", "alternance", "formation", "comparatif"]
 author: "nora-bellamy"
 image: "/images/blog/apprentissage-ou-professionnalisation.jpg"
-imageAlt: "Apprenti en bleu de travail limant une pièce de métal serrée dans un étau, dans un atelier de formation"
-imageCredit: "Photo : Septian Setiawan sur Unsplash"
+imageAlt: "Jeune salarié en chemise travaillant sur ordinateur à son poste, dans un bureau d'entreprise"
+imageCredit: "Photo : ThisisEngineering sur Unsplash"
 faq:
   - question: "Quelle différence entre contrat d'apprentissage et contrat de professionnalisation ?"
     answer: "Le contrat d'apprentissage relève de la formation initiale et prépare un diplôme ou un titre professionnel. Le contrat de professionnalisation relève de la formation continue et vise une qualification professionnelle. Ils diffèrent aussi par l'âge du bénéficiaire, la durée, la part de formation et la rémunération minimale."
