@@ -2,14 +2,14 @@
 title: "Which work-study contract to choose in France?"
 translationKey: "article-apprentissage-professionnalisation"
 date: 2026-10-19T08:00:00+02:00
-lastmod: 2026-10-19T08:00:00+02:00
+lastmod: 2026-10-21T15:30:00+02:00
 description: "Apprenticeship or professionalisation contract in France: age, length, training, pay and hiring aid compared, from official guides."
 categories: ["Training"]
 tags: ["apprenticeship contract", "professionalisation contract", "work-study", "training", "comparison"]
 author: "nora-bellamy"
 image: "/images/blog/apprentissage-ou-professionnalisation.jpg"
-imageAlt: "Hands working a wooden board with a wood chisel, shavings on the workbench"
-imageCredit: "Photo: Dominik Scythe on Unsplash"
+imageAlt: "Apprentice in blue overalls filing a metal part held in a vice, in a training workshop"
+imageCredit: "Photo: Septian Setiawan on Unsplash"
 faq:
   - question: "What is the difference between an apprenticeship and a professionalisation contract in France?"
     answer: "The apprenticeship contract (contrat d'apprentissage) is part of initial education and leads to a diploma or a vocational title. The professionalisation contract (contrat de professionnalisation) is part of continuing education and aims at a professional qualification. They also differ in the age of the beneficiary, length, share of training and minimum pay."
