@@ -12,7 +12,8 @@ Parole de RH est un site d'information indépendant consacré aux ressources hum
 ## Contenu principal
 
 - [Actualités RH](https://parole-de-rh.fr/actualites-rh/) : recrutement, formation, paie, droit social, onboarding, management, IA et SIRH, QVCT, marque employeur, rémunération et avantages sociaux, tendances RH
-- [Logiciels RH](https://parole-de-rh.fr/categories/logiciels-rh/) : SIRH, logiciels de paie, outils de recrutement
+- [Avis](https://parole-de-rh.fr/categories/avis/) : avis détaillés sur les logiciels RH, éditeur par éditeur
+- [Trouver mon logiciel RH](https://parole-de-rh.fr/trouver-mon-logiciel-rh/) : questionnaire en 3 questions qui oriente vers les logiciels relevés dans les comparatifs
 - [Comparatifs](https://parole-de-rh.fr/categories/comparatifs/) : comparatifs factuels entre dispositifs, contrats ou outils RH
 - [Définitions RH](https://parole-de-rh.fr/categories/definitions-rh/) : lexique des sigles et notions RH
 

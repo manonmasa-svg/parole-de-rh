@@ -71,7 +71,7 @@
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 
 <!-- Pages de liste sans contenu propre (index des categories, etiquettes) : hors index Google -->
-{{ if or (eq .Kind "taxonomy") (and (eq .Kind "term") (eq .Data.Plural "tags")) }}
+{{ if or (eq .Kind "taxonomy") (and (eq .Kind "term") (eq .Data.Plural "tags")) (and (eq .Kind "term") (not .Pages)) }}
 <meta name="robots" content="noindex, follow">
 {{ end }}
 

@@ -1,0 +1,241 @@
+# Questionnaire « Trouver mon logiciel RH » (22 octobre 2026, inspiré de meilleur-logiciel-rh.fr).
+# Chaque fait vient d'un comparatif publié sur le site et a été relevé à la date indiquée dans `checked`.
+# Quand un comparatif est mis à jour, mettre à jour l'éditeur ici aussi (mêmes chiffres, même date).
+# Les drapeaux (price, flex, secure, service) ne valent true que si l'information figure dans le comparatif.
+
+title: { fr: "Trouver mon logiciel RH", en: "Find my HR software" }
+intro:
+  fr: "Trois questions pour obtenir une première sélection parmi les logiciels étudiés dans nos comparatifs. Les résultats reposent uniquement sur les informations publiques relevées sur les sites des éditeurs."
+  en: "Three questions to get a first shortlist among the software covered in our comparisons. Results rely only on public information taken from the vendors' websites."
+disclaimer:
+  fr: "Cette sélection oriente une première recherche. Elle ne remplace ni une démonstration ni la lecture des conditions de l'éditeur, qui peuvent avoir changé depuis le relevé."
+  en: "This shortlist is a starting point. It does not replace a demo or reading the vendor's current terms, which may have changed since they were checked."
+
+steps:
+  - key: need
+    label: { fr: "Besoin", en: "Need" }
+    question: { fr: "Quel est votre besoin principal ?", en: "What is your main need?" }
+    help:
+      fr: "Le besoin principal détermine le type de logiciel : paie, SIRH, gestion des temps ou recrutement."
+      en: "Your main need determines the type of software: payroll, HRIS, time management or recruitment."
+    options:
+      - { value: paie, label: { fr: "Produire la paie et la DSN", en: "Run payroll and the DSN" }, hint: { fr: "Bulletins, déclarations sociales, conventions collectives", en: "Payslips, social security returns, collective agreements" } }
+      - { value: sirh, label: { fr: "Centraliser la gestion RH", en: "Centralise HR management" }, hint: { fr: "Dossiers du personnel, congés et absences, entretiens", en: "Employee records, leave and absence, reviews" } }
+      - { value: temps, label: { fr: "Suivre les temps et les plannings", en: "Track time and schedules" }, hint: { fr: "Pointage, feuilles de temps, planning des équipes", en: "Clocking, timesheets, team scheduling" } }
+      - { value: recrutement, label: { fr: "Recruter", en: "Recruit" }, hint: { fr: "Offres d'emploi, candidatures, suivi des candidats", en: "Job ads, applications, candidate tracking" } }
+  - key: size
+    label: { fr: "Taille", en: "Size" }
+    question: { fr: "Combien de salariés compte l'entreprise ?", en: "How many employees does the company have?" }
+    help:
+      fr: "Certains éditeurs publient leurs offres ou leurs prix pour une tranche d'effectif précise."
+      en: "Some vendors publish their plans or prices for a specific headcount range."
+    options:
+      - { value: s1, label: { fr: "1 à 10 salariés", en: "1 to 10 employees" }, hint: { fr: "Très petite entreprise", en: "Micro business" } }
+      - { value: s2, label: { fr: "11 à 49 salariés", en: "11 to 49 employees" }, hint: { fr: "Petite entreprise", en: "Small business" } }
+      - { value: s3, label: { fr: "50 à 249 salariés", en: "50 to 249 employees" }, hint: { fr: "PME avec une fonction RH", en: "SME with an HR function" } }
+      - { value: s4, label: { fr: "250 salariés et plus", en: "250 employees or more" }, hint: { fr: "ETI ou grand groupe", en: "Mid-sized or large company" } }
+  - key: priority
+    label: { fr: "Priorité", en: "Priority" }
+    question: { fr: "Quel critère compte le plus ?", en: "Which criterion matters most?" }
+    help:
+      fr: "Le critère choisi départage les logiciels qui répondent au besoin."
+      en: "The chosen criterion separates the software that meets the need."
+    options:
+      - { value: price, label: { fr: "Connaître le prix avant tout rendez-vous", en: "Know the price before any meeting" }, hint: { fr: "Prix publié sur le site de l'éditeur", en: "Price published on the vendor's website" } }
+      - { value: flex, label: { fr: "M'engager le moins possible", en: "Commit as little as possible" }, hint: { fr: "Essai gratuit ou offre sans engagement", en: "Free trial or no-commitment plan" } }
+      - { value: secure, label: { fr: "La sécurité des données", en: "Data security" }, hint: { fr: "Hébergement ou certification affichés", en: "Hosting or certification stated" } }
+      - { value: service, label: { fr: "Être accompagné ou déléguer", en: "Get support or outsource" }, hint: { fr: "Service de paie, accompagnement, déploiement inclus", en: "Payroll service, support, set-up included" } }
+
+# Comparatif vers lequel renvoie chaque besoin (nom du fichier FR et EN dans content/blog)
+articles:
+  paie: { fr: meilleur-logiciel-de-paie.md, en: best-payroll-software-france.md }
+  sirh: { fr: meilleur-logiciel-sirh.md, en: best-hris-software-france.md }
+  temps: { fr: meilleur-logiciel-rh.md, en: best-hr-software-france.md }
+  recrutement: { fr: meilleur-logiciel-de-recrutement.md, en: best-recruitment-software-france.md }
+
+# needs : besoin -> ordre dans le comparatif correspondant (sert à départager deux scores égaux)
+# sizes : tranches pour lesquelles l'éditeur publie une offre (liste vide = non relevé, sans effet)
+vendors:
+  - name: PayFit
+    needs: { paie: 1 }
+    sizes: [s1, s2, s3, s4]
+    flags: { price: true, flex: true, service: true }
+    target: { fr: "De 1 à plus de 1 000 collaborateurs", en: "From 1 to over 1,000 employees" }
+    fact:
+      fr: "Paie au cœur de l'offre : bulletins, DSN et déclarations événementielles. 26 € par mois et par collaborateur pour l'offre création d'entreprise, essai gratuit et service de paie réalisée par ses experts."
+      en: "Payroll is the core of the offer: payslips, DSN and event-based returns. €26 per month per employee for the start-up plan, free trial and a payroll service run by its experts."
+    checked: { fr: "Relevé des 7 et 12 octobre 2026", en: "Checked on 7 and 12 October 2026" }
+  - name: Kelio
+    needs: { paie: 2, temps: 1 }
+    sizes: [s3, s4]
+    flags: { price: true, secure: true, service: true }
+    target: { fr: "Grille publiée à partir de 50 salariés", en: "Price grid published from 50 employees" }
+    fact:
+      fr: "Gestion des temps reliée à la paie (123Paie, plus de 200 conventions collectives annoncées). À partir de 3,05 € HT par salarié et par mois pour 50 salariés, hébergement et support annoncés en France, externalisation de la paie proposée."
+      en: "Time management linked to payroll (123Paie, over 200 collective agreements stated). From €3.05 excl. VAT per employee per month for 50 employees, hosting and support stated as based in France, payroll outsourcing offered."
+    checked: { fr: "Relevé des 7 et 12 octobre 2026", en: "Checked on 7 and 12 October 2026" }
+  - name: Silae
+    needs: { paie: 3 }
+    sizes: [s1, s2, s3]
+    flags: {}
+    target: { fr: "TPE et PME, par l'intermédiaire de partenaires", en: "Small businesses and SMEs, through partners" }
+    fact:
+      fr: "900 conventions collectives annoncées. Logiciel diffusé par des cabinets d'expertise comptable et des intégrateurs partenaires, sans prix publié."
+      en: "900 collective agreements stated. Software distributed through accounting firms and partner integrators, with no published price."
+    checked: { fr: "Relevé du 12 octobre 2026", en: "Checked on 12 October 2026" }
+  - name: Nibelis
+    needs: { paie: 4, sirh: 6 }
+    sizes: [s3, s4]
+    flags: { service: true }
+    target: { fr: "PME de 50 à 250 salariés et ETI", en: "SMEs with 50 to 250 employees and mid-sized companies" }
+    fact:
+      fr: "RH et paie dans un même outil, avec trois niveaux de service : gestion autonome, accompagnée ou déléguée à l'éditeur. Aucun prix publié."
+      en: "HR and payroll in a single tool, with three service levels: in-house, supported or outsourced to the vendor. No published price."
+    checked: { fr: "Relevé des 12 et 21 octobre 2026", en: "Checked on 12 and 21 October 2026" }
+  - name: Sage
+    needs: { paie: 5 }
+    sizes: [s1, s2, s3, s4]
+    flags: { service: true }
+    target: { fr: "Petites entreprises d'un côté, PME et ETI de l'autre", en: "Small businesses on one side, SMEs and mid-sized companies on the other" }
+    fact:
+      fr: "Deux logiciels de paie : Sage Business Cloud Paie pour les petites entreprises, Sage 100 Paie & RH pour les PME et les ETI. Externalisation de la paie mentionnée, aucun prix relevé."
+      en: "Two payroll products: Sage Business Cloud Paie for small businesses, Sage 100 Paie & RH for SMEs and mid-sized companies. Payroll outsourcing mentioned, no price found."
+    checked: { fr: "Relevé du 12 octobre 2026", en: "Checked on 12 October 2026" }
+  - name: Lucca
+    needs: { sirh: 1, temps: 4, recrutement: 3 }
+    sizes: [s3, s4]
+    flags: { price: true, flex: true }
+    target: { fr: "Tarifs publiés au-delà de 100 collaborateurs", en: "Prices published for over 100 employees" }
+    fact:
+      fr: "Un prix publié pour chaque module, par exemple 3,21 € HT par collaborateur et par mois pour le socle RH ou le recrutement et 3,00 € pour les feuilles de temps, sans durée d'engagement."
+      en: "A published price for each module, for example €3.21 excl. VAT per employee per month for core HR or recruitment and €3.00 for timesheets, with no minimum term."
+    checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+  - name: Eurécia
+    needs: { sirh: 2, temps: 2 }
+    sizes: [s1, s2, s3, s4]
+    flags: { price: true, flex: true, secure: true }
+    target: { fr: "De 1 à plus de 500 collaborateurs", en: "From 1 to over 500 employees" }
+    fact:
+      fr: "À partir de 4,20 € HT par collaborateur et par mois (offre Business, 11 à 500 collaborateurs), essai gratuit de 30 jours, sans engagement, hébergement annoncé en France. Offre Starter de 1 à 10 collaborateurs via le cabinet d'expertise comptable."
+      en: "From €4.20 excl. VAT per employee per month (Business plan, 11 to 500 employees), 30-day free trial, no commitment, hosting stated as based in France. Starter plan for 1 to 10 employees through the accounting firm."
+    checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+  - name: Factorial
+    needs: { sirh: 3, temps: 3 }
+    sizes: [s1, s2, s3, s4]
+    flags: { price: true, flex: true }
+    target: { fr: "Toutes tailles d'entreprise", en: "Companies of all sizes" }
+    fact:
+      fr: "À partir de 6,90 € par utilisateur et par mois, essai gratuit. Gestion des temps, préparation de la paie et périmètre étendu à la finance et à l'informatique."
+      en: "From €6.90 per user per month, free trial. Time management, payroll preparation and a scope extended to finance and IT."
+    checked: { fr: "Relevé des 7 et 21 octobre 2026", en: "Checked on 7 and 21 October 2026" }
+  - name: Sesame HR
+    needs: { sirh: 4, temps: 5 }
+    sizes: []
+    flags: { flex: true, secure: true }
+    target: { fr: "Jusqu'aux grandes organisations (forfait Scale)", en: "Up to large organisations (Scale plan)" }
+    fact:
+      fr: "Quatre forfaits détaillés, du pointage, des congés et du planning (Essential) jusqu'aux grandes organisations (Scale). Essai gratuit sur chaque forfait, certification ISO 27001, aucun prix publié."
+      en: "Four detailed plans, from clocking, leave and scheduling (Essential) up to large organisations (Scale). Free trial on each plan, ISO 27001 certification, no published price."
+    checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+  - name: Cegid HR
+    needs: { sirh: 5 }
+    sizes: [s4]
+    flags: { secure: true }
+    target: { fr: "ETI et grands groupes", en: "Mid-sized companies and large groups" }
+    fact:
+      fr: "Suite RH pour les grandes structures, hébergement en Europe et certification ISO 27001, paie dans un logiciel distinct (Cegid Payroll). Prix sur demande."
+      en: "HR suite for large organisations, hosting in Europe and ISO 27001 certification, payroll in a separate product (Cegid Payroll). Price on request."
+    checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+  - name: We Recruit
+    needs: { recrutement: 1 }
+    sizes: []
+    flags: { price: true, flex: true }
+    target: { fr: "Utilisateurs illimités", en: "Unlimited users" }
+    fact:
+      fr: "À partir de 2 070 € HT par an (offre Essentiel), utilisateurs illimités, essai gratuit de 30 jours sans engagement, puis engagement annuel."
+      en: "From €2,070 excl. VAT per year (Essentiel plan), unlimited users, 30-day free trial with no commitment, then an annual commitment."
+    checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+  - name: Flatchr
+    needs: { recrutement: 2 }
+    sizes: []
+    flags: { flex: true, service: true }
+    target: { fr: "PME et ETI des secteurs opérationnels", en: "SMEs and mid-sized companies in operational sectors" }
+    fact:
+      fr: "Essai gratuit de 14 jours, offre sans engagement, plus de 160 sites d'emploi connectés. Déploiement, paramétrage et formation annoncés comme inclus. Prix sur devis."
+      en: "14-day free trial, no-commitment plan, over 160 job boards connected. Set-up, configuration and training stated as included. Price on quote."
+    checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+  - name: Teamtailor
+    needs: { recrutement: 4 }
+    sizes: []
+    flags: { secure: true }
+    target: { fr: "Utilisateurs et offres illimités", en: "Unlimited users and job ads" }
+    fact:
+      fr: "Utilisateurs et offres d'emploi illimités, assistant IA inclus, certifications de sécurité affichées. Prix sur devis."
+      en: "Unlimited users and job ads, AI assistant included, security certifications displayed. Price on quote."
+    checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+  - name: Taleez
+    needs: { recrutement: 5 }
+    sizes: []
+    flags: { service: true }
+    target: { fr: "Utilisateurs et recrutements illimités", en: "Unlimited users and hires" }
+    fact:
+      fr: "Utilisateurs et recrutements illimités, accompagnement humain annoncé. Prix sur devis, démonstration sur demande."
+      en: "Unlimited users and hires, human support stated. Price on quote, demo on request."
+    checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+  - name: Recruitee
+    needs: { recrutement: 6 }
+    sizes: []
+    flags: { flex: true }
+    target: { fr: "Selon l'offre choisie", en: "Depending on the plan" }
+    fact:
+      fr: "Offres décrites en détail, essai gratuit, stockage illimité des candidats. Aucun prix publié."
+      en: "Plans described in detail, free trial, unlimited candidate storage. No published price."
+    checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+
+# Les cinq critères affichés sous le questionnaire (repris des comparatifs SIRH et paie)
+criteria:
+  - title: { fr: "Les modules réellement utiles", en: "The modules you actually need" }
+    text: { fr: "Lister les tâches à outiller avant de comparer : congés, temps, entretiens, recrutement, paie.", en: "List the tasks to equip before comparing: leave, time, reviews, recruitment, payroll." }
+  - title: { fr: "La paie : intégrée, connectée ou déléguée", en: "Payroll: built in, connected or outsourced" }
+    text: { fr: "Certains SIRH produisent la paie, d'autres préparent les variables pour un logiciel de paie ou un cabinet.", en: "Some HRIS run payroll, others prepare the variables for payroll software or an accounting firm." }
+  - title: { fr: "La DSN et la convention collective", en: "The DSN and the collective agreement" }
+    text: { fr: "Vérifier que la convention collective de l'entreprise est prise en charge et que la DSN est produite.", en: "Check that the company's collective agreement is supported and that the DSN is produced." }
+  - title: { fr: "Les données personnelles", en: "Personal data" }
+    text: { fr: "Un logiciel RH traite des données de salariés : accès limités, traçabilité, durées de conservation.", en: "HR software processes employee data: restricted access, logging, retention periods." }
+  - title: { fr: "Le coût total", en: "The total cost" }
+    text: { fr: "Additionner abonnement, modules, mise en place, formation et durée d'engagement.", en: "Add up subscription, modules, set-up, training and minimum term." }
+
+# Tableau de l'accueil (22 octobre 2026) : quelques logiciels, données reprises des comparatifs (mêmes dates de relevé)
+showcase:
+  checked: { fr: "Relevés des 7, 12 et 21 octobre 2026", en: "Checked on 7, 12 and 21 October 2026" }
+  rows:
+    - name: Lucca
+      use: { fr: "SIRH modulaire", en: "Modular HRIS" }
+      price: { fr: "Un prix par module, socle RH 3,21 € HT", en: "A price per module, core HR €3.21 excl. VAT" }
+      trial: { fr: "Sans engagement", en: "No minimum term" }
+      article: sirh
+    - name: Eurécia
+      use: { fr: "SIRH", en: "HRIS" }
+      price: { fr: "Dès 4,20 € HT", en: "From €4.20 excl. VAT" }
+      trial: { fr: "Essai 30 jours, sans engagement", en: "30-day trial, no commitment" }
+      article: sirh
+    - name: Factorial
+      use: { fr: "SIRH", en: "HRIS" }
+      price: { fr: "Dès 6,90 €", en: "From €6.90" }
+      trial: { fr: "Essai gratuit", en: "Free trial" }
+      article: sirh
+    - name: PayFit
+      use: { fr: "Paie", en: "Payroll" }
+      price: { fr: "26 € (offre création d'entreprise)", en: "€26 (start-up plan)" }
+      trial: { fr: "Essai gratuit", en: "Free trial" }
+      article: paie
+    - name: Kelio
+      use: { fr: "Temps et paie", en: "Time and payroll" }
+      price: { fr: "Dès 3,05 € HT (50 salariés)", en: "From €3.05 excl. VAT (50 employees)" }
+      trial: { fr: "Non relevé", en: "Not found" }
+      article: paie
+    - name: We Recruit
+      use: { fr: "Recrutement", en: "Recruitment" }
+      price: { fr: "Dès 2 070 € HT par an", en: "From €2,070 excl. VAT a year" }
+      trial: { fr: "Essai 30 jours", en: "30-day trial" }
+      article: recrutement

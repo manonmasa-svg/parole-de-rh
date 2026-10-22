@@ -4,7 +4,7 @@ translationKey: "article-logiciel-rh-donnees"
 date: 2026-10-04T11:30:00+02:00
 lastmod: 2026-10-07T12:00:00+02:00
 description: "Logiciel RH : données collectables, accès, durée de conservation, information des salariés. Les règles de la CNIL à respecter."
-categories: ["Logiciels RH"]
+categories: ["IA et SIRH"]
 tags: ["logiciel RH", "SIRH", "RGPD", "CNIL", "données personnelles"]
 author: "julien-carrel"
 image: "/images/blog/logiciel-rh-donnees-personnelles-rgpd.jpg"

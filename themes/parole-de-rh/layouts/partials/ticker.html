@@ -1,0 +1,48 @@
+{{/* Bandeau defilant des prochaines echeances RH, en haut de l'accueil (22 octobre 2026).
+     Donnees : data/agenda.yaml. Les echeances passees sont retirees au build et dans le navigateur.
+     Pause au survol et au clavier ; defilement manuel si l'utilisateur limite les animations. */}}
+{{ $lang := site.Language.Lang }}
+{{ $today := now.Format "2006-01-02" }}
+{{ $upcoming := slice }}
+{{ range sort hugo.Data.agenda.events "date" }}
+    {{ if ge .date $today }}{{ $upcoming = $upcoming | append . }}{{ end }}
+{{ end }}
+{{ with $upcoming }}
+{{ $page := site.GetPage (cond (eq $lang "en") "/hr-calendar" "/agenda-rh") }}
+<div class="ticker" role="region" aria-label="{{ T "tickerLabel" }}">
+    <a class="ticker-label" href="{{ with $page }}{{ .RelPermalink }}{{ end }}"><span class="ticker-dot" aria-hidden="true"></span>{{ T "tickerLabel" }}</a>
+    <div class="ticker-viewport">
+        <ul class="ticker-track">
+            {{ range first 8 . }}
+            {{ $d := time.AsTime .date }}
+            <li class="ticker-item" data-date="{{ .date }}">
+                <a href="{{ with $page }}{{ .RelPermalink }}{{ end }}">
+                    <time datetime="{{ .date }}">{{ if .label }}{{ index .label $lang }}{{ else }}{{ $d | time.Format ":date_medium" }}{{ end }}</time>
+                    <span>{{ partial "typo.html" (index .title $lang) }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+<script>
+(function() {
+    var t = document.querySelector('.ticker');
+    if (!t) { return; }
+    var today = new Date().toISOString().slice(0, 10);
+    var track = t.querySelector('.ticker-track');
+    [].slice.call(track.children).forEach(function(li) { if (li.dataset.date < today) { li.remove(); } });
+    if (!track.children.length) { t.remove(); return; }
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { return; }
+    /* Copie de la liste pour une boucle continue, ignoree par les lecteurs d'ecran et le clavier */
+    [].slice.call(track.children).forEach(function(li) {
+        var c = li.cloneNode(true);
+        c.setAttribute('aria-hidden', 'true');
+        c.querySelector('a').tabIndex = -1;
+        track.appendChild(c);
+    });
+    track.style.setProperty('--ticker-duration', (track.children.length * 5) + 's');
+    t.classList.add('is-moving');
+})();
+</script>
+{{ end }}

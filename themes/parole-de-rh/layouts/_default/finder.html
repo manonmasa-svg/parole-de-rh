@@ -1,0 +1,58 @@
+{{ define "main" }}
+{{/* Page « Trouver mon logiciel RH » (22 octobre 2026) : questionnaire, cinq criteres de choix,
+     comparatifs de logiciels, puis le texte de la page. Donnees : data/finder.yaml */}}
+{{ $lang := .Site.Language.Lang }}
+{{ $f := hugo.Data.finder }}
+
+<div class="container">
+    <header class="page-hero">
+        <p class="kicker">{{ T "finderKicker" }}</p>
+        <h1>{{ partial "typo.html" .Title }}</h1>
+        {{ with .Description }}<p>{{ partial "typo.html" . }}</p>{{ end }}
+    </header>
+
+    <div class="finder-page">
+        {{ partial "finder.html" (dict "head" false) }}
+    </div>
+
+    {{ with $f.criteria }}
+    <section class="section criteria reveal" aria-labelledby="criteria-title">
+        <div class="section-head">
+            <h2 class="section-title" id="criteria-title">{{ T "criteriaTitle" }}</h2>
+        </div>
+        <ol class="criteria-list">
+            {{ range $i, $c := . }}
+            <li class="criteria-item">
+                <span class="criteria-n" aria-hidden="true">{{ printf "%02d" (add $i 1) }}</span>
+                <h3 class="criteria-title">{{ partial "typo.html" (index $c.title $lang) }}</h3>
+                <p>{{ partial "typo.html" (index $c.text $lang) }}</p>
+            </li>
+            {{ end }}
+        </ol>
+    </section>
+    {{ end }}
+
+    {{ $comp := slice }}
+    {{ range $need, $files := $f.articles }}{{ with site.GetPage (printf "/blog/%s" (strings.TrimSuffix ".md" (index $files $lang))) }}{{ $comp = $comp | append . }}{{ end }}{{ end }}
+    {{ with $comp }}
+    <section class="section reveal" aria-labelledby="comp-title">
+        <div class="section-head">
+            <h2 class="section-title" id="comp-title">{{ T "finderComparisons" }}</h2>
+            {{ with site.GetPage (cond (eq $lang "en") "/categories/comparisons" "/categories/comparatifs") }}<a href="{{ .RelPermalink }}" class="section-more">{{ T "allComparisons" }} →</a>{{ end }}
+        </div>
+        <div class="cols cols-4">
+            {{ range (sort . "Date" "desc") }}
+            {{ partial "card.html" (dict "page" . "level" "h3" "image" true) }}
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    {{ with .Content }}
+    <div class="article-content page-notes">
+        {{ partial "typo.html" . | safeHTML }}
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

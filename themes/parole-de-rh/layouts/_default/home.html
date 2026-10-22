@@ -1,13 +1,58 @@
 {{ define "main" }}
 {{/* Accueil, direction editoriale (refonte du 17 octobre 2026, inspiree de la presse ecrite) :
-     a la une + a lire aussi, dernieres parutions, simulateur RH, agenda, index des rubriques,
-     engagements, FAQ. Le simulateur RH remplace le quiz (demande de Manon). Les animations au defilement sont desactivees si l'utilisateur le demande. */}}
+     a la une + a lire aussi, dernieres parutions, questionnaire logiciel RH, agenda, index des rubriques,
+     engagements, FAQ. Le questionnaire « Trouver mon logiciel RH » remplace le simulateur (22 octobre 2026). Les animations au defilement sont desactivees si l'utilisateur le demande. */}}
 {{ $articles := where .Site.RegularPages "Section" "blog" }}
 {{ $lang := .Site.Language.Lang }}
 {{ $home := hugo.Data.home }}
 
 <div class="container">
-    <h1 class="home-strap">{{ T "homeStrap" }}</h1>
+    {{ partial "ticker.html" . }}
+</div>
+
+<!-- Bandeau d'accueil inspire de meilleur-logiciel-rh.fr (22 octobre 2026) : titre, appel a l'action,
+     garanties et extrait des comparatifs (donnees : data/finder.yaml, showcase) -->
+{{ $finder := site.GetPage (cond (eq $lang "en") "/find-my-hr-software" "/trouver-mon-logiciel-rh") }}
+<section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+        <h1 class="hero-title" id="hero-title">{{ partial "typo.html" (T "heroTitle1") }} <span>{{ partial "typo.html" (T "heroTitle2") }}</span></h1>
+        <p class="hero-text">{{ partial "typo.html" (T "heroText") }}</p>
+        {{ with $finder }}
+        <a href="{{ .RelPermalink }}" class="hero-btn">{{ T "finderCtaLong" }} <span aria-hidden="true">→</span></a>
+        <p class="hero-sub">{{ partial "typo.html" (T "finderCtaSub") }}</p>
+        {{ end }}
+        <ul class="hero-checks">
+            <li>{{ T "heroCheck1" }}</li>
+            <li>{{ T "heroCheck2" }}</li>
+            <li>{{ T "heroCheck3" }}</li>
+        </ul>
+
+        {{ with hugo.Data.finder.showcase }}
+        {{ $arts := hugo.Data.finder.articles }}
+        <figure class="hero-table">
+            <figcaption><span>{{ partial "typo.html" (T "tblCaption") }}</span><span>{{ index .checked $lang }}</span></figcaption>
+            <div class="hero-table-scroll">
+                <table>
+                    <thead><tr><th scope="col">{{ T "tblSoftware" }}</th><th scope="col">{{ T "tblUse" }}</th><th scope="col">{{ T "tblPrice" }}</th><th scope="col">{{ T "tblTrial" }}</th><th scope="col">{{ T "tblMore" }}</th></tr></thead>
+                    <tbody>
+                        {{ range .rows }}
+                        <tr>
+                            <th scope="row">{{ .name }}</th>
+                            <td><span class="hero-tag">{{ index .use $lang }}</span></td>
+                            <td>{{ partial "typo.html" (index .price $lang) }}</td>
+                            <td>{{ partial "typo.html" (index .trial $lang) }}</td>
+                            <td>{{ with index $arts .article }}{{ with site.GetPage (printf "/blog/%s" (strings.TrimSuffix ".md" (index . $lang))) }}<a href="{{ .RelPermalink }}">{{ T "tblRead" }} →</a>{{ end }}{{ end }}</td>
+                        </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </figure>
+        {{ end }}
+    </div>
+</section>
+
+<div class="container">
 
     {{ with $articles }}
     <!-- A la une : grand article a gauche, trois articles numerotes a droite -->
@@ -49,7 +94,7 @@
             <h2 class="section-title" id="latest-title">{{ T "latestTitle" }}</h2>
             <a href="{{ "blog/" | relLangURL }}" class="section-more">{{ T "allArticles" }} →</a>
         </div>
-        <div class="cols">
+        <div class="cols stagger">
             {{ range first 3 (after 4 .) }}
             {{ partial "card.html" (dict "page" . "level" "h3" "image" true) }}
             {{ end }}
@@ -61,56 +106,11 @@
 
 <div class="home-band home-band-alt"><div class="container">
 
-    <!-- Simulateur RH : trois onglets, un curseur, des resultats en direct sur des lignes pointillees.
-         Parametres et sources dans data/home.yaml (simulator). -->
-    {{ with $home.simulator }}
-    {{ $rows := dict "conges" (slice "calc" "result" "max") "titres" (slice "employer" "employee" "exempt") "ij" (slice "base" "ij" "cap" "waiting") }}
-    {{ $total := len .tabs }}
-    <section class="section sim reveal" id="simulateur" aria-labelledby="sim-title" data-locale="{{ site.Language.Locale | default $lang }}">
-        <div class="sim-head">
-            <div>
-                <h2 class="section-title" id="sim-title">{{ index .title $lang }}</h2>
-                <p class="section-intro">{{ partial "typo.html" (index .intro $lang) }}</p>
-            </div>
-            <p class="sim-step" aria-hidden="true"><span class="sim-step-n">1</span><span class="sim-step-t">/{{ $total }}</span></p>
-        </div>
-
-        <div class="sim-tabs" role="tablist" aria-label="{{ index .title $lang }}">
-            {{ range $i, $t := .tabs }}
-            <button type="button" class="sim-tab" role="tab" id="sim-tab-{{ $t.key }}" aria-controls="sim-panel-{{ $t.key }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}">
-                <span class="sim-tab-n" aria-hidden="true">0{{ add $i 1 }}</span>
-                <span class="sim-tab-label">{{ index $t.label $lang }}</span>
-            </button>
-            {{ end }}
-        </div>
-
-        {{ range $i, $t := .tabs }}
-        {{ $labels := dict }}
-        {{ range $k, $v := $t.lines }}{{ $labels = merge $labels (dict $k (index $v $lang)) }}{{ end }}
-        <div class="sim-panel" role="tabpanel" id="sim-panel-{{ $t.key }}" aria-labelledby="sim-tab-{{ $t.key }}" data-key="{{ $t.key }}" data-params="{{ $t.params | jsonify }}" data-labels="{{ $labels | jsonify }}" data-unit="{{ index $t.unit $lang }}"{{ if gt $i 0 }} hidden{{ end }}>
-            <div class="sim-grid">
-                <div class="sim-control">
-                    <label for="sim-in-{{ $t.key }}" class="sim-label">{{ index $t.input $lang }}</label>
-                    <p class="sim-value"><output for="sim-in-{{ $t.key }}" class="sim-out">{{ $t.value }}</output> <span class="sim-unit">{{ index $t.unit $lang }}</span></p>
-                    <input type="range" class="sim-range" id="sim-in-{{ $t.key }}" min="{{ $t.min }}" max="{{ $t.max }}" step="{{ $t.step }}" value="{{ $t.value }}">
-                    <p class="sim-scale" aria-hidden="true"><span>{{ $t.min }} {{ index $t.unit $lang }}</span><span>{{ $t.max }} {{ index $t.unit $lang }}</span></p>
-                </div>
-                <div class="sim-readout" aria-live="polite">
-                    <p class="sim-big"><span class="sim-big-n">…</span> <span class="sim-big-u">{{ index $t.big $lang }}</span></p>
-                    <dl class="sim-lines">
-                        {{ range index $rows $t.key }}
-                        <div class="sim-line"><dt>{{ index $labels . }}</dt><dd data-line="{{ . }}">…</dd></div>
-                        {{ end }}
-                    </dl>
-                </div>
-            </div>
-            <p class="sim-note">{{ partial "typo.html" (index $t.note $lang) }}</p>
-            <p class="sim-source">{{ T "sourceLabel" }} <a href="{{ $t.url }}" rel="noopener">{{ $t.source }}</a>{{ with $t.page }}{{ with index $home.pages . }}{{ with site.GetPage (printf "/blog/%s" (index . $lang)) }} · <a href="{{ .RelPermalink }}">{{ T "readArticle" }}</a>{{ end }}{{ end }}{{ end }}</p>
-        </div>
-        {{ end }}
-        <noscript><p class="sim-note">{{ T "simNoScript" }}</p></noscript>
-    </section>
-    {{ end }}
+    <!-- Questionnaire « Trouver mon logiciel RH » (remplace le simulateur le 22 octobre 2026).
+         Donnees : data/finder.yaml -->
+    <div class="section reveal">
+        {{ partial "finder.html" (dict "head" true "level" "h2") }}
+    </div>
 </div></div>
 
 <div class="home-band"><div class="container">
@@ -135,7 +135,7 @@
         <div class="section-head">
             <h2 class="section-title" id="explore-title">{{ T "sectionsIndex" }}</h2>
         </div>
-        <div class="rub-index">
+        <div class="rub-index stagger">
             {{ $roman := slice "I" "II" "III" "IV" "V" "VI" }}
             {{ $i := 0 }}
             {{ range .Site.Menus.main }}
@@ -150,7 +150,7 @@
                 <span class="rub-num" aria-hidden="true">{{ index $roman (mod $i 6) }}.</span>
                 <span class="rub-title">{{ .Name }}</span>
                 {{ with .Page.Description }}<span class="rub-text">{{ partial "typo.html" . }}</span>{{ end }}
-                <span class="rub-count">{{ $count }} {{ if gt $count 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }}</span>
+                <span class="rub-count">{{ if eq $count 0 }}{{ T "comingSoon" }}{{ else }}{{ $count }} {{ if gt $count 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }}{{ end }}</span>
             </a>
             {{ $i = add $i 1 }}
             {{ end }}
@@ -164,8 +164,17 @@
 <section class="commitments reveal" aria-labelledby="commit-title">
     <div class="container">
         <h2 class="visually-hidden" id="commit-title">{{ T "commitTitle" }}</h2>
+        <!-- Le site en chiffres : nombres calcules au build, animes a l apparition -->
+        {{ $comp := 0 }}{{ with site.GetPage (cond (eq $lang "en") "/categories/comparisons" "/categories/comparatifs") }}{{ $comp = len .Pages }}{{ end }}
+        {{ $today := now.Format "2006-01-02" }}{{ $next := 0 }}{{ range hugo.Data.agenda.events }}{{ if ge .date $today }}{{ $next = add $next 1 }}{{ end }}{{ end }}
+        <dl class="figures stagger">
+            <div class="figure"><dt class="figure-l">{{ T "figArticles" }}</dt><dd class="figure-n" data-count="{{ len $articles }}">{{ len $articles }}</dd></div>
+            <div class="figure"><dt class="figure-l">{{ T "figComparisons" }}</dt><dd class="figure-n" data-count="{{ $comp }}">{{ $comp }}</dd></div>
+            <div class="figure"><dt class="figure-l">{{ T "figVendors" }}</dt><dd class="figure-n" data-count="{{ len hugo.Data.finder.vendors }}">{{ len hugo.Data.finder.vendors }}</dd></div>
+            <div class="figure"><dt class="figure-l">{{ T "figDeadlines" }}</dt><dd class="figure-n" data-count="{{ $next }}">{{ $next }}</dd></div>
+        </dl>
         <p class="commit-quote">« {{ partial "typo.html" (T "commitQuote") }} »</p>
-        <div class="commit-grid">
+        <div class="commit-grid stagger">
             {{ range $i, $c := $home.commitments }}
             <div class="commit">
                 <span class="commit-num" aria-hidden="true">{{ add $i 1 }}</span>
@@ -208,92 +217,4 @@
 {{ end }}
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $questions | jsonify | safeJS }}</script>
 
-<script>
-/* Simulateur RH : onglets accessibles au clavier et calculs en direct */
-(function() {
-    var sim = document.getElementById('simulateur');
-    if (!sim) { return; }
-    var locale = sim.dataset.locale || 'fr';
-    var tabs = [].slice.call(sim.querySelectorAll('.sim-tab'));
-    var panels = [].slice.call(sim.querySelectorAll('.sim-panel'));
-    var stepN = sim.querySelector('.sim-step-n');
-    var money = new Intl.NumberFormat(locale, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    var dec = new Intl.NumberFormat(locale, { maximumFractionDigits: 2 });
-    function eur(x) { return money.format(x) + ' €'; }
-    function trunc2(x) { return Math.floor(x * 100 + 1e-9) / 100; }
-    function round2(x) { return Math.round(x * 100) / 100; }
-
-    var compute = {
-        conges: function(v, p, L, set) {
-            var raw = p.per_month * v;
-            var days = Math.min(p.max_days, Math.ceil(raw - 1e-9));
-            set('calc', dec.format(p.per_month) + ' × ' + v + ' = ' + dec.format(raw));
-            set('result', String(days));
-            set('max', String(p.max_days));
-            return String(days);
-        },
-        titres: function(v, p, L, set) {
-            var emin = v * p.min_share, emax = v * p.max_share;
-            set('employer', eur(emin) +' ' + L.to + ' '+ eur(emax));
-            set('employee', eur(v - emax) +' ' + L.to + ' '+ eur(v - emin));
-            set('exempt', emax <= p.exempt_cap + 1e-9 ? L.full : (emin <= p.exempt_cap + 1e-9 ? L.partial : L.none));
-            return money.format(emin) +' ' + L.to + ' '+ eur(emax);
-        },
-        ij: function(v, p, L, set) {
-            var capped = v >= p.salary_cap;
-            var base = round2(3 * Math.min(v, p.salary_cap) / p.divisor);
-            var ij = capped ? p.max_ij : Math.min(p.max_ij, trunc2(base * p.rate));
-            set('base', eur(base));
-            set('ij', eur(ij));
-            set('cap', capped ? L.capped : L.notcapped);
-            set('waiting', p.waiting_days + ' ' + L.days);
-            return eur(ij);
-        }
-    };
-
-    panels.forEach(function(panel) {
-        var key = panel.dataset.key;
-        var p = JSON.parse(panel.dataset.params);
-        var L = JSON.parse(panel.dataset.labels);
-        var input = panel.querySelector('.sim-range');
-        var out = panel.querySelector('.sim-out');
-        var big = panel.querySelector('.sim-big-n');
-        function set(name, txt) {
-            var el = panel.querySelector('[data-line="' + name + '"]');
-            if (el) { el.textContent = txt; }
-        }
-        function update() {
-            var v = parseFloat(input.value);
-            out.textContent = panel.dataset.unit === '€' ? dec.format(v) : String(v);
-            var pct = (v - input.min) / (input.max - input.min) * 100;
-            input.style.setProperty('--fill', pct + '%');
-            big.textContent = compute[key](v, p, L, set);
-        }
-        input.addEventListener('input', update);
-        update();
-    });
-
-    function select(i, focus) {
-        tabs.forEach(function(t, j) {
-            var on = i === j;
-            t.setAttribute('aria-selected', String(on));
-            t.tabIndex = on ? 0 : -1;
-            panels[j].hidden = !on;
-        });
-        stepN.textContent = i + 1;
-        if (focus) { tabs[i].focus(); }
-    }
-    tabs.forEach(function(t, i) {
-        t.addEventListener('click', function() { select(i, false); });
-        t.addEventListener('keydown', function(e) {
-            var n = null;
-            if (e.key === 'ArrowRight') { n = (i + 1) % tabs.length; }
-            if (e.key === 'ArrowLeft') { n = (i - 1 + tabs.length) % tabs.length; }
-            if (e.key === 'Home') { n = 0; }
-            if (e.key === 'End') { n = tabs.length - 1; }
-            if (n !== null) { e.preventDefault(); select(n, true); }
-        });
-    });
-})();
-</script>
 {{ end }}

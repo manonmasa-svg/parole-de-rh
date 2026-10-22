@@ -21,6 +21,15 @@
             {{ if and (eq .Data.Plural "categories") .Pages }}{{ $terms = $terms | append . }}{{ end }}
         {{ end }}
         {{ partial "filter-grid.html" (dict "pages" .Pages.ByDate.Reverse "terms" $terms "level" "h2") }}
+        {{ else if and $isCategory (not .Pages) }}
+        <!-- Rubrique encore vide (cas de la rubrique Avis a sa creation) -->
+        <div class="empty-rub">
+            <p>{{ partial "typo.html" (T "avisEmpty") }}</p>
+            <p>
+                {{ with site.GetPage (cond (eq .Site.Language.Lang "en") "/categories/comparisons" "/categories/comparatifs") }}<a href="{{ .RelPermalink }}" class="section-more">{{ T "allComparisons" }} →</a>{{ end }}
+                {{ with site.GetPage (cond (eq .Site.Language.Lang "en") "/find-my-hr-software" "/trouver-mon-logiciel-rh") }}<a href="{{ .RelPermalink }}" class="section-more">{{ T "finderCtaLong" }} →</a>{{ end }}
+            </p>
+        </div>
         {{ else }}
         <div class="card-grid">
             {{ range .Pages.ByDate.Reverse }}

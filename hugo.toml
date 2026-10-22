@@ -92,12 +92,12 @@ enableRobotsTXT = false
   pageRef = "/categories/tendances-rh"
   weight = 11
 [[languages.fr.menus.main]]
-  name = "Logiciels RH"
-  pageRef = "/categories/logiciels-rh"
-  weight = 2
-[[languages.fr.menus.main]]
   name = "Comparatifs"
   pageRef = "/categories/comparatifs"
+  weight = 2
+[[languages.fr.menus.main]]
+  name = "Avis"
+  pageRef = "/categories/avis"
   weight = 3
 [[languages.fr.menus.main]]
   name = "Définitions RH"
@@ -106,7 +106,7 @@ enableRobotsTXT = false
 [[languages.fr.menus.main]]
   name = "Agenda RH"
   pageRef = "/agenda-rh"
-  weight = 5
+  weight = 6
   [languages.fr.menus.main.params]
     tile = false
 [[languages.fr.menus.main]]
@@ -210,12 +210,12 @@ enableRobotsTXT = false
   pageRef = "/categories/hr-trends"
   weight = 11
 [[languages.en.menus.main]]
-  name = "HR software"
-  pageRef = "/categories/hr-software"
-  weight = 2
-[[languages.en.menus.main]]
   name = "Comparisons"
   pageRef = "/categories/comparisons"
+  weight = 2
+[[languages.en.menus.main]]
+  name = "Reviews"
+  pageRef = "/categories/reviews"
   weight = 3
 [[languages.en.menus.main]]
   name = "HR glossary"
@@ -224,7 +224,7 @@ enableRobotsTXT = false
 [[languages.en.menus.main]]
   name = "HR calendar"
   pageRef = "/hr-calendar"
-  weight = 5
+  weight = 6
   [languages.en.menus.main.params]
     tile = false
 [[languages.en.menus.main]]
@@ -274,8 +274,8 @@ enableRobotsTXT = false
   expertise = ["Ressources humaines", "Recrutement", "Paie", "Droit social", "Formation professionnelle", "Management", "QVCT", "SIRH"]
   og_locale_alternate = "en_US"
   # Images des 4 tuiles de rubriques de l accueil, dans l ordre du menu principal
-  home_tiles = ["/images/rubriques/actualites-rh.jpg", "/images/rubriques/logiciels-rh.jpg", "/images/rubriques/comparatifs.jpg", "/images/rubriques/definitions-rh.jpg"]
-  home_tiles_credit = "Redd Francisco, path digital, Van Tay Media, Pisit Heng"
+  home_tiles = ["/images/rubriques/actualites-rh.jpg", "/images/rubriques/comparatifs.jpg", "/images/rubriques/avis.jpg", "/images/rubriques/definitions-rh.jpg"]
+  home_tiles_credit = "Redd Francisco, Van Tay Media, path digital, Pisit Heng"
 
 [sitemap]
   changefreq = "weekly"

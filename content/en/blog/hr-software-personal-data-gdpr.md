@@ -4,7 +4,7 @@ translationKey: "article-logiciel-rh-donnees"
 date: 2026-10-04T11:30:00+02:00
 lastmod: 2026-10-07T12:00:00+02:00
 description: "HR software: data that can be collected, access, retention period, employee information. The CNIL's rules to follow."
-categories: ["HR software"]
+categories: ["AI and HRIS"]
 tags: ["HR software", "HRIS", "GDPR", "CNIL", "personal data"]
 author: "julien-carrel"
 image: "/images/blog/logiciel-rh-donnees-personnelles-rgpd.jpg"

@@ -4,7 +4,7 @@ translationKey: "article-logiciel-gestion-rh"
 date: 2026-10-08T08:00:00+02:00
 lastmod: 2026-10-08T08:00:00+02:00
 description: "HR management software in France: definition, features, the most established vendors and how to choose, based on verified sources."
-categories: ["HR software"]
+categories: ["Comparisons"]
 tags: ["HR management software", "HR software", "HRIS", "payroll software", "personnel management"]
 author: "julien-carrel"
 image: "/images/blog/logiciel-gestion-rh.jpg"

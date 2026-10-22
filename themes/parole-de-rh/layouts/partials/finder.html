@@ -1,0 +1,197 @@
+{{/* Questionnaire « Trouver mon logiciel RH » (22 octobre 2026) : trois questions, une par ecran,
+     puis une selection de trois logiciels calculee dans le navigateur.
+     Donnees : data/finder.yaml (faits repris des comparatifs, avec leur date de releve).
+     Parametres : "head" (true pour afficher le titre et l'introduction), "level" (balise du titre). */}}
+{{ $lang := site.Language.Lang }}
+{{ $f := hugo.Data.finder }}
+{{ $level := .level | default "h2" }}
+{{ with $f }}
+{{ $articles := dict }}
+{{ range $need, $files := .articles }}
+    {{ with site.GetPage (printf "/blog/%s" (strings.TrimSuffix ".md" (index $files $lang))) }}
+    {{ $articles = merge $articles (dict $need (dict "u" .RelPermalink "t" .Title)) }}
+    {{ end }}
+{{ end }}
+{{ $vendors := slice }}
+{{ range .vendors }}
+    {{ $vendors = $vendors | append (dict "n" .name "needs" .needs "sizes" .sizes "flags" .flags "target" (index .target $lang) "fact" (index .fact $lang) "checked" (index .checked $lang)) }}
+{{ end }}
+{{ $labels := dict }}
+{{ range .steps }}
+    {{ $opts := dict }}
+    {{ range .options }}{{ $opts = merge $opts (dict .value (dict "l" (index .label $lang) "h" (index .hint $lang))) }}{{ end }}
+    {{ $labels = merge $labels (dict .key $opts) }}
+{{ end }}
+{{ $total := len .steps }}
+<section class="finder" id="finder" aria-labelledby="finder-title"
+    data-vendors="{{ $vendors | jsonify }}" data-articles="{{ $articles | jsonify }}" data-labels="{{ $labels | jsonify }}">
+    {{ if $.head }}
+    <div class="finder-head">
+        <div>
+            {{ printf "<%s class=\"section-title\" id=\"finder-title\">%s</%s>" $level (index .title $lang) $level | safeHTML }}
+            <p class="section-intro">{{ partial "typo.html" (index .intro $lang) }}</p>
+        </div>
+    </div>
+    {{ else }}
+    <h2 class="visually-hidden" id="finder-title">{{ index .title $lang }}</h2>
+    {{ end }}
+
+    <div class="finder-progress" aria-hidden="true">
+        <p class="finder-count">{{ T "finderQuestion" }} <span class="finder-count-n">1</span> {{ T "finderOf" }} {{ $total }}</p>
+        <div class="finder-bar"><span style="width: {{ div 100.0 $total }}%"></span></div>
+    </div>
+    <ol class="finder-steps">
+        {{ range $i, $s := .steps }}
+        <li class="finder-steps-item"{{ if eq $i 0 }} aria-current="step"{{ end }}><span class="finder-steps-n">{{ add $i 1 }}</span> {{ index $s.label $lang }}</li>
+        {{ end }}
+        <li class="finder-steps-item"><span class="finder-steps-n">✓</span> {{ T "finderResultStep" }}</li>
+    </ol>
+
+    <form class="finder-form" novalidate>
+        {{ range $i, $s := .steps }}
+        <fieldset class="finder-step" data-step="{{ $i }}"{{ if gt $i 0 }} hidden{{ end }}>
+            <legend class="finder-question"><span class="kicker">{{ T "finderQuestion" }} {{ add $i 1 }} / {{ $total }}</span>{{ partial "typo.html" (index $s.question $lang) }}</legend>
+            <p class="finder-help">{{ partial "typo.html" (index $s.help $lang) }}</p>
+            <div class="finder-options">
+                {{ range $j, $o := $s.options }}
+                <label class="finder-opt">
+                    <input type="radio" name="{{ $s.key }}" value="{{ $o.value }}">
+                    <span class="finder-opt-n" aria-hidden="true">{{ index (slice "A" "B" "C" "D" "E" "F") $j }}</span>
+                    <span class="finder-opt-t">{{ partial "typo.html" (index $o.label $lang) }}</span>
+                    <span class="finder-opt-h">{{ partial "typo.html" (index $o.hint $lang) }}</span>
+                </label>
+                {{ end }}
+            </div>
+            {{ if gt $i 0 }}<button type="button" class="finder-back">← {{ T "finderBack" }}</button>{{ end }}
+        </fieldset>
+        {{ end }}
+    </form>
+
+    <div class="finder-result" hidden tabindex="-1">
+        <p class="kicker">{{ T "finderResultStep" }}</p>
+        <h3 class="finder-result-title">{{ T "finderResultTitle" }}</h3>
+        <p class="finder-answers"></p>
+        <p class="finder-nomatch" hidden>{{ T "finderNoPriority" }}</p>
+        <ol class="finder-picks"></ol>
+        <p class="finder-more"></p>
+        <p class="finder-disclaimer">{{ partial "typo.html" (index .disclaimer $lang) }}</p>
+        <button type="button" class="finder-restart">↺ {{ T "finderRestart" }}</button>
+    </div>
+
+    <noscript>
+        <p class="finder-help">{{ T "finderNoScript" }}</p>
+        <ul>{{ range $need, $a := $articles }}<li><a href="{{ $a.u }}">{{ $a.t }}</a></li>{{ end }}</ul>
+    </noscript>
+    <template class="finder-tpl"
+        data-match="{{ T "finderMatchPriority" }}" data-size="{{ T "finderSizeMatch" }}" data-target="{{ T "finderTarget" }}"
+        data-read="{{ T "finderRead" }}" data-more="{{ T "finderMoreIn" }}" data-sep="{{ if eq $lang "fr" }}&nbsp;: {{ else }}: {{ end }}"></template>
+</section>
+
+<script>
+/* Questionnaire : un ecran par question, avance automatique au choix, retour possible, selection calculee localement */
+(function() {
+    var root = document.getElementById('finder');
+    if (!root || root.dataset.ready) { return; }
+    root.dataset.ready = '1';
+    var vendors = JSON.parse(root.dataset.vendors);
+    var articles = JSON.parse(root.dataset.articles);
+    var labels = JSON.parse(root.dataset.labels);
+    var tpl = root.querySelector('.finder-tpl').dataset;
+    var steps = [].slice.call(root.querySelectorAll('.finder-step'));
+    var marks = [].slice.call(root.querySelectorAll('.finder-steps-item'));
+    var bar = root.querySelector('.finder-bar span');
+    var countN = root.querySelector('.finder-count-n');
+    var progress = root.querySelector('.finder-progress');
+    var result = root.querySelector('.finder-result');
+    var answers = {};
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function show(i) {
+        steps.forEach(function(s, j) { s.hidden = j !== i; });
+        result.hidden = i < steps.length;
+        progress.hidden = i >= steps.length;
+        marks.forEach(function(m, j) {
+            m.classList.toggle('is-done', j < i);
+            if (j === i) { m.setAttribute('aria-current', 'step'); } else { m.removeAttribute('aria-current'); }
+        });
+        countN.textContent = Math.min(i + 1, steps.length);
+        bar.style.width = (Math.min(i + 1, steps.length) / steps.length * 100) + '%';
+        if (i < steps.length) {
+            var first = steps[i].querySelector('input:checked') || steps[i].querySelector('input');
+            if (first && root.dataset.started) { first.focus({ preventScroll: true }); }
+        }
+    }
+
+    function el(tag, cls, text) {
+        var e = document.createElement(tag);
+        if (cls) { e.className = cls; }
+        if (text) { e.textContent = text; }
+        return e;
+    }
+
+    function render() {
+        var need = answers.need, size = answers.size, prio = answers.priority;
+        var list = vendors.filter(function(v) { return v.needs && v.needs[need]; }).map(function(v) {
+            var sizeOk = v.sizes && v.sizes.indexOf(size) > -1;
+            var prioOk = !!(v.flags && v.flags[prio]);
+            var score = (v.sizes && v.sizes.length ? (sizeOk ? 2 : 0) : 1) + (prioOk ? 3 : 0) - v.needs[need] / 100;
+            return { v: v, score: score, sizeOk: sizeOk, prioOk: prioOk };
+        }).sort(function(a, b) { return b.score - a.score; }).slice(0, 3);
+
+        root.querySelector('.finder-answers').textContent = ['need', 'size', 'priority'].map(function(k) {
+            return labels[k][answers[k]].l;
+        }).join(' · ');
+        root.querySelector('.finder-nomatch').hidden = list.some(function(x) { return x.prioOk; });
+
+        var ol = root.querySelector('.finder-picks');
+        ol.textContent = '';
+        list.forEach(function(x, i) {
+            var li = el('li', 'finder-pick');
+            li.appendChild(el('span', 'finder-pick-n', String(i + 1)));
+            var body = el('div', 'finder-pick-body');
+            body.appendChild(el('h4', 'finder-pick-name', x.v.n));
+            var tags = el('p', 'finder-pick-tags');
+            if (x.prioOk) { tags.appendChild(el('span', 'finder-tag is-on', '✓ ' + tpl.match + tpl.sep + labels.priority[prio].l.toLowerCase())); }
+            if (x.sizeOk) { tags.appendChild(el('span', 'finder-tag is-on', '✓ ' + tpl.size)); }
+            if (tags.childNodes.length) { body.appendChild(tags); }
+            body.appendChild(el('p', 'finder-pick-fact', x.v.fact));
+            body.appendChild(el('p', 'finder-pick-meta', tpl.target + tpl.sep + x.v.target + ' · ' + x.v.checked));
+            li.appendChild(body);
+            ol.appendChild(li);
+        });
+
+        var more = root.querySelector('.finder-more');
+        more.textContent = '';
+        var art = articles[need];
+        if (art) {
+            more.appendChild(document.createTextNode(tpl.more + ' '));
+            var a = el('a', 'section-more', art.t + ' →');
+            a.href = art.u;
+            more.appendChild(a);
+        }
+    }
+
+    steps.forEach(function(step, i) {
+        step.addEventListener('change', function(e) {
+            if (!e.target.matches('input[type="radio"]')) { return; }
+            answers[e.target.name] = e.target.value;
+            root.dataset.started = '1';
+            var next = function() {
+                if (i + 1 < steps.length) { show(i + 1); }
+                else { render(); show(steps.length); result.focus({ preventScroll: true }); }
+            };
+            if (reduce) { next(); } else { setTimeout(next, 220); }
+        });
+        var back = step.querySelector('.finder-back');
+        if (back) { back.addEventListener('click', function() { show(i - 1); }); }
+    });
+
+    root.querySelector('.finder-restart').addEventListener('click', function() {
+        answers = {};
+        root.querySelector('.finder-form').reset();
+        show(0);
+        steps[0].querySelector('input').focus();
+    });
+})();
+</script>
+{{ end }}

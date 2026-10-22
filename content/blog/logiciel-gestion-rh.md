@@ -4,7 +4,7 @@ translationKey: "article-logiciel-gestion-rh"
 date: 2026-10-08T08:00:00+02:00
 lastmod: 2026-10-08T08:00:00+02:00
 description: "Logiciel de gestion RH : définition, fonctionnalités, éditeurs présents en France et critères de choix, sources à l'appui."
-categories: ["Logiciels RH"]
+categories: ["Comparatifs"]
 tags: ["logiciel gestion RH", "logiciel RH", "SIRH", "logiciel de paie", "gestion du personnel"]
 author: "julien-carrel"
 image: "/images/blog/logiciel-gestion-rh.jpg"
