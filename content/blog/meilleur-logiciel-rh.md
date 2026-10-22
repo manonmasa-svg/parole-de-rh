@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel RH ?"
 translationKey: "article-meilleur-logiciel-rh"
 date: 2026-10-07T14:00:00+02:00
-lastmod: 2026-10-07T14:00:00+02:00
+lastmod: 2026-10-22T19:00:00+02:00
 description: "Meilleur logiciel RH : Lucca, Kelio, Eurécia, Factorial et PayFit comparés sur les tarifs et périmètres publiés par les éditeurs."
 categories: ["Comparatifs"]
 tags: ["logiciel RH", "SIRH", "comparatif", "Lucca", "Kelio", "Eurécia", "Factorial", "PayFit"]
@@ -138,6 +138,8 @@ La page consultée affiche un tarif de 26 euros par mois et par collaborateur po
 | Structurer les entretiens et la formation | Lucca, Eurécia, Kelio | Modules talents publiés |
 | Tester avant de s'engager | Eurécia, Factorial, PayFit | Essai gratuit proposé |
 | Très petite entreprise | Eurécia (Starter), PayFit | Offres dédiées aux petites structures |
+
+Pour centraliser les dossiers du personnel, les congés et les entretiens dans un même outil, le comparatif du [meilleur logiciel SIRH]({{< relref "meilleur-logiciel-sirh.md" >}}) étudie aussi Sesame HR, Cegid HR et Nibelis, avec l'hébergement et les modules de chaque éditeur.
 
 ### Entreprise de plus de 100 salariés
 

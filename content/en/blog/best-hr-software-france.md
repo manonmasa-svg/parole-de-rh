@@ -2,7 +2,7 @@
 title: "What is the best HR software in France?"
 translationKey: "article-meilleur-logiciel-rh"
 date: 2026-10-07T14:00:00+02:00
-lastmod: 2026-10-07T14:00:00+02:00
+lastmod: 2026-10-22T19:00:00+02:00
 description: "Best HR software in France: Lucca, Kelio, Eurécia, Factorial and PayFit compared on the prices and scope published by the vendors."
 categories: ["Comparisons"]
 tags: ["HR software", "HRIS", "comparison", "Lucca", "Kelio", "Eurécia", "Factorial", "PayFit"]
@@ -138,6 +138,8 @@ The page consulted shows a price of 26 euros per month per employee for the offe
 | Structuring reviews and training | Lucca, Eurécia, Kelio | Talent modules published |
 | Testing before committing | Eurécia, Factorial, PayFit | Free trial offered |
 | Very small business | Eurécia (Starter), PayFit | Offers dedicated to small organisations |
+
+To bring employee records, leave and reviews together in a single tool, the comparison of the [best HRIS software]({{< relref "best-hris-software-france.md" >}}) also covers Sesame HR, Cegid HR and Nibelis, with each vendor's hosting and modules.
 
 ### Company with more than 100 employees
 
