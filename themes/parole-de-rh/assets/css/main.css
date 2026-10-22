@@ -1583,13 +1583,8 @@ a.pill:hover {
 /* --- Responsive --- */
 @media (max-width: 1080px) {
     .article-layout {
-        grid-template-columns: minmax(0, 1fr);
+        grid-template-columns: 220px minmax(0, 1fr);
         gap: var(--space-md);
-    }
-
-    .article-sidebar {
-        position: static;
-        max-height: none;
     }
 
     .tiles {
@@ -3265,4 +3260,11 @@ h1, h2, h3, .section-title, .card-title, .article-title, .page-hero h1 {
 @media (prefers-reduced-motion: reduce) {
     .js .hero-inner > * { animation: none; }
     .hero-btn span, .hero-table tbody tr { transition: none; }
+}
+
+/* Sommaire des articles : reste a gauche et sticky jusqu a 860 px (demande de Manon, 22 octobre 2026),
+   puis passe au-dessus de l article sur tablette et mobile */
+@media (max-width: 860px) {
+    .article-layout { grid-template-columns: minmax(0, 1fr); }
+    .article-sidebar { position: static; max-height: none; }
 }
