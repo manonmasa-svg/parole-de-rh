@@ -2,7 +2,7 @@
 title: "What is the best HRIS software in France?"
 translationKey: "article-meilleur-logiciel-sirh"
 date: 2026-10-22T08:00:00+02:00
-lastmod: 2026-10-22T08:00:00+02:00
+lastmod: 2026-10-25T21:20:00+01:00
 description: "Best HRIS software in France: Lucca, Eurécia, Factorial, Sesame HR, Cegid HR and Nibelis compared on modules, prices and hosting."
 categories: ["Comparisons"]
 tags: ["HRIS", "HRIS software", "comparison", "Lucca", "Eurécia", "Factorial", "Cegid"]
@@ -18,7 +18,7 @@ faq:
   - question: "How much does an HRIS cost in France?"
     answer: "On 21 October 2026, Lucca published a price per module, for example 3.21 euros excluding tax per employee per month for its HR core in a company with more than 100 employees. Eurécia displayed its Business plan from 4.20 euros excluding tax per employee per month, and Factorial an entry price of 6.90 euros per user per month. Sesame HR, Cegid HR and Nibelis work on a quote basis or display no price."
   - question: "Which HRIS is hosted in France?"
-    answer: "Among the vendors compared, Eurécia announces hosting in France. Cegid HR states hosting in Europe and ISO 27001 certification, and Sesame HR also displays ISO 27001 certification. For the others, the information did not appear on the pages consulted: it should be requested from the vendor."
+    answer: "Among the vendors compared, Eurécia announces hosting in France, and Lucca hosting with OVH in France and Germany, with ISO 27001 certification (checked on 25 October 2026). Cegid HR states hosting in Europe and ISO 27001 certification, and Sesame HR also displays ISO 27001 certification. For the others, the information did not appear on the pages consulted: it should be requested from the vendor."
 ---
 
 > **In short:**
@@ -35,7 +35,7 @@ The information below was taken on 21 October 2026 from the vendors' public page
 |---|---|---|---|---|---|---|
 | Published price | A price per module | From €4.20 excl. tax per employee per month (Business plan) | From €6.90 per user per month | Not published | Not published | Not published |
 | Trial and commitment | No minimum term | 30-day free trial, no commitment | Free trial | Free trial on every plan | Demo on request | Not found |
-| Displayed hosting and security | Not found | Hosted in France | Not found | ISO 27001 certification | Hosting in Europe, ISO 27001 | 100% cloud platform |
+| Displayed hosting and security | OVH in France and Germany, ISO 27001 (checked on 25 October 2026) | Hosted in France | Not found | ISO 27001 certification | Hosting in Europe, ISO 27001 | 100% cloud platform |
 | Payroll | Payroll preparation and connectors to payroll software | Payroll preparation and checking | Payroll preparation and checking (review of 7 October 2026) | Not found | Separate payroll software (Cegid Payroll) | Yes, HR and payroll combined |
 | Companies targeted | Prices published above 100 employees | From 1 to more than 500 employees | All sizes | Up to large organisations (Scale plan) | Mid-caps and large groups | SMEs with 50 to 250 employees and mid-caps |
 | **Key point** | Most detailed prices | Public price, trial and hosting in France | Public entry price | Clear plans, time and talent | Complete suite for large organisations | HRIS and payroll in one tool |
@@ -92,6 +92,7 @@ Lucca offers a modular HRIS: each HR need corresponds to a module, billed separa
 
 - **Commitment**: no minimum term.
 - **Integrations**: more than 300 solutions announced.
+- **Hosting and security**: according to its GDPR page, consulted on 25 October 2026, applications are hosted with OVH on servers in France and Germany, and ISO 27001 certification was obtained in July 2022. Details are in the [Lucca review]({{< relref "lucca-review.md" >}}).
 - **Note**: prices are presented as indicative for the most requested company sizes. A quote is still needed for an exact price.
 
 Lucca also appears in the comparison of the [best HR software]({{< relref "best-hr-software-france.md" >}}), with the same prices.
@@ -217,13 +218,13 @@ On 21 October 2026, Lucca published a price per module, for example 3.21 euros e
 <details>
 <summary>Which HRIS is hosted in France?</summary>
 
-Among the vendors compared, Eurécia announces hosting in France. Cegid HR states hosting in Europe and ISO 27001 certification, and Sesame HR also displays ISO 27001 certification. For the others, the information did not appear on the pages consulted: it should be requested from the vendor.
+Among the vendors compared, Eurécia announces hosting in France, and Lucca hosting with OVH in France and Germany, with ISO 27001 certification (checked on 25 October 2026). Cegid HR states hosting in Europe and ISO 27001 certification, and Sesame HR also displays ISO 27001 certification. For the others, the information did not appear on the pages consulted: it should be requested from the vendor.
 
 </details>
 
 ## Sources
 
-- Lucca, [Tarifs](https://www.lucca.fr/tarifs/), page consulted on 21 October 2026.
+- Lucca, [Tarifs](https://www.lucca.fr/tarifs/) (pricing), page consulted on 21 October 2026, and [RGPD](https://www.lucca.fr/rgpd/) (GDPR), page consulted on 25 October 2026.
 - Eurécia, [Tarifs](https://www.eurecia.com/tarifs) and [home page](https://www.eurecia.com/), pages consulted on 21 October 2026.
 - Factorial, [Tarifs](https://factorial.fr/tarifs), page consulted on 21 October 2026.
 - Sesame HR, [Prix et formules tarifaires](https://www.sesamehr.fr/prix/), page consulted on 21 October 2026.
