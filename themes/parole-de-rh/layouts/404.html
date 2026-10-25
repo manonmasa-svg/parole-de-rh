@@ -1,15 +1,156 @@
 {{ define "main" }}
+{{/* Page 404 (25 octobre 2026, demande de Manon, inspiree de la 404 d'Horace) : clin d'oeil RH tire au hasard,
+     faux avis d'absence tamponne, suggestions d'articles tirees de l'adresse demandee, recherche, pistes et
+     dernieres parutions. Hors index Google (noindex dans seo-head.html). GitHub Pages sert /404.html pour toutes
+     les adresses : une adresse en /en/ est renvoyee vers /en/404.html, avec l'adresse d'origine dans le fragment. */}}
+{{ $lang := .Site.Language.Lang }}
+{{ $jokes := split (T "nfJokes") "|" }}
+{{ $articles := where .Site.RegularPages "Section" "blog" }}
 
-<section class="error-page">
-    <div class="container">
-        <span class="error-code">404</span>
-        <h1>{{ T "notFoundTitle" }}</h1>
-        <p>{{ T "notFoundText" }}</p>
-        <div class="error-links">
-            <a href="{{ site.Home.RelPermalink }}" class="btn-primary">{{ T "backHome" }}</a>
-            <a href="{{ "blog/" | relLangURL }}" class="btn-outline">{{ T "seeArticles" }}</a>
+<div class="container">
+    <section class="nf" aria-labelledby="nf-title" data-jokes="{{ $jokes | jsonify }}" data-index="{{ "index.json" | relLangURL }}" data-lang="{{ $lang }}">
+        <div class="nf-main">
+            <p class="kicker">{{ T "nfKicker" }}</p>
+            <h1 class="nf-title" id="nf-title">{{ partial "typo.html" (index $jokes 0) }}</h1>
+            <p class="nf-text">{{ partial "typo.html" (T "nfText") }}</p>
+
+            <form class="nf-search" role="search">
+                <label for="nf-q" class="nf-label">{{ T "nfSearchLabel" }}</label>
+                <div class="nf-search-row">
+                    <input type="search" id="nf-q" class="nf-input" autocomplete="off" spellcheck="false">
+                    <button type="submit" class="nf-btn">{{ T "nfSearchBtn" }}</button>
+                </div>
+            </form>
+
+            <p class="nf-actions">
+                <a href="{{ site.Home.RelPermalink }}" class="section-more">{{ T "backHome" }} →</a>
+                <a href="#" class="section-more nf-back" hidden>← {{ T "nfBack" }}</a>
+            </p>
         </div>
-    </div>
-</section>
 
+        <!-- Faux avis d'absence : le seul visuel de la page, sans image ni contenu tiers -->
+        <figure class="nf-slip" aria-hidden="true">
+            <p class="nf-slip-head">{{ T "nfSlipTitle" }}</p>
+            <dl>
+                <div><dt>{{ T "nfSlipWho" }}</dt><dd>{{ T "nfSlipWhoValue" }}</dd></div>
+                <div><dt>{{ T "nfSlipUrl" }}</dt><dd class="nf-slip-url">…</dd></div>
+                <div><dt>{{ T "nfSlipReason" }}</dt><dd class="nf-slip-reason">{{ index $jokes 0 }}</dd></div>
+                <div><dt>{{ T "nfSlipBack" }}</dt><dd>{{ T "nfSlipBackValue" }}</dd></div>
+            </dl>
+            <span class="nf-stamp">404</span>
+        </figure>
+    </section>
+
+    <section class="section nf-suggest" aria-labelledby="nf-suggest-title" hidden>
+        <div class="section-head">
+            <h2 class="section-title" id="nf-suggest-title">{{ T "nfSuggestTitle" }}</h2>
+        </div>
+        <ol class="nf-hits"></ol>
+    </section>
+
+    <section class="section" aria-labelledby="nf-paths-title">
+        <div class="section-head">
+            <h2 class="section-title" id="nf-paths-title">{{ T "nfPathsTitle" }}</h2>
+        </div>
+        <ol class="nf-paths">
+            {{ range .Site.Menus.main }}{{ if lt .Weight 99 }}
+            <li><a href="{{ .URL }}"><span class="nf-paths-name">{{ .Name }}</span>{{ with .Page }}{{ with .Description }}<span class="nf-paths-desc">{{ partial "typo.html" . }}</span>{{ end }}{{ end }}</a></li>
+            {{ end }}{{ end }}
+            {{ with site.GetPage (cond (eq $lang "en") "/find-my-hr-software" "/trouver-mon-logiciel-rh") }}
+            <li><a href="{{ .RelPermalink }}"><span class="nf-paths-name">{{ .Title }}</span><span class="nf-paths-desc">{{ partial "typo.html" .Description }}</span></a></li>
+            {{ end }}
+        </ol>
+    </section>
+
+    {{ with $articles }}
+    <section class="section" aria-labelledby="nf-latest-title">
+        <div class="section-head">
+            <h2 class="section-title" id="nf-latest-title">{{ T "latestTitle" }}</h2>
+            <a href="{{ "blog/" | relLangURL }}" class="section-more">{{ T "allArticles" }} →</a>
+        </div>
+        <div class="cols">
+            {{ range first 3 . }}
+            {{ partial "card.html" (dict "page" . "level" "h3" "image" true) }}
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+</div>
+
+<script>
+(function() {
+    var root = document.querySelector('.nf');
+    if (!root) { return; }
+    var lang = root.dataset.lang;
+    var path = location.pathname;
+
+    /* Adresse anglaise servie par la 404 francaise de GitHub Pages : passage a la version anglaise */
+    if (lang === 'fr' && /^\/en(\/|$)/.test(path)) {
+        location.replace('/en/404.html#' + encodeURIComponent(path));
+        return;
+    }
+    if (/\/404\.html$/.test(path) && location.hash.length > 1) {
+        try { path = decodeURIComponent(location.hash.slice(1)); } catch (e) {}
+    }
+
+    /* Clin d'oeil RH tire au hasard */
+    var jokes = JSON.parse(root.dataset.jokes);
+    var joke = jokes[Math.floor(Math.random() * jokes.length)];
+    var nbsp = lang === 'fr' ? function(s) { return s.replace(/ ([:;!?»])/g, ' $1'); } : function(s) { return s; };
+    root.querySelector('.nf-title').textContent = nbsp(joke);
+    root.querySelector('.nf-slip-reason').textContent = nbsp(joke);
+    root.querySelector('.nf-slip-url').textContent = path;
+
+    /* Retour a la page precedente seulement si elle vient du site */
+    var back = root.querySelector('.nf-back');
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) {
+        back.hidden = false;
+        back.addEventListener('click', function(e) { e.preventDefault(); history.back(); });
+    }
+
+    /* Mots de l'adresse demandee : ils pre-remplissent la recherche et servent aux suggestions */
+    function norm(s) { return (s || '').toString().normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+    var stop = ['blog', 'en', 'categories', 'tags', 'html', 'index', 'page', 'les', 'des', 'une', 'pour', 'and', 'the', 'for', 'with', 'what', 'quel', 'quelle', 'est', 'how'];
+    var words = norm(path).split(/[^a-z0-9]+/).filter(function(w) { return w.length > 2 && stop.indexOf(w) < 0; });
+    var input = root.querySelector('.nf-input');
+    input.value = words.join(' ');
+
+    /* Bouton Rechercher : ouvre le moteur de recherche de l'en-tete avec la requete */
+    root.querySelector('.nf-search').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var panelInput = document.querySelector('#search-panel .search-input');
+        var toggle = [].slice.call(document.querySelectorAll('.search-toggle')).filter(function(b) { return b.offsetParent !== null; })[0];
+        if (!panelInput || !toggle) { return; }
+        if (document.getElementById('search-panel').hidden) { toggle.click(); }
+        panelInput.value = input.value;
+        panelInput.dispatchEvent(new Event('input'));
+        panelInput.focus();
+    });
+
+    /* Suggestions : articles dont le titre, la rubrique ou le chapo contiennent un mot de l'adresse */
+    if (!words.length || !window.fetch) { return; }
+    fetch(root.dataset.index).then(function(r) { return r.json(); }).then(function(items) {
+        var hits = items.map(function(it) {
+            var t = norm(it.t), c = norm(it.c + ' ' + it.g), d = norm(it.d), u = norm(it.u), s = 0;
+            words.forEach(function(w) {
+                s += (u.indexOf(w) > -1 ? 6 : 0) + (t.indexOf(w) > -1 ? 5 : 0) + (c.indexOf(w) > -1 ? 3 : 0) + (d.indexOf(w) > -1 ? 2 : 0);
+            });
+            return { it: it, s: s };
+        }).filter(function(h) { return h.s > 0; }).sort(function(a, b) { return b.s - a.s; }).slice(0, 4);
+        if (!hits.length) { return; }
+        var ol = document.querySelector('.nf-hits');
+        hits.forEach(function(h) {
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = h.it.u;
+            if (h.it.c) { var k = document.createElement('span'); k.className = 'kicker'; k.textContent = h.it.c; a.appendChild(k); }
+            var t = document.createElement('span'); t.className = 'nf-hit-title'; t.textContent = nbsp(h.it.t); a.appendChild(t);
+            var d = document.createElement('span'); d.className = 'nf-hit-desc'; d.textContent = nbsp(h.it.d); a.appendChild(d);
+            li.appendChild(a);
+            ol.appendChild(li);
+        });
+        document.querySelector('.nf-suggest').hidden = false;
+    }).catch(function() {});
+})();
+</script>
 {{ end }}

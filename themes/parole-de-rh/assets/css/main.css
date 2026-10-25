@@ -3268,3 +3268,56 @@ h1, h2, h3, .section-title, .card-title, .article-title, .page-hero h1 {
     .article-layout { grid-template-columns: minmax(0, 1fr); }
     .article-sidebar { position: static; max-height: none; }
 }
+
+/* Page 404 (25 octobre 2026) : clin d'oeil RH, faux avis d'absence tamponne, suggestions et pistes */
+.nf { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 3rem; align-items: center; padding: 3rem 0 2.6rem; border-bottom: 1px solid var(--text); }
+.nf-title { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 600; line-height: 1.08; margin: 0.4rem 0 1rem; text-wrap: balance; }
+.nf-text { font-size: 1.05rem; color: var(--ink-soft); max-width: 36em; margin: 0 0 1.6rem; }
+.nf-label { display: block; font-family: var(--font-ui); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 0.4rem; }
+.nf-search-row { display: flex; max-width: 34rem; border: 1px solid var(--text); }
+.nf-input { flex: 1; min-width: 0; min-height: 46px; padding: 0.6rem 0.9rem; border: 0; font: inherit; font-size: 1rem; background: var(--white); color: var(--text); }
+.nf-input:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+.nf-btn { min-height: 46px; padding: 0 1.3rem; border: 0; background: var(--text); color: #fff; font-family: var(--font-ui); font-weight: 700; font-size: 0.9rem; cursor: pointer; transition: background 0.2s ease; }
+.nf-btn:hover, .nf-btn:focus-visible { background: var(--accent); }
+.nf-actions { display: flex; flex-wrap: wrap; gap: 0.6rem 1.8rem; margin: 1.4rem 0 0; }
+
+/* Avis d'absence : feuille de papier legerement inclinee, lignes pointillees, tampon rouge */
+.nf-slip { position: relative; margin: 0; padding: 1.6rem 1.6rem 1.4rem; background: var(--paper-2); border: 1px solid var(--hair); transform: rotate(-1.5deg); box-shadow: 0 18px 30px -24px rgba(20, 33, 61, 0.45); animation: nf-drop 0.7s ease both; }
+.nf-slip-head { margin: 0 0 1rem; padding-bottom: 0.6rem; border-bottom: 2px solid var(--text); font-family: var(--font-ui); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.nf-slip dl { margin: 0; }
+.nf-slip dl > div { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.6rem; padding: 0.55rem 0; border-bottom: 1px dotted var(--ink-soft); }
+.nf-slip dt { font-size: 0.78rem; color: var(--ink-soft); }
+.nf-slip dd { margin: 0; font-family: var(--serif); font-style: italic; font-size: 1rem; overflow-wrap: anywhere; }
+.nf-stamp { position: absolute; right: 1.2rem; bottom: 1rem; padding: 0.1rem 0.7rem; border: 3px solid var(--accent); color: var(--accent); font-family: var(--font-ui); font-size: 2rem; font-weight: 800; letter-spacing: 0.08em; opacity: 0.85; transform: rotate(-12deg); animation: nf-stamp 0.45s 0.6s cubic-bezier(0.2, 1.6, 0.4, 1) both; }
+@keyframes nf-drop { from { opacity: 0; transform: translateY(-14px) rotate(-4deg); } to { opacity: 1; transform: rotate(-1.5deg); } }
+@keyframes nf-stamp { from { opacity: 0; transform: scale(2.2) rotate(-12deg); } to { opacity: 0.85; transform: scale(1) rotate(-12deg); } }
+
+/* Suggestions et pistes */
+.nf-hits { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--text); }
+.nf-hits li { border-bottom: 1px solid var(--hair); }
+.nf-hits li:nth-child(even) { border-left: 1px solid var(--hair); padding-left: 1.4rem; }
+.nf-hits a { display: block; padding: 1rem 1.4rem 1rem 0; color: var(--text); text-decoration: none; }
+.nf-hits .kicker { display: block; margin-bottom: 0.3rem; }
+.nf-hit-title { display: block; font-family: var(--serif); font-size: 1.2rem; font-weight: 600; line-height: 1.25; }
+.nf-hit-desc { display: block; margin-top: 0.3rem; font-size: 0.9rem; color: var(--ink-soft); }
+.nf-hits a:hover .nf-hit-title { color: var(--accent); }
+.nf-paths { list-style: none; margin: 0; padding: 0; counter-reset: nfp; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--text); }
+.nf-paths li { counter-increment: nfp; border-bottom: 1px solid var(--hair); }
+.nf-paths a { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); padding: 1rem 1rem 1rem 0; color: var(--text); text-decoration: none; }
+.nf-paths a::before { content: counter(nfp, decimal-leading-zero); grid-row: span 2; font-family: var(--serif); font-size: 1.3rem; font-weight: 300; color: var(--accent); font-variant-numeric: tabular-nums; }
+.nf-paths-name { font-weight: 700; }
+.nf-paths-desc { font-size: 0.86rem; color: var(--ink-soft); }
+.nf-paths a:hover .nf-paths-name { color: var(--accent); }
+
+@media (max-width: 860px) {
+    .nf { grid-template-columns: minmax(0, 1fr); gap: 2.2rem; padding-top: 2rem; }
+    .nf-paths { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+    .nf-hits, .nf-paths { grid-template-columns: minmax(0, 1fr); }
+    .nf-hits li:nth-child(even) { border-left: 0; padding-left: 0; }
+    .nf-slip dl > div { grid-template-columns: 6rem minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .nf-slip, .nf-stamp { animation: none; }
+}

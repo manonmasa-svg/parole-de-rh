@@ -3,11 +3,11 @@
 {{ $description := .Description | default .Site.Params.description }}
 {{ $isArticle := and .IsPage (eq .Section "blog") }}
 
-<!-- Canonical -->
-<link rel="canonical" href="{{ .Permalink }}">
+<!-- Canonical (aucun sur la page 404) -->
+{{ if ne .Kind "404" }}<link rel="canonical" href="{{ .Permalink }}">{{ end }}
 
 <!-- Hreflang -->
-{{ if .IsTranslated }}
+{{ if and .IsTranslated (ne .Kind "404") }}
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ if eq .Lang hugo.Sites.Default.Language.Lang }}
@@ -71,7 +71,7 @@
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 
 <!-- Pages de liste sans contenu propre (index des categories, etiquettes) : hors index Google -->
-{{ if or (eq .Kind "taxonomy") (and (eq .Kind "term") (eq .Data.Plural "tags")) (and (eq .Kind "term") (not .Pages)) }}
+{{ if or (eq .Kind "404") (eq .Kind "taxonomy") (and (eq .Kind "term") (eq .Data.Plural "tags")) (and (eq .Kind "term") (not .Pages)) }}
 <meta name="robots" content="noindex, follow">
 {{ end }}
 
