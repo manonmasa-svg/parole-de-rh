@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel SIRH ?"
 translationKey: "article-meilleur-logiciel-sirh"
 date: 2026-10-22T08:00:00+02:00
-lastmod: 2026-10-25T21:20:00+01:00
+lastmod: 2026-10-27T16:00:00+01:00
 description: "Meilleur logiciel SIRH : Lucca, Eurécia, Factorial, Sesame HR, Cegid HR et Nibelis comparés sur leurs modules, prix et hébergement."
 categories: ["Comparatifs"]
 tags: ["SIRH", "logiciel SIRH", "comparatif", "Lucca", "Eurécia", "Factorial", "Cegid"]
@@ -18,7 +18,7 @@ faq:
   - question: "Combien coûte un SIRH ?"
     answer: "Le 21 octobre 2026, Lucca publiait un prix par module, par exemple 3,21 euros hors taxes par collaborateur et par mois pour le socle RH dans une entreprise de plus de 100 collaborateurs. Eurécia affichait son offre Business à partir de 4,20 euros hors taxes par collaborateur et par mois, et Factorial un prix d'entrée de 6,90 euros par utilisateur et par mois. Sesame HR, Cegid HR et Nibelis fonctionnent sur devis ou sans prix affiché."
   - question: "Quel SIRH est hébergé en France ?"
-    answer: "Parmi les éditeurs comparés, Eurécia annonce un hébergement en France, et Lucca un hébergement chez OVH en France et en Allemagne, avec la certification ISO 27001 (relevé du 25 octobre 2026). Cegid HR indique un hébergement en Europe et la certification ISO 27001, et Sesame HR affiche aussi la certification ISO 27001. Pour les autres, l'information ne figurait pas sur les pages consultées : elle est à demander à l'éditeur."
+    answer: "Parmi les éditeurs comparés, Eurécia annonce un hébergement en France, et Lucca un hébergement chez OVH en France et en Allemagne, avec la certification ISO 27001 (relevé du 25 octobre 2026). Factorial indique des données hébergées dans l'Union européenne, sans préciser le pays, et affiche les certifications ISO 27001, SOC 2 Type 2 et SOC 3. Cegid HR indique un hébergement en Europe et la certification ISO 27001, et Sesame HR affiche aussi la certification ISO 27001. Pour les autres, l'information ne figurait pas sur les pages consultées : elle est à demander à l'éditeur."
 ---
 
 > **En bref :**
@@ -35,7 +35,7 @@ Les informations ci-dessous ont été relevées le 21 octobre 2026 sur les pages
 |---|---|---|---|---|---|---|
 | Prix publié | Un prix par module | À partir de 4,20 € HT par collaborateur et par mois (offre Business) | À partir de 6,90 € par utilisateur et par mois | Non publié | Non publié | Non publié |
 | Essai et engagement | Sans durée d'engagement | Essai gratuit de 30 jours, sans engagement | Essai gratuit | Essai gratuit sur chaque forfait | Démonstration sur demande | Non relevé |
-| Hébergement et sécurité affichés | OVH en France et en Allemagne, ISO 27001 (relevé du 25 octobre 2026) | Hébergé en France | Non relevé | Certification ISO 27001 | Hébergement en Europe, ISO 27001 | Plateforme 100 % cloud |
+| Hébergement et sécurité affichés | OVH en France et en Allemagne, ISO 27001 (relevé du 25 octobre 2026) | Hébergé en France | ISO 27001, SOC 2 Type 2, SOC 3, données dans l'Union européenne (relevé du 25 octobre 2026) | Certification ISO 27001 | Hébergement en Europe, ISO 27001 | Plateforme 100 % cloud |
 | Paie | Préparation de la paie et connecteurs vers des logiciels de paie | Préparation et vérification de la paie | Préparation et vérification de la paie (relevé du 7 octobre 2026) | Non relevé | Logiciel de paie distinct (Cegid Payroll) | Oui, RH et paie intégrées |
 | Entreprises visées | Tarifs publiés au-delà de 100 collaborateurs | De 1 à plus de 500 collaborateurs | Toutes tailles | Jusqu'aux grandes organisations (forfait Scale) | ETI et grands groupes | PME de 50 à 250 salariés et ETI |
 | **À retenir** | Prix les plus détaillés | Prix public, essai et hébergement en France | Prix d'entrée public | Forfaits clairs, temps et talents | Suite complète pour les grandes structures | SIRH et paie dans un même outil |
@@ -120,6 +120,7 @@ Factorial propose une plateforme qui couvre les RH, les talents, l'engagement de
 - **Prix** : à partir de 6,90 € par mois et par utilisateur dans le texte de sa page de tarifs, avec un plan construit sur mesure. Le titre de cette même page indiquait 6,50 € le 21 octobre 2026 : l'écart est à faire préciser par l'éditeur.
 - **Essai** : un essai gratuit est proposé.
 - **Cible** : l'éditeur indique que ses plans s'adaptent à toutes les entreprises.
+- **Sécurité** : selon son centre de sécurité, consulté le 25 octobre 2026, certifications ISO/IEC 27001:2022, SOC 2 Type 2 et SOC 3. Sa page IA indique des données hébergées dans l'Union européenne, sans préciser le pays. Le détail figure dans l'[avis sur Factorial]({{< relref "avis-factorial.md" >}}).
 
 ## Sesame HR : des forfaits détaillés, sans prix affiché
 
@@ -218,7 +219,7 @@ Le 21 octobre 2026, Lucca publiait un prix par module, par exemple 3,21 euros ho
 <details>
 <summary>Quel SIRH est hébergé en France ?</summary>
 
-Parmi les éditeurs comparés, Eurécia annonce un hébergement en France, et Lucca un hébergement chez OVH en France et en Allemagne, avec la certification ISO 27001 (relevé du 25 octobre 2026). Cegid HR indique un hébergement en Europe et la certification ISO 27001, et Sesame HR affiche aussi la certification ISO 27001. Pour les autres, l'information ne figurait pas sur les pages consultées : elle est à demander à l'éditeur.
+Parmi les éditeurs comparés, Eurécia annonce un hébergement en France, et Lucca un hébergement chez OVH en France et en Allemagne, avec la certification ISO 27001 (relevé du 25 octobre 2026). Factorial indique des données hébergées dans l'Union européenne, sans préciser le pays, et affiche les certifications ISO 27001, SOC 2 Type 2 et SOC 3. Cegid HR indique un hébergement en Europe et la certification ISO 27001, et Sesame HR affiche aussi la certification ISO 27001. Pour les autres, l'information ne figurait pas sur les pages consultées : elle est à demander à l'éditeur.
 
 </details>
 
@@ -226,7 +227,7 @@ Parmi les éditeurs comparés, Eurécia annonce un hébergement en France, et Lu
 
 - Lucca, [Tarifs](https://www.lucca.fr/tarifs/), page consultée le 21 octobre 2026, et [RGPD](https://www.lucca.fr/rgpd/), page consultée le 25 octobre 2026.
 - Eurécia, [Tarifs](https://www.eurecia.com/tarifs) et [page d'accueil](https://www.eurecia.com/), pages consultées le 21 octobre 2026.
-- Factorial, [Tarifs](https://factorial.fr/tarifs), page consultée le 21 octobre 2026.
+- Factorial, [Tarifs](https://factorial.fr/tarifs), page consultée le 21 octobre 2026, [Trust Center](https://trust.factorial.co/) et [One, agent IA](https://factorial.fr/ia), pages consultées le 25 octobre 2026.
 - Sesame HR, [Prix et formules tarifaires](https://www.sesamehr.fr/prix/), page consultée le 21 octobre 2026.
 - Cegid, [Cegid HR](https://www.cegid.com/fr/produits/cegid-hr/), page consultée le 21 octobre 2026.
 - Nibelis, [page d'accueil](https://www.nibelis.com/), consultée le 21 octobre 2026.

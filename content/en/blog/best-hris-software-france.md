@@ -2,7 +2,7 @@
 title: "What is the best HRIS software in France?"
 translationKey: "article-meilleur-logiciel-sirh"
 date: 2026-10-22T08:00:00+02:00
-lastmod: 2026-10-25T21:20:00+01:00
+lastmod: 2026-10-27T16:00:00+01:00
 description: "Best HRIS software in France: Lucca, Eurécia, Factorial, Sesame HR, Cegid HR and Nibelis compared on modules, prices and hosting."
 categories: ["Comparisons"]
 tags: ["HRIS", "HRIS software", "comparison", "Lucca", "Eurécia", "Factorial", "Cegid"]
@@ -18,7 +18,7 @@ faq:
   - question: "How much does an HRIS cost in France?"
     answer: "On 21 October 2026, Lucca published a price per module, for example 3.21 euros excluding tax per employee per month for its HR core in a company with more than 100 employees. Eurécia displayed its Business plan from 4.20 euros excluding tax per employee per month, and Factorial an entry price of 6.90 euros per user per month. Sesame HR, Cegid HR and Nibelis work on a quote basis or display no price."
   - question: "Which HRIS is hosted in France?"
-    answer: "Among the vendors compared, Eurécia announces hosting in France, and Lucca hosting with OVH in France and Germany, with ISO 27001 certification (checked on 25 October 2026). Cegid HR states hosting in Europe and ISO 27001 certification, and Sesame HR also displays ISO 27001 certification. For the others, the information did not appear on the pages consulted: it should be requested from the vendor."
+    answer: "Among the vendors compared, Eurécia announces hosting in France, and Lucca hosting with OVH in France and Germany, with ISO 27001 certification (checked on 25 October 2026). Factorial states that data is hosted in the European Union, without naming the country, and displays ISO 27001, SOC 2 Type 2 and SOC 3 certifications. Cegid HR states hosting in Europe and ISO 27001 certification, and Sesame HR also displays ISO 27001 certification. For the others, the information did not appear on the pages consulted: it should be requested from the vendor."
 ---
 
 > **In short:**
@@ -35,7 +35,7 @@ The information below was taken on 21 October 2026 from the vendors' public page
 |---|---|---|---|---|---|---|
 | Published price | A price per module | From €4.20 excl. tax per employee per month (Business plan) | From €6.90 per user per month | Not published | Not published | Not published |
 | Trial and commitment | No minimum term | 30-day free trial, no commitment | Free trial | Free trial on every plan | Demo on request | Not found |
-| Displayed hosting and security | OVH in France and Germany, ISO 27001 (checked on 25 October 2026) | Hosted in France | Not found | ISO 27001 certification | Hosting in Europe, ISO 27001 | 100% cloud platform |
+| Displayed hosting and security | OVH in France and Germany, ISO 27001 (checked on 25 October 2026) | Hosted in France | ISO 27001, SOC 2 Type 2, SOC 3, data in the European Union (checked on 25 October 2026) | ISO 27001 certification | Hosting in Europe, ISO 27001 | 100% cloud platform |
 | Payroll | Payroll preparation and connectors to payroll software | Payroll preparation and checking | Payroll preparation and checking (review of 7 October 2026) | Not found | Separate payroll software (Cegid Payroll) | Yes, HR and payroll combined |
 | Companies targeted | Prices published above 100 employees | From 1 to more than 500 employees | All sizes | Up to large organisations (Scale plan) | Mid-caps and large groups | SMEs with 50 to 250 employees and mid-caps |
 | **Key point** | Most detailed prices | Public price, trial and hosting in France | Public entry price | Clear plans, time and talent | Complete suite for large organisations | HRIS and payroll in one tool |
@@ -120,6 +120,7 @@ Factorial offers a platform covering HR, talent, team engagement and part of fin
 - **Price**: from €6.90 per month per user in the text of its pricing page, with a tailor-made plan. The title of that same page showed €6.50 on 21 October 2026: the vendor should be asked to clarify the difference.
 - **Trial**: a free trial is offered.
 - **Target**: the vendor states that its plans adapt to all companies.
+- **Security**: according to its trust centre, consulted on 25 October 2026, ISO/IEC 27001:2022, SOC 2 Type 2 and SOC 3 certifications. Its AI page states that data is hosted in the European Union, without naming the country. Details are in the [Factorial review]({{< relref "factorial-review.md" >}}).
 
 ## Sesame HR: detailed plans, no displayed price
 
@@ -218,7 +219,7 @@ On 21 October 2026, Lucca published a price per module, for example 3.21 euros e
 <details>
 <summary>Which HRIS is hosted in France?</summary>
 
-Among the vendors compared, Eurécia announces hosting in France, and Lucca hosting with OVH in France and Germany, with ISO 27001 certification (checked on 25 October 2026). Cegid HR states hosting in Europe and ISO 27001 certification, and Sesame HR also displays ISO 27001 certification. For the others, the information did not appear on the pages consulted: it should be requested from the vendor.
+Among the vendors compared, Eurécia announces hosting in France, and Lucca hosting with OVH in France and Germany, with ISO 27001 certification (checked on 25 October 2026). Factorial states that data is hosted in the European Union, without naming the country, and displays ISO 27001, SOC 2 Type 2 and SOC 3 certifications. Cegid HR states hosting in Europe and ISO 27001 certification, and Sesame HR also displays ISO 27001 certification. For the others, the information did not appear on the pages consulted: it should be requested from the vendor.
 
 </details>
 
@@ -226,7 +227,7 @@ Among the vendors compared, Eurécia announces hosting in France, and Lucca host
 
 - Lucca, [Tarifs](https://www.lucca.fr/tarifs/) (pricing), page consulted on 21 October 2026, and [RGPD](https://www.lucca.fr/rgpd/) (GDPR), page consulted on 25 October 2026.
 - Eurécia, [Tarifs](https://www.eurecia.com/tarifs) and [home page](https://www.eurecia.com/), pages consulted on 21 October 2026.
-- Factorial, [Tarifs](https://factorial.fr/tarifs), page consulted on 21 October 2026.
+- Factorial, [Tarifs](https://factorial.fr/tarifs) (pricing), page consulted on 21 October 2026, [Trust Center](https://trust.factorial.co/) and [One, agent IA](https://factorial.fr/ia) (AI agent), pages consulted on 25 October 2026.
 - Sesame HR, [Prix et formules tarifaires](https://www.sesamehr.fr/prix/), page consulted on 21 October 2026.
 - Cegid, [Cegid HR](https://www.cegid.com/fr/produits/cegid-hr/), page consulted on 21 October 2026.
 - Nibelis, [home page](https://www.nibelis.com/), consulted on 21 October 2026.

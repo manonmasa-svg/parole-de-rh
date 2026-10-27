@@ -122,12 +122,12 @@ vendors:
   - name: Factorial
     needs: { sirh: 3, temps: 3 }
     sizes: [s1, s2, s3, s4]
-    flags: { price: true, flex: true }
+    flags: { price: true, flex: true, secure: true }
     target: { fr: "Toutes tailles d'entreprise", en: "Companies of all sizes" }
     fact:
-      fr: "À partir de 6,90 € par utilisateur et par mois, essai gratuit. Gestion des temps, préparation de la paie et périmètre étendu à la finance et à l'informatique."
-      en: "From €6.90 per user per month, free trial. Time management, payroll preparation and a scope extended to finance and IT."
-    checked: { fr: "Relevé des 7 et 21 octobre 2026", en: "Checked on 7 and 21 October 2026" }
+      fr: "À partir de 6,90 € par utilisateur et par mois, essai gratuit. Gestion des temps, préparation de la paie et périmètre étendu à la finance et à l'informatique. Certifications ISO 27001, SOC 2 Type 2 et SOC 3, données hébergées dans l'Union européenne."
+      en: "From €6.90 per user per month, free trial. Time management, payroll preparation and a scope extended to finance and IT. ISO 27001, SOC 2 Type 2 and SOC 3 certifications, data hosted in the European Union."
+    checked: { fr: "Relevé des 7, 21 et 25 octobre 2026", en: "Checked on 7, 21 and 25 October 2026" }
   - name: Sesame HR
     needs: { sirh: 4, temps: 5 }
     sizes: []
