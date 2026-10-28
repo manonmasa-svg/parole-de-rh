@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ if .Params.hub }}{{ partial "hub.html" . }}{{ else }}
 {{ $isCategory := and (eq .Kind "term") (eq .Data.Plural "categories") }}
 
 <div class="container">
@@ -39,5 +40,6 @@
         {{ end }}
     </section>
 </div>
+{{ end }}
 
 {{ end }}

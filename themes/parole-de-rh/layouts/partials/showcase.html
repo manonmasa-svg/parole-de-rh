@@ -1,0 +1,24 @@
+{{/* Tableau extrait des comparatifs (accueil et page Comparatifs). Donnees : data/finder.yaml (showcase). */}}
+{{ $lang := site.Language.Lang }}
+{{ with hugo.Data.finder.showcase }}
+{{ $arts := hugo.Data.finder.articles }}
+<figure class="hero-table">
+    <figcaption><span>{{ partial "typo.html" (T "tblCaption") }}</span><span>{{ index .checked $lang }}</span></figcaption>
+    <div class="hero-table-scroll">
+        <table>
+            <thead><tr><th scope="col">{{ T "tblSoftware" }}</th><th scope="col">{{ T "tblUse" }}</th><th scope="col">{{ T "tblPrice" }}</th><th scope="col">{{ T "tblTrial" }}</th><th scope="col">{{ T "tblMore" }}</th></tr></thead>
+            <tbody>
+                {{ range .rows }}
+                <tr>
+                    <th scope="row">{{ .name }}</th>
+                    <td><span class="hero-tag">{{ index .use $lang }}</span></td>
+                    <td>{{ partial "typo.html" (index .price $lang) }}</td>
+                    <td>{{ partial "typo.html" (index .trial $lang) }}</td>
+                    <td>{{ with index $arts .article }}{{ with site.GetPage (printf "/blog/%s" (strings.TrimSuffix ".md" (index . $lang))) }}<a href="{{ .RelPermalink }}">{{ T "tblRead" }} →</a>{{ end }}{{ end }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</figure>
+{{ end }}

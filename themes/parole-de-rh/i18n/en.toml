@@ -144,3 +144,9 @@ nfSlipBack = "Expected return"
 nfSlipBackValue = "Not disclosed"
 nfSuggestTitle = "What you may have been looking for"
 nfPathsTitle = "Ways to get back on track"
+
+# Enriched Comparisons page (28 October 2026)
+hubSoftwareWord = "software"
+hubTableTitle = "HR software compared at a glance"
+hubSoftwareTitle = "HR software comparisons"
+hubOtherTitle = "Contracts, terminations and benefits: other comparisons"

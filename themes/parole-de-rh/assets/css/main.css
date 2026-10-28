@@ -3321,3 +3321,16 @@ h1, h2, h3, .section-title, .card-title, .article-title, .page-hero h1 {
 @media (prefers-reduced-motion: reduce) {
     .nf-slip, .nf-stamp { animation: none; }
 }
+
+/* Page Comparatifs enrichie (28 octobre 2026) : methode et questionnaire cote a cote, tableau sur bandeau encre */
+.hub-top { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 3rem; align-items: start; margin: 0 0 2.6rem; }
+.hub-method h2 { margin-top: 0; }
+.hub-cta { position: sticky; top: 90px; padding: 1.4rem 0; border-top: 2px solid var(--text); border-bottom: 1px solid var(--hair); }
+.hub-cta .kicker { margin: 0 0 0.4rem; }
+.hub-cta-text { font-family: var(--serif); font-size: 1.15rem; line-height: 1.4; margin: 0 0 1.2rem; }
+.hub-band { margin: 0 0 1rem; padding: 2.8rem 0 3rem; }
+.hub-band-title { margin: 0 0 1.6rem; font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 500; color: #fff; text-align: center; }
+@media (max-width: 860px) {
+    .hub-top { grid-template-columns: minmax(0, 1fr); gap: 1.6rem; }
+    .hub-cta { position: static; }
+}

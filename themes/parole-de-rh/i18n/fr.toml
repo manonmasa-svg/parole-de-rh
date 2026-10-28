@@ -144,3 +144,9 @@ nfSlipBack = "Retour prévu"
 nfSlipBackValue = "Non communiqué"
 nfSuggestTitle = "Ce que vous cherchiez peut-être"
 nfPathsTitle = "Les pistes pour repartir"
+
+# Page Comparatifs enrichie (28 octobre 2026)
+hubSoftwareWord = "logiciel"
+hubTableTitle = "Les logiciels RH comparés en un coup d'œil"
+hubSoftwareTitle = "Les comparatifs de logiciels RH"
+hubOtherTitle = "Contrats, ruptures et avantages : les autres comparatifs"

@@ -1,0 +1,63 @@
+{{/* Page de rubrique enrichie (rubrique Comparatifs, 28 octobre 2026, piste choisie par Manon) :
+     chapo, methode (texte du _index.md), questionnaire, tableau des logiciels sur bandeau encre,
+     comparatifs de logiciels puis autres comparatifs. Active avec `hub: true` dans le _index.md.
+     Un article va dans le premier groupe si son titre contient le mot de i18n `hubSoftwareWord`. */}}
+{{ $lang := site.Language.Lang }}
+{{ $word := lower (T "hubSoftwareWord") }}
+{{ $soft := slice }}{{ $other := slice }}
+{{ range .Pages.ByDate.Reverse }}
+    {{ if in (lower .Title) $word }}{{ $soft = $soft | append . }}{{ else }}{{ $other = $other | append . }}{{ end }}
+{{ end }}
+
+<div class="container">
+    <header class="page-hero">
+        <p class="kicker">{{ T "sections" }}</p>
+        <h1>{{ partial "typo.html" (.Params.heading | default .Title) }}</h1>
+        {{ with .Description }}<p>{{ partial "typo.html" . }}</p>{{ end }}
+    </header>
+
+    <div class="hub-top">
+        {{ with .Content }}
+        <div class="article-content hub-method">
+            {{ partial "typo.html" . | safeHTML }}
+        </div>
+        {{ end }}
+        {{ with site.GetPage (cond (eq $lang "en") "/find-my-hr-software" "/trouver-mon-logiciel-rh") }}
+        <aside class="hub-cta">
+            <p class="kicker">{{ T "finderKicker" }}</p>
+            <p class="hub-cta-text">{{ partial "typo.html" .Description }}</p>
+            <a href="{{ .RelPermalink }}" class="btn-ink">{{ T "finderCtaLong" }} →</a>
+        </aside>
+        {{ end }}
+    </div>
+</div>
+
+<section class="hero hub-band" aria-labelledby="hub-table-title">
+    <div class="container hero-inner">
+        <h2 class="hub-band-title" id="hub-table-title">{{ T "hubTableTitle" }}</h2>
+        {{ partial "showcase.html" . }}
+    </div>
+</section>
+
+<div class="container">
+    {{ with $soft }}
+    <section class="section reveal" aria-labelledby="hub-soft-title">
+        <div class="section-head">
+            <h2 class="section-title" id="hub-soft-title">{{ T "hubSoftwareTitle" }}</h2>
+        </div>
+        <div class="card-grid stagger">
+            {{ range . }}{{ partial "card.html" (dict "page" . "level" "h3" "image" true) }}{{ end }}
+        </div>
+    </section>
+    {{ end }}
+    {{ with $other }}
+    <section class="section reveal" aria-labelledby="hub-other-title">
+        <div class="section-head">
+            <h2 class="section-title" id="hub-other-title">{{ T "hubOtherTitle" }}</h2>
+        </div>
+        <div class="card-grid stagger">
+            {{ range . }}{{ partial "card.html" (dict "page" . "level" "h3" "image" true) }}{{ end }}
+        </div>
+    </section>
+    {{ end }}
+</div>
