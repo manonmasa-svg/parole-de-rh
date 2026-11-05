@@ -2,7 +2,7 @@
 title: "What is the best payroll software in France?"
 translationKey: "article-meilleur-logiciel-de-paie"
 date: 2026-10-12T21:00:00+02:00
-lastmod: 2026-10-12T21:00:00+02:00
+lastmod: 2026-11-05T20:00:00+01:00
 description: "Best payroll software in France: PayFit, Kelio, Silae, Nibelis and Sage compared, plus the criteria for choosing."
 categories: ["Comparisons"]
 tags: ["payroll software", "payroll", "comparison", "DSN", "PayFit", "Kelio", "Silae", "Nibelis", "Sage"]
@@ -18,23 +18,23 @@ faq:
   - question: "Is payroll software mandatory in France?"
     answer: "According to the Entreprendre.Service-Public guide on the DSN, payroll software compatible with the DSN is needed to make this declaration. A company can also entrust its declarations to a third-party filer, for example a chartered accountant, who then uses their own software."
   - question: "How much does payroll software cost in France?"
-    answer: "Few vendors publish a price. On 12 October 2026, PayFit displayed 26 euros per month per employee for its offer aimed at business founders. Kelio published a price list starting at 3.05 euros excluding tax per employee per month for 50 employees, but for its time management plans: the price of the payroll module was not shown. No price was found on the pages consulted for Silae, Nibelis and Sage."
+    answer: "Few vendors publish a price. On 5 November 2026, PayFit published a price list excluding VAT: 20 to 30 euros per employee per month depending on the plan, plus a 49 euro monthly subscription, or 26 euros with no subscription for a company running its first payroll. Kelio published a price list starting at 3.05 euros excluding tax per employee per month for 50 employees, but for its time management plans: the price of the payroll module was not shown. No price was found on the pages consulted for Silae, Nibelis and Sage."
 ---
 
 > **In short:**
 > 1. There is no universal **best payroll software**. This comparison ranks PayFit, Kelio, Silae, Nibelis and Sage on verifiable criteria, taken from the vendors' French websites on 12 October 2026.
 > 2. PayFit comes first on these criteria: payroll is the core of its offer, a price is published and the offer starts from the first employee.
-> 3. Only one payroll price could be found: 26 euros per month per employee at PayFit (offer for business founders). The other vendors work on a quote basis or do not price their payroll module.
+> 3. Only PayFit publishes a payroll price list: 20 to 30 euros excluding VAT per employee per month plus a 49 euro subscription, or 26 euros with no subscription for a first payroll (checked on 5 November 2026). The other vendors work on a quote basis or do not price their payroll module.
 > 4. When choosing, the first criterion is regulatory: the software must be compatible with the DSN and follow the company's collective agreement.
 
 ## Comparison table of the best payroll software
 
-The information below was taken on 12 October 2026 from the vendors' public pages. "Not found" means the information did not appear on the pages consulted.
+The information below was taken on 12 October 2026 from the vendors' public pages. PayFit's prices were updated on 5 November 2026. "Not found" means the information did not appear on the pages consulted.
 
 | Criterion | PayFit | Kelio | Silae | Nibelis | Sage |
 |---|---|---|---|---|---|
 | Payroll product | Online payroll software and service | 123Paie, the payroll module of the Kelio suite | mySilae Paie | Online payroll and HR suite | Sage Business Cloud Paie and Sage 100 Paie & RH |
-| Payroll price | €26 per month per employee (offer for business founders) | Not found for the payroll module | Not found | Not found | Not found |
+| Payroll price | €20 to €30 excl. VAT per employee per month, plus a €49 monthly subscription, or €26 with no subscription for a first payroll | Not found for the payroll module | Not found | Not found | Not found |
 | Payslips and DSN | Payslips, DSN and event-based declarations | Payslips, monthly and event-based DSN | Payslips, variables and DSN | Payroll, digital safe | Payslips and online declarations, including the DSN |
 | Collective agreements announced | Not found | More than 200 | 900 | Not found | Automated updates announced, number not found |
 | Payroll run by the vendor | Yes, payroll service run by its experts | Yes, outsourcing offered | Not found, distributed through partner firms and integrators | Yes, delegated management | Outsourcing offer mentioned |
@@ -58,7 +58,7 @@ Naming the **best payroll software** means saying on which criteria. User review
 
 | Rank | Software | Main reason |
 |---|---|---|
-| 1 | PayFit | Payroll at the core of the offer, the only payroll price found, offer from 1 employee, payroll service run by the vendor |
+| 1 | PayFit | Payroll at the core of the offer, the only published payroll price list, offer from 1 employee, payroll service run by the vendor |
 | 2 | Kelio | Detailed payroll scope, more than 200 collective agreements announced, public price list for the rest of the suite |
 | 3 | Silae | 900 collective agreements announced, but software distributed by partners and no published price |
 | 4 | Nibelis | Three clearly described levels of service, no published price |
@@ -75,12 +75,13 @@ PayFit presents itself as online payroll software and a payroll service. It is t
 - **Payroll**: payslips with automatic calculations, DSN and event-based declarations, a dashboard with payroll indicators.
 - **Related modules**: leave and absences, time tracking, expense reports, reviews.
 - **Offers**: one offer for companies with 1 to 9 employees, another for those with 10 to more than 1,000 employees.
-- **Price found**: 26 euros per month per employee, presented as a rate for business founders hiring their first employees.
+- **Price found**: on 5 November 2026, the offers page publishes a price list excluding VAT. The Starter plan, reserved for companies running their first payroll, costs 26 euros per employee per month, with no subscription. The Payroll, Advanced payroll and HR+ plans cost 20, 27 and 30 euros per employee per month, plus a 49 euro monthly subscription. For 3 employees, the page calculates from 78 euros (Starter) to 139 euros (HR+) per month. The vendor announces plans with no commitment and free set-up.
 - **Service**: the vendor also offers payroll "fully carried out" by its experts, including collecting variables, generating payslips and dealing with the social security bodies.
+- **Security**: according to its security page, consulted on 29 October 2026, ISO 27001 certification and data hosted in France. Details are in the [PayFit review]({{< relref "payfit-review.md" >}}).
 
 ### Limits of the data
 
-The full price list was not found on 12 October 2026: the 26 euro price only applies to the offer mentioned. The number of collective agreements supported is not stated on the page consulted. PayFit reports 22,000 client companies, a figure that has not been checked against an independent source.
+The price list had not been found on 12 October 2026. It was taken on 5 November 2026 from the offers page. The number of collective agreements supported is not stated on the page consulted. PayFit reports 22,000 client companies, a figure that has not been checked against an independent source.
 
 ## Kelio: payroll linked to time management
 
@@ -209,7 +210,7 @@ According to the Entreprendre.Service-Public guide on the DSN, payroll software 
 <details>
 <summary>How much does payroll software cost in France?</summary>
 
-Few vendors publish a price. On 12 October 2026, PayFit displayed 26 euros per month per employee for its offer aimed at business founders. Kelio published a price list starting at 3.05 euros excluding tax per employee per month for 50 employees, but for its time management plans: the price of the payroll module was not shown. No price was found on the pages consulted for Silae, Nibelis and Sage.
+Few vendors publish a price. On 5 November 2026, PayFit published a price list excluding VAT: 20 to 30 euros per employee per month depending on the plan, plus a 49 euro monthly subscription, or 26 euros with no subscription for a company running its first payroll. Kelio published a price list starting at 3.05 euros excluding tax per employee per month for 50 employees, but for its time management plans: the price of the payroll module was not shown. No price was found on the pages consulted for Silae, Nibelis and Sage.
 
 </details>
 
@@ -217,7 +218,7 @@ Few vendors publish a price. On 12 October 2026, PayFit displayed 26 euros per m
 
 - Entreprendre.Service-Public, [Déclaration sociale nominative (DSN)](https://entreprendre.service-public.gouv.fr/vosdroits/F34059), guide checked on 4 May 2026, consulted on 12 October 2026.
 - Service-Public, [Fiche de paie](https://www.service-public.gouv.fr/particuliers/vosdroits/F559), guide checked on 1 June 2026, consulted on 12 October 2026.
-- PayFit, [home page](https://payfit.com/fr/), consulted on 12 October 2026.
+- PayFit, [home page](https://payfit.com/fr/), consulted on 12 October 2026, and [offers page](https://payfit.com/fr/nos-offres/), consulted on 5 November 2026.
 - Kelio, [Logiciel de paie](https://www.kelio.com/fr/fonctionnalites/gestion-de-la-paie/logiciel-de-paie.html) and [Tarifs](https://www.kelio.com/fr/tarifs.html), pages consulted on 12 October 2026.
 - Silae, [home page](https://www.silae.fr/), consulted on 12 October 2026.
 - Nibelis, [home page](https://www.nibelis.com/), consulted on 12 October 2026.

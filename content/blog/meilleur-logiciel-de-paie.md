@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel de paie ?"
 translationKey: "article-meilleur-logiciel-de-paie"
 date: 2026-10-12T21:00:00+02:00
-lastmod: 2026-10-12T21:00:00+02:00
+lastmod: 2026-11-05T20:00:00+01:00
 description: "Meilleur logiciel de paie : PayFit, Kelio, Silae, Nibelis et Sage comparés, et les critères pour bien choisir."
 categories: ["Comparatifs"]
 tags: ["logiciel de paie", "paie", "comparatif", "DSN", "PayFit", "Kelio", "Silae", "Nibelis", "Sage"]
@@ -18,23 +18,23 @@ faq:
   - question: "Un logiciel de paie est-il obligatoire ?"
     answer: "Selon la fiche d'Entreprendre.Service-Public sur la DSN, un logiciel de paie compatible avec la DSN est nécessaire pour effectuer cette déclaration. L'entreprise peut aussi confier ses déclarations à un tiers déclarant, par exemple un expert-comptable, qui utilise alors son propre logiciel."
   - question: "Combien coûte un logiciel de paie ?"
-    answer: "Peu d'éditeurs publient un prix. Le 12 octobre 2026, PayFit affichait 26 euros par mois et par collaborateur pour son offre destinée aux créateurs d'entreprise. Kelio publiait une grille à partir de 3,05 euros hors taxes par salarié et par mois pour 50 salariés, mais pour ses formules de gestion des temps : le prix du module de paie n'y figurait pas. Aucun prix n'a été relevé sur les pages consultées de Silae, Nibelis et Sage."
+    answer: "Peu d'éditeurs publient un prix. Le 5 novembre 2026, PayFit publiait une grille hors taxes : de 20 à 30 euros par collaborateur et par mois selon l'offre, plus 49 euros d'abonnement mensuel, ou 26 euros sans abonnement pour une entreprise qui réalise sa première paie. Kelio publiait une grille à partir de 3,05 euros hors taxes par salarié et par mois pour 50 salariés, mais pour ses formules de gestion des temps : le prix du module de paie n'y figurait pas. Aucun prix n'a été relevé sur les pages consultées de Silae, Nibelis et Sage."
 ---
 
 > **En bref :**
 > 1. Il n'existe pas de **meilleur logiciel de paie** universel. Ce comparatif classe PayFit, Kelio, Silae, Nibelis et Sage sur des critères vérifiables, relevés sur les sites des éditeurs le 12 octobre 2026.
 > 2. PayFit arrive en tête sur ces critères : la paie est le cœur de son offre, un prix est publié et l'offre démarre dès le premier salarié.
-> 3. Un seul prix de paie a pu être relevé : 26 euros par mois et par collaborateur chez PayFit (offre pour les créateurs d'entreprise). Les autres éditeurs fonctionnent sur devis ou ne chiffrent pas leur module de paie.
+> 3. Seul PayFit publie une grille de prix pour la paie : de 20 à 30 euros hors taxes par collaborateur et par mois plus 49 euros d'abonnement, ou 26 euros sans abonnement pour une première paie (relevé du 5 novembre 2026). Les autres éditeurs fonctionnent sur devis ou ne chiffrent pas leur module de paie.
 > 4. Pour choisir, le premier critère est réglementaire : le logiciel doit être compatible avec la DSN et suivre la convention collective de l'entreprise.
 
 ## Tableau comparatif des meilleurs logiciels de paie
 
-Les informations ci-dessous ont été relevées le 12 octobre 2026 sur les pages publiques des éditeurs. La mention « non relevé » signale une information qui ne figurait pas sur les pages consultées.
+Les informations ci-dessous ont été relevées le 12 octobre 2026 sur les pages publiques des éditeurs. Les prix de PayFit ont été mis à jour le 5 novembre 2026. La mention « non relevé » signale une information qui ne figurait pas sur les pages consultées.
 
 | Critère | PayFit | Kelio | Silae | Nibelis | Sage |
 |---|---|---|---|---|---|
 | Produit de paie | Logiciel et service de paie en ligne | 123Paie, module de paie de la suite Kelio | mySilae Paie | Suite de paie et de RH en ligne | Sage Business Cloud Paie et Sage 100 Paie & RH |
-| Prix de la paie | 26 € par mois et par collaborateur (offre pour les créateurs d'entreprise) | Non relevé pour le module de paie | Non relevé | Non relevé | Non relevé |
+| Prix de la paie | De 20 à 30 € HT par collaborateur et par mois, plus 49 € d'abonnement mensuel, ou 26 € sans abonnement pour une première paie | Non relevé pour le module de paie | Non relevé | Non relevé | Non relevé |
 | Bulletins et DSN | Bulletins, DSN et déclarations événementielles | Bulletins, DSN mensuelles et événementielles | Bulletins, variables et DSN | Paie, coffre-fort numérique | Bulletins et télédéclarations, dont la DSN |
 | Conventions collectives annoncées | Non relevé | Plus de 200 | 900 | Non relevé | Mise à jour automatisée annoncée, nombre non relevé |
 | Paie réalisée par l'éditeur | Oui, service de paie réalisée par ses experts | Oui, externalisation proposée | Non relevé, diffusion par des cabinets et intégrateurs partenaires | Oui, gestion déléguée | Offre d'externalisation mentionnée |
@@ -58,7 +58,7 @@ Désigner le **meilleur logiciel de paie** suppose de dire sur quels critères. 
 
 | Rang | Logiciel | Raison principale |
 |---|---|---|
-| 1 | PayFit | Paie au cœur de l'offre, seul prix de paie relevé, offre dès 1 collaborateur, service de paie réalisée par l'éditeur |
+| 1 | PayFit | Paie au cœur de l'offre, seule grille de prix de paie publiée, offre dès 1 collaborateur, service de paie réalisée par l'éditeur |
 | 2 | Kelio | Périmètre de paie détaillé, plus de 200 conventions collectives annoncées, grille tarifaire publique pour le reste de la suite |
 | 3 | Silae | 900 conventions collectives annoncées, mais un logiciel diffusé par des partenaires et aucun prix publié |
 | 4 | Nibelis | Trois niveaux de service clairement décrits, aucun prix publié |
@@ -75,12 +75,13 @@ PayFit se présente comme un logiciel et un service de paie en ligne. C'est le s
 - **Paie** : bulletins de paie avec calculs automatiques, DSN et déclarations événementielles, tableau de bord avec indicateurs de paie.
 - **Modules associés** : congés et absences, gestion des temps, notes de frais, entretiens.
 - **Offres** : une offre pour les entreprises de 1 à 9 collaborateurs, une autre pour celles de 10 à plus de 1 000 collaborateurs.
-- **Prix relevé** : 26 euros par mois et par collaborateur, présenté comme un tarif pour les créateurs d'entreprise qui recrutent leurs premiers salariés.
+- **Prix relevé** : le 5 novembre 2026, la page Nos offres publie une grille hors taxes. L'offre Starter, réservée aux entreprises qui réalisent leur première paie, coûte 26 euros par collaborateur et par mois, sans abonnement. Les offres Paie, Paie avancée et RH+ coûtent 20, 27 et 30 euros par collaborateur et par mois, plus 49 euros d'abonnement mensuel. Pour 3 collaborateurs, la page calcule de 78 euros (Starter) à 139 euros (RH+) par mois. L'éditeur annonce des offres sans engagement et des frais de mise en place offerts.
 - **Service** : l'éditeur propose aussi une paie « intégralement réalisée » par ses experts, avec collecte des variables, génération des bulletins et démarches auprès des organismes.
+- **Sécurité** : selon sa page sécurité, consultée le 29 octobre 2026, certification ISO 27001 et données hébergées en France. Le détail figure dans l'[avis sur PayFit]({{< relref "avis-payfit.md" >}}).
 
 ### Les limites du relevé
 
-La grille tarifaire complète n'a pas été trouvée le 12 octobre 2026 : le prix de 26 euros ne vaut que pour l'offre citée. Le nombre de conventions collectives prises en charge n'est pas indiqué sur la page consultée. PayFit déclare 22 000 entreprises clientes, un chiffre qui n'a pas été vérifié par une source indépendante.
+La grille tarifaire n'avait pas été trouvée le 12 octobre 2026. Elle a été relevée le 5 novembre 2026 sur la page Nos offres. Le nombre de conventions collectives prises en charge n'est pas indiqué sur la page consultée. PayFit déclare 22 000 entreprises clientes, un chiffre qui n'a pas été vérifié par une source indépendante.
 
 ## Kelio : la paie reliée à la gestion des temps
 
@@ -209,7 +210,7 @@ Selon la fiche d'Entreprendre.Service-Public sur la DSN, un logiciel de paie com
 <details>
 <summary>Combien coûte un logiciel de paie ?</summary>
 
-Peu d'éditeurs publient un prix. Le 12 octobre 2026, PayFit affichait 26 euros par mois et par collaborateur pour son offre destinée aux créateurs d'entreprise. Kelio publiait une grille à partir de 3,05 euros hors taxes par salarié et par mois pour 50 salariés, mais pour ses formules de gestion des temps : le prix du module de paie n'y figurait pas. Aucun prix n'a été relevé sur les pages consultées de Silae, Nibelis et Sage.
+Peu d'éditeurs publient un prix. Le 5 novembre 2026, PayFit publiait une grille hors taxes : de 20 à 30 euros par collaborateur et par mois selon l'offre, plus 49 euros d'abonnement mensuel, ou 26 euros sans abonnement pour une entreprise qui réalise sa première paie. Kelio publiait une grille à partir de 3,05 euros hors taxes par salarié et par mois pour 50 salariés, mais pour ses formules de gestion des temps : le prix du module de paie n'y figurait pas. Aucun prix n'a été relevé sur les pages consultées de Silae, Nibelis et Sage.
 
 </details>
 
@@ -217,7 +218,7 @@ Peu d'éditeurs publient un prix. Le 12 octobre 2026, PayFit affichait 26 euros 
 
 - Entreprendre.Service-Public, [Déclaration sociale nominative (DSN)](https://entreprendre.service-public.gouv.fr/vosdroits/F34059), fiche vérifiée le 4 mai 2026, consultée le 12 octobre 2026.
 - Service-Public, [Fiche de paie](https://www.service-public.gouv.fr/particuliers/vosdroits/F559), fiche vérifiée le 1er juin 2026, consultée le 12 octobre 2026.
-- PayFit, [page d'accueil](https://payfit.com/fr/), consultée le 12 octobre 2026.
+- PayFit, [page d'accueil](https://payfit.com/fr/), consultée le 12 octobre 2026, et [Nos offres](https://payfit.com/fr/nos-offres/), page consultée le 5 novembre 2026.
 - Kelio, [Logiciel de paie](https://www.kelio.com/fr/fonctionnalites/gestion-de-la-paie/logiciel-de-paie.html) et [Tarifs](https://www.kelio.com/fr/tarifs.html), pages consultées le 12 octobre 2026.
 - Silae, [page d'accueil](https://www.silae.fr/), consultée le 12 octobre 2026.
 - Nibelis, [page d'accueil](https://www.nibelis.com/), consultée le 12 octobre 2026.

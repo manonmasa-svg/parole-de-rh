@@ -2,7 +2,7 @@
 title: "Qu'est-ce qu'un logiciel de gestion RH et lequel choisir ?"
 translationKey: "article-logiciel-gestion-rh"
 date: 2026-10-08T08:00:00+02:00
-lastmod: 2026-10-08T08:00:00+02:00
+lastmod: 2026-11-05T20:00:00+01:00
 description: "Logiciel de gestion RH : définition, fonctionnalités, éditeurs présents en France et critères de choix, sources à l'appui."
 categories: ["Comparatifs"]
 tags: ["logiciel gestion RH", "logiciel RH", "SIRH", "logiciel de paie", "gestion du personnel"]
@@ -16,7 +16,7 @@ faq:
   - question: "Quels sont les logiciels de gestion RH les plus utilisés en France ?"
     answer: "Aucune statistique publique et indépendante ne classe les logiciels de gestion RH par nombre d'utilisateurs. Les seuls chiffres disponibles sont ceux que les éditeurs déclarent eux-mêmes. Le 7 octobre 2026, PayFit annonçait 22 000 entreprises clientes, Kelio 20 000 clients, Factorial plus de 17 000 entreprises, Eurécia plus de 4 500 entreprises clientes et 400 000 utilisateurs, et Lucca plus d'un million d'utilisateurs. Ces chiffres ne sont pas comparables entre eux."
   - question: "Quel est le prix d'un logiciel de gestion RH ?"
-    answer: "Les prix d'entrée publiés le 7 octobre 2026 vont de 3,05 euros hors taxes par salarié et par mois chez Kelio (50 salariés) à 6,90 euros par utilisateur et par mois chez Factorial. Eurécia affiche 4,20 euros hors taxes par collaborateur et par mois pour son offre Business, et Lucca facture chaque module séparément, par exemple 3,21 euros hors taxes pour le socle RH. Le prix final dépend du nombre de salariés et des modules retenus."
+    answer: "Le 5 novembre 2026, Factorial affichait le prix d'entrée le plus bas, à partir de 2,9 euros par utilisateur et par mois (6,5 euros dans le titre de sa page de tarifs). Kelio publie une première formule à partir de 3,05 euros hors taxes par salarié et par mois (50 salariés), Eurécia 4,20 euros hors taxes par collaborateur et par mois pour son offre Business, et Lucca facture chaque module séparément, par exemple 3,21 euros hors taxes pour le socle RH. Le prix final dépend du nombre de salariés et des modules retenus."
   - question: "Un logiciel de gestion RH est-il obligatoire ?"
     answer: "Non. Aucun texte n'impose d'utiliser un logiciel de gestion RH. En revanche, plusieurs obligations de l'employeur passent par un outil informatique, en particulier la déclaration sociale nominative, transmise chaque mois à partir de la paie."
 ---
@@ -95,7 +95,7 @@ Le tableau ci-dessous reprend les informations publiées par les éditeurs le 7 
 | Lucca | 3,21 € HT par collaborateur et par mois pour le socle RH (plus de 100 collaborateurs) | Un prix public pour chaque module, sans durée d'engagement | Préparation et connecteurs |
 | Kelio | À partir de 3,05 € HT par salarié et par mois (50 salariés) | Gestion des temps, hébergement et support en France | Paie proposée |
 | Eurécia | À partir de 4,20 € HT par collaborateur et par mois | Périmètre RH large, essai gratuit de 30 jours | Préparation et vérification |
-| Factorial | À partir de 6,90 € par utilisateur et par mois | Essai gratuit, modules finance et informatique | Préparation et vérification |
+| Factorial | À partir de 2,9 € par utilisateur et par mois (relevé du 5 novembre 2026) | Essai gratuit, modules finance et informatique | Préparation et vérification |
 | PayFit | 26 € par mois et par collaborateur (offre création d'entreprise) | Spécialiste de la paie et de la DSN | Cœur de l'offre |
 
 Parole de RH n'a testé aucun de ces logiciels et n'a de lien commercial avec aucun éditeur. Le classement proposé dans le comparatif repose sur la transparence des informations publiées, pas sur la qualité à l'usage.
@@ -154,7 +154,7 @@ Aucune statistique publique et indépendante ne classe les logiciels de gestion 
 <details>
 <summary>Quel est le prix d'un logiciel de gestion RH ?</summary>
 
-Les prix d'entrée publiés le 7 octobre 2026 vont de 3,05 euros hors taxes par salarié et par mois chez Kelio (50 salariés) à 6,90 euros par utilisateur et par mois chez Factorial. Eurécia affiche 4,20 euros hors taxes par collaborateur et par mois pour son offre Business, et Lucca facture chaque module séparément, par exemple 3,21 euros hors taxes pour le socle RH. Le prix final dépend du nombre de salariés et des modules retenus.
+Le 5 novembre 2026, Factorial affichait le prix d'entrée le plus bas, à partir de 2,9 euros par utilisateur et par mois (6,5 euros dans le titre de sa page de tarifs). Kelio publie une première formule à partir de 3,05 euros hors taxes par salarié et par mois (50 salariés), Eurécia 4,20 euros hors taxes par collaborateur et par mois pour son offre Business, et Lucca facture chaque module séparément, par exemple 3,21 euros hors taxes pour le socle RH. Le prix final dépend du nombre de salariés et des modules retenus.
 
 </details>
 
@@ -170,4 +170,4 @@ Non. Aucun texte n'impose d'utiliser un logiciel de gestion RH. En revanche, plu
 - CNIL, [Les règles pour la gestion du personnel](https://www.cnil.fr/fr/les-regles-pour-la-gestion-du-personnel), page datée du 17 août 2023, consultée le 7 octobre 2026.
 - Entreprendre.Service-Public, [Procédure et formalités d'embauche d'un salarié du secteur privé](https://entreprendre.service-public.gouv.fr/vosdroits/F23107) et [Déclaration sociale nominative (DSN)](https://entreprendre.service-public.gouv.fr/vosdroits/F34059), fiches consultées le 7 octobre 2026.
 - Service-Public, [Congés payés du salarié dans le secteur privé](https://www.service-public.gouv.fr/particuliers/vosdroits/F2258), [Durée du travail d'un salarié à temps plein](https://www.service-public.gouv.fr/particuliers/vosdroits/F1911), [Entretien de parcours professionnel](https://www.service-public.gouv.fr/particuliers/vosdroits/F32040), [Fiche de paie](https://www.service-public.gouv.fr/particuliers/vosdroits/F559) et [Titres-restaurant](https://www.service-public.gouv.fr/particuliers/vosdroits/F21059), fiches consultées le 7 octobre 2026.
-- Sites des éditeurs Lucca, Kelio, Eurécia, Factorial et PayFit (pages d'accueil et pages de tarifs), consultés le 7 octobre 2026.
+- Sites des éditeurs Lucca, Kelio, Eurécia, Factorial et PayFit (pages d'accueil et pages de tarifs), consultés le 7 octobre 2026. Page de tarifs de Factorial revue le 5 novembre 2026.

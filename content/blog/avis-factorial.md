@@ -2,7 +2,7 @@
 title: "Avis Factorial : que vaut ce logiciel RH ?"
 translationKey: "article-avis-factorial"
 date: 2026-10-27T08:00:00+01:00
-lastmod: 2026-10-27T08:00:00+01:00
+lastmod: 2026-11-05T20:00:00+01:00
 description: "Avis Factorial : prix, modules, paie, sécurité et agent IA One du logiciel RH, relevés sur les pages de l'éditeur."
 categories: ["Avis"]
 tags: ["Factorial", "avis Factorial", "logiciel RH", "SIRH", "tarifs Factorial"]
@@ -12,9 +12,9 @@ imageAlt: "Salariée avec un casque audio travaillant sur un ordinateur portable
 imageCredit: "Photo : Julio Lopez sur Unsplash"
 faq:
   - question: "Quel avis sur le logiciel RH Factorial ?"
-    answer: "Factorial est une plateforme très large, qui couvre les RH, la finance et l'informatique, avec un essai gratuit sans carte bancaire et un abonnement annulable à tout moment. Le 25 octobre 2026, sa page de tarifs annonçait un prix à partir de 6,9 euros par mois et par utilisateur, puis un plan construit sur mesure. Ses limites : le détail des prix n'est pas publié, deux prix d'entrée différents figurent sur la même page, et Factorial ne calcule pas la paie."
+    answer: "Factorial est une plateforme très large, qui couvre les RH, la finance et l'informatique, avec un essai gratuit sans carte bancaire et un abonnement annulable à tout moment. Le 5 novembre 2026, sa page de tarifs annonçait un prix à partir de 2,9 euros par mois et par utilisateur (6,9 euros le 25 octobre), puis un plan construit sur mesure. Ses limites : le détail des prix n'est pas publié, deux prix d'entrée différents figurent sur la même page, et Factorial ne calcule pas la paie."
   - question: "Combien coûte Factorial ?"
-    answer: "Le 25 octobre 2026, la page de tarifs de Factorial indiquait « à partir de 6.9 € par mois et par utilisateur » dans son texte, et « dès 6,5 € » dans son titre. Au-delà de ce prix d'entrée, chaque entreprise reçoit un plan sur mesure, établi avec un spécialiste. Les plans mensuels sont facturés selon le nombre d'employés au début de chaque mois."
+    answer: "Le 5 novembre 2026, la page de tarifs de Factorial indiquait « à partir de 2.9€ par mois et par utilisateur » dans son texte, et « dès 6,5 € » dans son titre. Le 25 octobre, le texte affichait 6.9 €. Au-delà de ce prix d'entrée, chaque entreprise reçoit un plan sur mesure, établi avec un spécialiste. Les plans mensuels sont facturés selon le nombre d'employés au début de chaque mois."
   - question: "Factorial fait-il la paie ?"
     answer: "Non. La page paie de Factorial précise que le logiciel ne calcule pas la paie : il centralise et vérifie les éléments variables, les transmet au prestataire de paie ou au comptable, distribue les bulletins et génère les mandats SEPA pour verser les salaires. Un service d'accompagnement par un expert peut être demandé."
   - question: "Factorial propose-t-il un essai gratuit ?"
@@ -23,7 +23,7 @@ faq:
 
 > **En bref :**
 > 1. **Factorial** est un éditeur espagnol, basé à Barcelone, qui déclare plus de 17 000 entreprises clientes et plus de 1 500 salariés (pages relevées le 25 octobre 2026).
-> 2. Son prix d'entrée est annoncé à partir de 6,9 € par mois et par utilisateur, mais le titre de la même page indique 6,5 €. Le reste du tarif se fixe dans un plan sur mesure.
+> 2. Son prix d'entrée est annoncé à partir de 2,9 € par mois et par utilisateur (relevé du 5 novembre 2026, contre 6,9 € le 25 octobre), mais le titre de la même page indique 6,5 €. Le reste du tarif se fixe dans un plan sur mesure.
 > 3. L'essai gratuit se lance sans carte bancaire et l'abonnement est annulable à tout moment. Factorial prépare la paie mais ne la calcule pas.
 > 4. L'éditeur affiche les certifications ISO 27001, SOC 2 Type 2 et SOC 3, et intègre un agent IA, One, inclus dans toutes ses offres.
 
@@ -49,7 +49,7 @@ Deux pages du même site donnent un nombre de pays différent pour la même base
 
 ## Les tarifs de Factorial : un prix d'entrée, puis du sur-mesure
 
-La [page de tarifs de Factorial](https://factorial.fr/tarifs) affiche « à partir de 6.9 € par mois et par utilisateur ». Le titre de cette même page annonce « dès 6,5 €/utilisateur/mois ». L'écart, déjà constaté le 21 octobre 2026, est toujours présent le 25 octobre : seule une demande de devis permet de connaître le prix applicable.
+Le 25 octobre 2026, la [page de tarifs de Factorial](https://factorial.fr/tarifs) affichait « à partir de 6.9 € par mois et par utilisateur ». Les 3 et 5 novembre 2026, le même texte indiquait « à partir de 2.9€ par mois et par utilisateur ». Le titre de cette même page annonce toujours « dès 6,5 €/utilisateur/mois ». L'écart entre le texte et le titre, déjà constaté le 21 octobre 2026, persiste : seule une demande de devis permet de connaître le prix applicable.
 
 Au-delà de ce prix d'entrée, Factorial ne publie pas de grille. L'éditeur explique qu'un spécialiste élabore un plan sur mesure selon les besoins de chaque entreprise. Le prix réel dépend donc des modules retenus et du nombre d'utilisateurs.
 
@@ -57,7 +57,7 @@ La FAQ de la page de tarifs précise les conditions suivantes :
 
 | Point vérifié | Ce qu'indique Factorial (25 octobre 2026) |
 |---|---|
-| Prix d'entrée | 6,9 € par mois et par utilisateur dans le texte, 6,5 € dans le titre de la page |
+| Prix d'entrée | 2,9 € par mois et par utilisateur dans le texte (relevé du 5 novembre 2026, 6,9 € le 25 octobre), 6,5 € dans le titre de la page |
 | Essai gratuit | Oui, sans informations de paiement |
 | Résiliation | À tout moment ; accès conservé jusqu'à la date de renouvellement |
 | Plans mensuels | Facturés selon le nombre d'employés au début de chaque mois |
@@ -65,7 +65,7 @@ La FAQ de la page de tarifs précise les conditions suivantes :
 | Taxes | Appliquées conformément à la législation en vigueur |
 | Paiement | Carte bancaire, ou prélèvement en passant par le service commercial |
 
-Le prix d'entrée de 6,9 € est celui déjà utilisé dans les comparatifs du [meilleur logiciel RH]({{< relref "meilleur-logiciel-rh.md" >}}) et du [meilleur logiciel SIRH]({{< relref "meilleur-logiciel-sirh.md" >}}), où Factorial se classe respectivement quatrième et troisième.
+Ce prix d'entrée a été mis à jour le 5 novembre 2026 dans les comparatifs du [meilleur logiciel RH]({{< relref "meilleur-logiciel-rh.md" >}}) et du [meilleur logiciel SIRH]({{< relref "meilleur-logiciel-sirh.md" >}}), où Factorial se classe respectivement quatrième et troisième.
 
 ## Ce que comprend Factorial : socle commun et modules
 
@@ -130,7 +130,7 @@ Le tri et l'appel automatisés de candidats relèvent des usages encadrés par l
 | Points forts relevés | Limites relevées |
 |---|---|
 | Essai gratuit sans carte bancaire | Aucune grille de prix au-delà du prix d'entrée |
-| Abonnement annulable à tout moment | Deux prix d'entrée différents sur la même page (6,5 € et 6,9 €) |
+| Abonnement annulable à tout moment | Deux prix d'entrée différents sur la même page (2,9 € et 6,5 €), prix modifié entre octobre et novembre 2026 |
 | Périmètre très large : RH, finance, informatique | Pas de calcul de la paie |
 | Certifications ISO 27001, SOC 2 Type 2 et SOC 3 affichées | Pays d'hébergement précis non indiqué |
 | Agent IA inclus dans toutes les offres | Agent capable d'agir, donc à encadrer, notamment en recrutement |
@@ -156,14 +156,14 @@ Pour une entreprise qui veut connaître le coût avant tout rendez-vous, Lucca p
 <details>
 <summary>Quel avis sur le logiciel RH Factorial ?</summary>
 
-Factorial est une plateforme très large, qui couvre les RH, la finance et l'informatique, avec un essai gratuit sans carte bancaire et un abonnement annulable à tout moment. Le 25 octobre 2026, sa page de tarifs annonçait un prix à partir de 6,9 euros par mois et par utilisateur, puis un plan construit sur mesure. Ses limites : le détail des prix n'est pas publié, deux prix d'entrée différents figurent sur la même page, et Factorial ne calcule pas la paie.
+Factorial est une plateforme très large, qui couvre les RH, la finance et l'informatique, avec un essai gratuit sans carte bancaire et un abonnement annulable à tout moment. Le 5 novembre 2026, sa page de tarifs annonçait un prix à partir de 2,9 euros par mois et par utilisateur (6,9 euros le 25 octobre), puis un plan construit sur mesure. Ses limites : le détail des prix n'est pas publié, deux prix d'entrée différents figurent sur la même page, et Factorial ne calcule pas la paie.
 
 </details>
 
 <details>
 <summary>Combien coûte Factorial ?</summary>
 
-Le 25 octobre 2026, la page de tarifs de Factorial indiquait « à partir de 6.9 € par mois et par utilisateur » dans son texte, et « dès 6,5 € » dans son titre. Au-delà de ce prix d'entrée, chaque entreprise reçoit un plan sur mesure, établi avec un spécialiste. Les plans mensuels sont facturés selon le nombre d'employés au début de chaque mois.
+Le 5 novembre 2026, la page de tarifs de Factorial indiquait « à partir de 2.9€ par mois et par utilisateur » dans son texte, et « dès 6,5 € » dans son titre. Le 25 octobre, le texte affichait 6.9 €. Au-delà de ce prix d'entrée, chaque entreprise reçoit un plan sur mesure, établi avec un spécialiste. Les plans mensuels sont facturés selon le nombre d'employés au début de chaque mois.
 
 </details>
 
@@ -183,7 +183,7 @@ Oui. Selon la FAQ de sa page de tarifs, consultée le 25 octobre 2026, l'essai g
 
 ## Sources
 
-- Factorial, [Tarifs](https://factorial.fr/tarifs), page consultée le 25 octobre 2026.
+- Factorial, [Tarifs](https://factorial.fr/tarifs), page consultée le 25 octobre et le 5 novembre 2026.
 - Factorial, [Qui sommes-nous](https://factorial.fr/aboutus), page consultée le 25 octobre 2026.
 - Factorial, [Logiciel de gestion de paie](https://factorial.fr/sirh-paie) et [Logiciel SIRH paie](https://factorial.fr/gestion-des-paies-en-ligne), pages consultées le 25 octobre 2026.
 - Factorial, [One, agent IA](https://factorial.fr/ia), page consultée le 25 octobre 2026.

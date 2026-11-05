@@ -2,7 +2,7 @@
 title: "Factorial review: is this HR software worth it?"
 translationKey: "article-avis-factorial"
 date: 2026-10-27T08:00:00+01:00
-lastmod: 2026-10-27T08:00:00+01:00
+lastmod: 2026-11-05T20:00:00+01:00
 description: "Factorial review: pricing, modules, payroll, security and the One AI agent of the HR software, taken from the vendor's pages."
 categories: ["Reviews"]
 tags: ["Factorial", "Factorial review", "HR software", "HRIS", "Factorial pricing"]
@@ -12,9 +12,9 @@ imageAlt: "Employee wearing headphones working on a laptop in front of a large w
 imageCredit: "Photo: Julio Lopez on Unsplash"
 faq:
   - question: "What is the verdict on Factorial HR software?"
-    answer: "Factorial is a very broad platform covering HR, finance and IT, with a free trial that requires no credit card and a subscription that can be cancelled at any time. On 25 October 2026, its pricing page announced a price from €6.9 per month per user, followed by a tailored plan. Its limits: detailed prices are not published, two different entry prices appear on the same page, and Factorial does not calculate payroll."
+    answer: "Factorial is a very broad platform covering HR, finance and IT, with a free trial that requires no credit card and a subscription that can be cancelled at any time. On 5 November 2026, its pricing page announced a price from €2.9 per month per user (€6.9 on 25 October), followed by a tailored plan. Its limits: detailed prices are not published, two different entry prices appear on the same page, and Factorial does not calculate payroll."
   - question: "How much does Factorial cost?"
-    answer: "On 25 October 2026, Factorial's French pricing page said \"from €6.9 per month per user\" in its text and \"from €6.5\" in its title. Beyond this entry price, each company receives a tailored plan drawn up with a specialist. Monthly plans are billed according to the number of employees at the start of each month."
+    answer: "On 5 November 2026, Factorial's French pricing page said \"from €2.9 per month per user\" in its text and \"from €6.5\" in its title. On 25 October, the text showed €6.9. Beyond this entry price, each company receives a tailored plan drawn up with a specialist. Monthly plans are billed according to the number of employees at the start of each month."
   - question: "Does Factorial run payroll?"
     answer: "No. Factorial's payroll page states that the software does not calculate payroll: it centralises and checks variable pay items, sends them to the payroll provider or accountant, distributes payslips and generates SEPA mandates to pay salaries. A support service with an expert can be requested."
   - question: "Does Factorial offer a free trial?"
@@ -23,7 +23,7 @@ faq:
 
 > **In short:**
 > 1. **Factorial** is a Spanish vendor based in Barcelona, which claims over 17,000 customer companies and over 1,500 employees (pages checked on 25 October 2026).
-> 2. Its entry price is announced from €6.9 per month per user, but the title of the same page says €6.5. The rest of the price is set in a tailored plan.
+> 2. Its entry price is announced from €2.9 per month per user (checked on 5 November 2026, compared with €6.9 on 25 October), but the title of the same page says €6.5. The rest of the price is set in a tailored plan.
 > 3. The free trial starts without a credit card and the subscription can be cancelled at any time. Factorial prepares payroll but does not calculate it.
 > 4. The vendor displays ISO 27001, SOC 2 Type 2 and SOC 3 certifications, and includes an AI agent, One, in all its plans.
 
@@ -49,7 +49,7 @@ Two pages of the same website give a different number of countries for the same 
 
 ## Factorial pricing: an entry price, then a tailored plan
 
-[Factorial's pricing page](https://factorial.fr/tarifs) shows "from €6.9 per month per user". The title of the same page announces "from €6.5 per user per month". The discrepancy, already noted on 21 October 2026, was still there on 25 October: only a quote gives the applicable price.
+On 25 October 2026, [Factorial's pricing page](https://factorial.fr/tarifs) showed "from €6.9 per month per user". On 3 and 5 November 2026, the same text said "from €2.9 per month per user". The title of the same page still announces "from €6.5 per user per month". The gap between the text and the title, already noted on 21 October 2026, remains: only a quote gives the applicable price.
 
 Beyond this entry price, Factorial does not publish a price list. The vendor explains that a specialist draws up a tailored plan according to each company's needs. The actual price therefore depends on the modules chosen and the number of users.
 
@@ -57,7 +57,7 @@ The FAQ on the pricing page sets out the following terms:
 
 | Point checked | What Factorial states (25 October 2026) |
 |---|---|
-| Entry price | €6.9 per month per user in the text, €6.5 in the page title |
+| Entry price | €2.9 per month per user in the text (checked on 5 November 2026, €6.9 on 25 October), €6.5 in the page title |
 | Free trial | Yes, without payment details |
 | Cancellation | At any time; access kept until the renewal date |
 | Monthly plans | Billed according to the number of employees at the start of each month |
@@ -65,7 +65,7 @@ The FAQ on the pricing page sets out the following terms:
 | Taxes | Applied in accordance with the law |
 | Payment | Credit card, or direct debit through the sales team |
 
-The €6.9 entry price is the one already used in the comparisons of the [best HR software]({{< relref "best-hr-software-france.md" >}}) and the [best HRIS software]({{< relref "best-hris-software-france.md" >}}), where Factorial ranks fourth and third respectively.
+This entry price was updated on 5 November 2026 in the comparisons of the [best HR software]({{< relref "best-hr-software-france.md" >}}) and the [best HRIS software]({{< relref "best-hris-software-france.md" >}}), where Factorial ranks fourth and third respectively.
 
 ## What Factorial includes: core platform and modules
 
@@ -130,7 +130,7 @@ Automated screening and calling of candidates fall under the uses regulated by t
 | Strengths found | Limits found |
 |---|---|
 | Free trial without a credit card | No price list beyond the entry price |
-| Subscription cancellable at any time | Two different entry prices on the same page (€6.5 and €6.9) |
+| Subscription cancellable at any time | Two different entry prices on the same page (€2.9 and €6.5), price changed between October and November 2026 |
 | Very broad scope: HR, finance, IT | No payroll calculation |
 | ISO 27001, SOC 2 Type 2 and SOC 3 certifications displayed | Exact hosting country not stated |
 | AI agent included in all plans | An agent able to act, which needs oversight, especially in recruitment |
@@ -156,14 +156,14 @@ For a company that wants to know the cost before any meeting, Lucca publishes mo
 <details>
 <summary>What is the verdict on Factorial HR software?</summary>
 
-Factorial is a very broad platform covering HR, finance and IT, with a free trial that requires no credit card and a subscription that can be cancelled at any time. On 25 October 2026, its pricing page announced a price from €6.9 per month per user, followed by a tailored plan. Its limits: detailed prices are not published, two different entry prices appear on the same page, and Factorial does not calculate payroll.
+Factorial is a very broad platform covering HR, finance and IT, with a free trial that requires no credit card and a subscription that can be cancelled at any time. On 5 November 2026, its pricing page announced a price from €2.9 per month per user (€6.9 on 25 October), followed by a tailored plan. Its limits: detailed prices are not published, two different entry prices appear on the same page, and Factorial does not calculate payroll.
 
 </details>
 
 <details>
 <summary>How much does Factorial cost?</summary>
 
-On 25 October 2026, Factorial's French pricing page said "from €6.9 per month per user" in its text and "from €6.5" in its title. Beyond this entry price, each company receives a tailored plan drawn up with a specialist. Monthly plans are billed according to the number of employees at the start of each month.
+On 5 November 2026, Factorial's French pricing page said "from €2.9 per month per user" in its text and "from €6.5" in its title. On 25 October, the text showed €6.9. Beyond this entry price, each company receives a tailored plan drawn up with a specialist. Monthly plans are billed according to the number of employees at the start of each month.
 
 </details>
 
@@ -183,7 +183,7 @@ Yes. According to the FAQ on its pricing page, consulted on 25 October 2026, the
 
 ## Sources
 
-- Factorial, [Tarifs](https://factorial.fr/tarifs) (pricing), page consulted on 25 October 2026.
+- Factorial, [Tarifs](https://factorial.fr/tarifs) (pricing), page consulted on 25 October and 5 November 2026.
 - Factorial, [Qui sommes-nous](https://factorial.fr/aboutus) (about us), page consulted on 25 October 2026.
 - Factorial, [Logiciel de gestion de paie](https://factorial.fr/sirh-paie) and [Logiciel SIRH paie](https://factorial.fr/gestion-des-paies-en-ligne) (payroll), pages consulted on 25 October 2026.
 - Factorial, [One, agent IA](https://factorial.fr/ia) (AI agent), page consulted on 25 October 2026.

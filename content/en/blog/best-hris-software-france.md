@@ -2,7 +2,7 @@
 title: "What is the best HRIS software in France?"
 translationKey: "article-meilleur-logiciel-sirh"
 date: 2026-10-22T08:00:00+02:00
-lastmod: 2026-10-27T16:00:00+01:00
+lastmod: 2026-11-05T20:00:00+01:00
 description: "Best HRIS software in France: Lucca, Eurécia, Factorial, Sesame HR, Cegid HR and Nibelis compared on modules, prices and hosting."
 categories: ["Comparisons"]
 tags: ["HRIS", "HRIS software", "comparison", "Lucca", "Eurécia", "Factorial", "Cegid"]
@@ -16,7 +16,7 @@ faq:
   - question: "What is an HRIS?"
     answer: "An HRIS, or human resources information system (SIRH in French), is software that centralises employee data and automates HR processes: personnel records, leave and absences, working time, reviews, training, recruitment. Some HRIS also include payroll, others connect to payroll software."
   - question: "How much does an HRIS cost in France?"
-    answer: "On 21 October 2026, Lucca published a price per module, for example 3.21 euros excluding tax per employee per month for its HR core in a company with more than 100 employees. Eurécia displayed its Business plan from 4.20 euros excluding tax per employee per month, and Factorial an entry price of 6.90 euros per user per month. Sesame HR, Cegid HR and Nibelis work on a quote basis or display no price."
+    answer: "On 21 October 2026, Lucca published a price per module, for example 3.21 euros excluding tax per employee per month for its HR core in a company with more than 100 employees. Eurécia displayed its Business plan from 4.20 euros excluding tax per employee per month. On 5 November 2026, Factorial showed an entry price of 2.9 euros per user per month, compared with 6.90 euros on 21 October. Sesame HR, Cegid HR and Nibelis work on a quote basis or display no price."
   - question: "Which HRIS is hosted in France?"
     answer: "Among the vendors compared, Eurécia announces hosting in France, and Lucca hosting with OVH in France and Germany, with ISO 27001 certification (checked on 25 October 2026). Factorial states that data is hosted in the European Union, without naming the country, and displays ISO 27001, SOC 2 Type 2 and SOC 3 certifications. Cegid HR states hosting in Europe and ISO 27001 certification, and Sesame HR also displays ISO 27001 certification. For the others, the information did not appear on the pages consulted: it should be requested from the vendor."
 ---
@@ -24,7 +24,7 @@ faq:
 > **In short:**
 > 1. **HRIS software** centralises employee data and HR processes. This comparison ranks six vendors on verifiable criteria, taken from their French websites on 21 October 2026.
 > 2. Lucca comes first: it publishes a price for each module (€3.21 excl. tax per employee per month for the HR core above 100 employees) and a subscription with no minimum term.
-> 3. Eurécia follows, with a public entry price, a 30-day free trial, a no-commitment offer and hosting announced in France.
+> 3. Eurécia follows, with a public entry price, a 30-day free trial with no commitment and hosting announced in France.
 > 4. The choice mainly depends on company size and payroll: built into the HRIS (Nibelis) or handled by separate software.
 
 ## Comparison table of the best HRIS software
@@ -33,8 +33,8 @@ The information below was taken on 21 October 2026 from the vendors' public page
 
 | Criterion | Lucca | Eurécia | Factorial | Sesame HR | Cegid HR | Nibelis |
 |---|---|---|---|---|---|---|
-| Published price | A price per module | From €4.20 excl. tax per employee per month (Business plan) | From €6.90 per user per month | Not published | Not published | Not published |
-| Trial and commitment | No minimum term | 30-day free trial, no commitment | Free trial | Free trial on every plan | Demo on request | Not found |
+| Published price | A price per module | From €4.20 excl. tax per employee per month (Business plan) | From €2.9 per user per month (checked on 5 November 2026) | Not published | Not published | Not published |
+| Trial and commitment | No minimum term | 30-day free trial with no commitment, subscription terms set in the contract | Free trial, subscription cancellable at any time | Free trial on every plan | Demo on request | Not found |
 | Displayed hosting and security | OVH in France and Germany, ISO 27001 (checked on 25 October 2026) | Hosted in France | ISO 27001, SOC 2 Type 2, SOC 3, data in the European Union (checked on 25 October 2026) | ISO 27001 certification | Hosting in Europe, ISO 27001 | 100% cloud platform |
 | Payroll | Payroll preparation and connectors to payroll software | Payroll preparation and checking | Payroll preparation and checking (review of 7 October 2026) | Not found | Separate payroll software (Cegid Payroll) | Yes, HR and payroll combined |
 | Companies targeted | Prices published above 100 employees | From 1 to more than 500 employees | All sizes | Up to large organisations (Scale plan) | Mid-caps and large groups | SMEs with 50 to 250 employees and mid-caps |
@@ -69,7 +69,7 @@ Naming the **best HRIS software** means saying on which criteria. User reviews a
 | Rank | Software | Main reason |
 |---|---|---|
 | 1 | Lucca | Only vendor to publish a price for each module, with no minimum term |
-| 2 | Eurécia | Public entry price, 30-day trial, no commitment, hosting announced in France |
+| 2 | Eurécia | Public entry price, 30-day trial with no commitment, hosting announced in France |
 | 3 | Factorial | Public entry price and free trial |
 | 4 | Sesame HR | Detailed plans, free trial and ISO 27001 certification, but no published price |
 | 5 | Cegid HR | Hosting in Europe and ISO 27001, but price on request and aimed at large organisations |
@@ -108,7 +108,7 @@ Eurécia organises its offer according to company size.
 | Enterprise | More than 500 employees | On quote |
 
 - **Modules**: HR portal (administrative records, documents, directory, arrivals and departures, pre-hiring declaration, electronic signature), leave, time, scheduling, reviews, skills, training, expense reports.
-- **Trial**: free for 30 days, with support included and no commitment.
+- **Trial**: free for 30 days, with support included and no commitment. According to the FAQ on the pricing page, consulted on 5 November 2026, the subscription's commitment terms are set out in the contract.
 - **Hosting**: the vendor announces software hosted in France and support based in France.
 - **Support**: a dedicated expert consultant for the launch.
 - **Reported clients**: more than 4,500 companies.
@@ -117,7 +117,7 @@ Eurécia organises its offer according to company size.
 
 Factorial offers a platform covering HR, talent, team engagement and part of finance.
 
-- **Price**: from €6.90 per month per user in the text of its pricing page, with a tailor-made plan. The title of that same page showed €6.50 on 21 October 2026: the vendor should be asked to clarify the difference.
+- **Price**: on 5 November 2026, from €2.9 per month per user in the text of its pricing page, compared with €6.90 on 21 October, with a tailor-made plan. The title of that same page still shows €6.50: the vendor should be asked to clarify the difference.
 - **Trial**: a free trial is offered.
 - **Target**: the vendor states that its plans adapt to all companies.
 - **Security**: according to its trust centre, consulted on 25 October 2026, ISO/IEC 27001:2022, SOC 2 Type 2 and SOC 3 certifications. Its AI page states that data is hosted in the European Union, without naming the country. Details are in the [Factorial review]({{< relref "factorial-review.md" >}}).
@@ -212,7 +212,7 @@ An HRIS, or human resources information system (SIRH in French), is software tha
 <details>
 <summary>How much does an HRIS cost in France?</summary>
 
-On 21 October 2026, Lucca published a price per module, for example 3.21 euros excluding tax per employee per month for its HR core in a company with more than 100 employees. Eurécia displayed its Business plan from 4.20 euros excluding tax per employee per month, and Factorial an entry price of 6.90 euros per user per month. Sesame HR, Cegid HR and Nibelis work on a quote basis or display no price.
+On 21 October 2026, Lucca published a price per module, for example 3.21 euros excluding tax per employee per month for its HR core in a company with more than 100 employees. Eurécia displayed its Business plan from 4.20 euros excluding tax per employee per month. On 5 November 2026, Factorial showed an entry price of 2.9 euros per user per month, compared with 6.90 euros on 21 October. Sesame HR, Cegid HR and Nibelis work on a quote basis or display no price.
 
 </details>
 
@@ -226,8 +226,8 @@ Among the vendors compared, Eurécia announces hosting in France, and Lucca host
 ## Sources
 
 - Lucca, [Tarifs](https://www.lucca.fr/tarifs/) (pricing), page consulted on 21 October 2026, and [RGPD](https://www.lucca.fr/rgpd/) (GDPR), page consulted on 25 October 2026.
-- Eurécia, [Tarifs](https://www.eurecia.com/tarifs) and [home page](https://www.eurecia.com/), pages consulted on 21 October 2026.
-- Factorial, [Tarifs](https://factorial.fr/tarifs) (pricing), page consulted on 21 October 2026, [Trust Center](https://trust.factorial.co/) and [One, agent IA](https://factorial.fr/ia) (AI agent), pages consulted on 25 October 2026.
+- Eurécia, [Tarifs](https://www.eurecia.com/tarifs) and [home page](https://www.eurecia.com/), pages consulted on 21 October 2026, Tarifs page reviewed on 5 November 2026.
+- Factorial, [Tarifs](https://factorial.fr/tarifs) (pricing), page consulted on 21 October and 5 November 2026, [Trust Center](https://trust.factorial.co/) and [One, agent IA](https://factorial.fr/ia) (AI agent), pages consulted on 25 October 2026.
 - Sesame HR, [Prix et formules tarifaires](https://www.sesamehr.fr/prix/), page consulted on 21 October 2026.
 - Cegid, [Cegid HR](https://www.cegid.com/fr/produits/cegid-hr/), page consulted on 21 October 2026.
 - Nibelis, [home page](https://www.nibelis.com/), consulted on 21 October 2026.
