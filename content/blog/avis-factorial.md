@@ -65,7 +65,7 @@ La FAQ de la page de tarifs précise les conditions suivantes :
 | Taxes | Appliquées conformément à la législation en vigueur |
 | Paiement | Carte bancaire, ou prélèvement en passant par le service commercial |
 
-Ce prix d'entrée a été mis à jour le 5 novembre 2026 dans les comparatifs du [meilleur logiciel RH]({{< relref "meilleur-logiciel-rh.md" >}}) et du [meilleur logiciel SIRH]({{< relref "meilleur-logiciel-sirh.md" >}}), où Factorial se classe respectivement quatrième et troisième.
+Ce prix d'entrée a été mis à jour le 5 novembre 2026 dans les comparatifs du [meilleur logiciel RH]({{< relref "meilleur-logiciel-rh.md" >}}) et du [meilleur logiciel SIRH]({{< relref "meilleur-logiciel-sirh.md" >}}), où Factorial se classe respectivement cinquième et troisième.
 
 ## Ce que comprend Factorial : socle commun et modules
 

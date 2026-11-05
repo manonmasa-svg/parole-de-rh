@@ -65,7 +65,7 @@ The FAQ on the pricing page sets out the following terms:
 | Taxes | Applied in accordance with the law |
 | Payment | Credit card, or direct debit through the sales team |
 
-This entry price was updated on 5 November 2026 in the comparisons of the [best HR software]({{< relref "best-hr-software-france.md" >}}) and the [best HRIS software]({{< relref "best-hris-software-france.md" >}}), where Factorial ranks fourth and third respectively.
+This entry price was updated on 5 November 2026 in the comparisons of the [best HR software]({{< relref "best-hr-software-france.md" >}}) and the [best HRIS software]({{< relref "best-hris-software-france.md" >}}), where Factorial ranks fifth and third respectively.
 
 ## What Factorial includes: core platform and modules
 
