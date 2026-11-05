@@ -22,9 +22,9 @@ They are neither legal advice nor HR management advice. The situation of a compa
 
 Regulations change: an article reflects the state of the sources on the consultation date shown.
 
-## The HR simulator
+## The "Find my HR software" questionnaire
 
-The simulator on the home page applies the general rule described in the official guides cited under each tab. Its results are estimates, excluding more favourable collective provisions, and do not replace the calculation made by the employer or the body concerned.
+The questionnaire offers a first shortlist of software based on the answers given. This shortlist relies only on the information published in the site's comparisons, on the review date shown. It is a starting point and does not replace a demo or reading the vendor's terms, which may have changed since. Answers are processed in the browser and are not sent to Parole de RH.
 
 ## Comparisons
 

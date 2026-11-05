@@ -22,9 +22,9 @@ Ils ne constituent ni un conseil juridique, ni un conseil en gestion du personne
 
 La réglementation évolue : un article reflète l'état des sources à la date de consultation indiquée.
 
-## Le simulateur RH
+## Le questionnaire « Trouver mon logiciel RH »
 
-Le simulateur de la page d'accueil applique la règle générale décrite par les fiches officielles citées sous chaque onglet. Ses résultats sont des estimations, hors dispositions conventionnelles plus favorables, et ne remplacent pas le calcul fait par l'employeur ou l'organisme concerné.
+Le questionnaire propose une première sélection de logiciels à partir des réponses données. Cette sélection repose uniquement sur les informations publiées dans les comparatifs du site, à la date du relevé indiquée. Elle oriente une première recherche et ne remplace ni une démonstration ni la lecture des conditions de l'éditeur, qui peuvent avoir changé depuis. Les réponses sont traitées dans le navigateur et ne sont pas transmises à Parole de RH.
 
 ## Comparatifs
 
