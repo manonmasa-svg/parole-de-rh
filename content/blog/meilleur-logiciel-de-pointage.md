@@ -2,14 +2,14 @@
 title: "Quel est le meilleur logiciel de pointage ?"
 translationKey: "article-meilleur-logiciel-pointage"
 date: 2026-11-04T08:00:00+01:00
-lastmod: 2026-11-04T08:00:00+01:00
+lastmod: 2026-11-05T19:30:00+01:00
 description: "Meilleur logiciel de pointage : Combo, Lucca, Kelio, Eurécia, Skello et Factorial comparés sur leurs prix, badgeuses et engagements."
 categories: ["Comparatifs"]
 tags: ["logiciel de pointage", "badgeuse", "gestion des temps", "comparatif", "Combo", "Kelio", "Skello"]
 author: "julien-carrel"
 image: "/images/blog/meilleur-logiciel-de-pointage.jpg"
-imageAlt: "Horloge murale à cadran blanc éclairée par la lumière d'une fenêtre sur un mur jaune"
-imageCredit: "Photo : Jianfeng Yang sur Unsplash"
+imageAlt: "Main tenant un smartphone devant un lecteur de badge fixé sur un mur en béton, près d'une porte"
+imageCredit: "Photo : Jakub Żerdzicki sur Unsplash"
 faq:
   - question: "Quel est le meilleur logiciel de pointage ?"
     answer: "Il n'existe pas de meilleur logiciel de pointage dans l'absolu : tout dépend du nombre d'établissements, de salariés et du besoin de badgeuse physique. Sur les critères vérifiables retenus ici, Combo arrive en tête, seul éditeur à publier le prix de sa pointeuse (2 euros par salarié et par mois en option). Suivent Lucca (feuilles de temps à 3,00 euros hors taxes par collaborateur et par mois, sans durée d'engagement), Kelio (à partir de 3,05 euros hors taxes pour 50 salariés, engagement de 3 ans), Eurécia, Skello et Factorial."

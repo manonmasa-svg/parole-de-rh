@@ -2,14 +2,14 @@
 title: "What is the best time clock software in France?"
 translationKey: "article-meilleur-logiciel-pointage"
 date: 2026-11-04T08:00:00+01:00
-lastmod: 2026-11-04T08:00:00+01:00
+lastmod: 2026-11-05T19:30:00+01:00
 description: "Best time clock software in France: Combo, Lucca, Kelio, Eurécia, Skello and Factorial compared on prices, clock-in options and terms."
 categories: ["Comparisons"]
 tags: ["time clock software", "time tracking", "clock-in", "comparison", "Combo", "Kelio", "Skello"]
 author: "julien-carrel"
 image: "/images/blog/meilleur-logiciel-de-pointage.jpg"
-imageAlt: "White-faced wall clock lit by window light on a yellow wall"
-imageCredit: "Photo: Jianfeng Yang on Unsplash"
+imageAlt: "Hand holding a smartphone in front of a badge reader mounted on a concrete wall, near a door"
+imageCredit: "Photo: Jakub Żerdzicki on Unsplash"
 faq:
   - question: "What is the best time clock software in France?"
     answer: "There is no single best time clock software: it depends on the number of sites, employees and whether a physical clock is needed. On the verifiable criteria used here, Combo comes first, the only vendor to publish the price of its time clock (€2 per employee per month as an option). It is followed by Lucca (timesheets at €3.00 excluding VAT per employee per month, no minimum term), Kelio (from €3.05 excluding VAT for 50 employees, 3-year commitment), Eurécia, Skello and Factorial."
