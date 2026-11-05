@@ -9,3 +9,5 @@ Pour signaler une erreur, proposer un sujet ou poser une question sur un article
 [contact@parole-de-rh.fr](mailto:contact@parole-de-rh.fr)
 
 Parole de RH ne délivre pas de conseil juridique personnalisé. Pour une situation individuelle, il est recommandé de se rapprocher de l'inspection du travail ou d'un professionnel du droit.
+
+Les éditeurs, organismes de formation et acteurs des ressources humaines qui souhaitent échanger sur un partenariat peuvent [écrire à la même adresse](mailto:contact@parole-de-rh.fr?subject=Partenariat). Tout contenu publié dans ce cadre est signalé comme tel, conformément à la [ligne éditoriale]({{< relref "ligne-editoriale.md" >}}).

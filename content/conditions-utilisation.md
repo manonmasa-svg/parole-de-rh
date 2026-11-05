@@ -4,7 +4,7 @@ description: "Conditions générales d'utilisation de Parole de RH : accès au s
 translationKey: "terms"
 ---
 
-Dernière mise à jour : 17 octobre 2026.
+Dernière mise à jour : 5 novembre 2026.
 
 ## Objet
 
@@ -28,7 +28,7 @@ Le simulateur de la page d'accueil applique la règle générale décrite par le
 
 ## Comparatifs
 
-Les comparatifs de logiciels et de services reposent sur les informations publiées par les éditeurs à la date du relevé, indiquée dans l'article. Parole de RH n'a de lien commercial avec aucun éditeur cité. Les prix et les fonctionnalités peuvent changer : ils sont à confirmer auprès de chaque éditeur.
+Les comparatifs de logiciels et de services reposent sur les informations publiées par les éditeurs à la date du relevé, indiquée dans l'article. À ce jour, Parole de RH n'a de lien commercial avec aucun éditeur cité. Le site peut conclure des partenariats avec des éditeurs, des organismes de formation ou d'autres acteurs des ressources humaines. Tout contenu publié dans ce cadre est signalé comme tel, et un partenariat avec un éditeur est indiqué dans chaque comparatif où cet éditeur figure. Les prix et les fonctionnalités peuvent changer : ils sont à confirmer auprès de chaque éditeur.
 
 ## Propriété intellectuelle
 

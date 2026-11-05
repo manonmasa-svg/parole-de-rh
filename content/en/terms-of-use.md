@@ -4,7 +4,7 @@ description: "Parole de RH terms of use: access to the site, nature of the conte
 translationKey: "terms"
 ---
 
-Last updated: 17 October 2026.
+Last updated: 5 November 2026.
 
 ## Purpose
 
@@ -28,7 +28,7 @@ The simulator on the home page applies the general rule described in the officia
 
 ## Comparisons
 
-Comparisons of software and services are based on the information published by vendors on the date of the review, shown in the article. Parole de RH has no commercial link with any vendor mentioned. Prices and features may change: they should be confirmed with each vendor.
+Comparisons of software and services are based on the information published by vendors on the date of the review, shown in the article. To date, Parole de RH has no commercial link with any vendor mentioned. The site may enter into partnerships with software vendors, training providers or other HR businesses. Any content published in that context is clearly labelled as such, and a partnership with a vendor is disclosed in every comparison in which that vendor appears. Prices and features may change: they should be confirmed with each vendor.
 
 ## Intellectual property
 
