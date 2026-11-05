@@ -3,7 +3,7 @@ title: "What is the best HR software in France?"
 translationKey: "article-meilleur-logiciel-rh"
 date: 2026-10-07T14:00:00+02:00
 lastmod: 2026-11-05T20:00:00+01:00
-description: "Best HR software in France: Lucca, Kelio, Eurécia, Factorial and PayFit compared on the prices and scope published by the vendors."
+description: "Best HR software in France: Lucca, Eurécia, Kelio, Factorial and PayFit compared on the prices and scope published by the vendors."
 categories: ["Comparisons"]
 tags: ["HR software", "HRIS", "comparison", "Lucca", "Kelio", "Eurécia", "Factorial", "PayFit"]
 author: "julien-carrel"
@@ -12,7 +12,7 @@ imageAlt: "Screen showing a dashboard with charts and key figures"
 imageCredit: "Photo: Luke Chesser on Unsplash"
 faq:
   - question: "What is the best HR software in France?"
-    answer: "There is no best HR software in absolute terms: it all depends on the need. On the verifiable criteria used here (price transparency, commitment, published scope), Lucca comes first, ahead of Kelio, Eurécia, Factorial and PayFit. Lucca publishes a price for each of its modules and states that its subscription has no minimum commitment. Kelio stands out for its price grid by company size and its hosting in France, Eurécia and Factorial for a public entry price, PayFit for its payroll specialisation. This ranking is based on the information published by the vendors on 7 October 2026, not on a test of the software."
+    answer: "There is no best HR software in absolute terms: it all depends on the need. On the verifiable criteria used here (price transparency, commitment, published scope), Lucca comes first, ahead of Eurécia, Kelio, Factorial and PayFit. Lucca publishes a price for each of its modules and states that its subscription has no minimum commitment. Eurécia stands out for a public entry price and a trial with no commitment, Kelio for its price grid by company size and its hosting in France despite a 3-year initial commitment, Factorial for a public entry price, PayFit for its payroll specialisation. This ranking is based on the information published by the vendors on 7 October 2026, updated on 5 November 2026, not on a test of the software."
   - question: "How much does HR software cost in France?"
     answer: "On 5 November 2026, the lowest entry price was Factorial's, from 2.9 euros per user per month (the title of its pricing page said 6.5 euros). Kelio shows its first plan from 3.05 euros excluding tax per employee per month for 50 employees, and Eurécia its Business plan from 4.20 euros excluding tax per employee per month. Lucca charges per module, for example 3.21 euros excluding tax for the core HR module in a company with more than 100 employees. These prices are not directly comparable: they cover neither the same scope nor the same company size."
   - question: "What is the difference between HR software and payroll software?"
@@ -22,7 +22,7 @@ faq:
 ---
 
 > **In short:**
-> 1. There is no universal **best HR software**. This comparison ranks Lucca, Kelio, Eurécia, Factorial and PayFit on verifiable criteria, taken from the vendors' websites on 7 October 2026 and updated on 5 November 2026.
+> 1. There is no universal **best HR software**. This comparison ranks Lucca, Eurécia, Kelio, Factorial and PayFit on verifiable criteria, taken from the vendors' websites on 7 October 2026 and updated on 5 November 2026.
 > 2. Lucca comes first on these criteria: a public price for each module, a subscription with no minimum commitment and more than 300 integrations announced.
 > 3. Published entry prices range from 2.9 euros per user per month (Factorial, checked on 5 November 2026) to 4.20 euros excluding tax per employee per month (Eurécia). They do not cover the same scope.
 > 4. The right choice depends on the main need: payroll, time management, talent or personnel administration.
@@ -31,16 +31,16 @@ faq:
 
 The information below was taken on 7 October 2026 from the vendors' public pages. Factorial's price and the commitment terms were updated on 5 November 2026. "Not found" indicates information that did not appear on the pages consulted.
 
-| Criterion | Lucca | Kelio | Eurécia | Factorial | PayFit |
+| Criterion | Lucca | Eurécia | Kelio | Factorial | PayFit |
 |---|---|---|---|---|---|
-| Public price | One price per module | Grid by plan and by size | Entry price of the Business plan | Entry price | Price of the business creation offer |
-| Price found | €3.21 excl. tax per employee per month for core HR (more than 100 employees) | From €3.05 excl. tax per employee per month (50 employees) | From €4.20 excl. tax per employee per month | From €2.9 per user per month (€6.5 in the page title) | €26 per month per employee (business creation offer) |
-| Pricing model | Per module, decreasing unit cost | Modular and decreasing | Decreasing with headcount | Tailored plan | Offers by company size |
-| Commitment | No minimum commitment | 3 years initially, then renewed yearly | Trial with no commitment, subscription terms set in the contract | Subscription cancellable at any time | No commitment |
-| Free trial | Not found | Not found | Yes, 30 days | Yes | Yes |
-| Payroll | Payroll preparation and connectors to payroll software | Payroll offered | Payroll preparation and checking | Payroll preparation and checking | Core of the offer: payslips and DSN |
-| Target companies | Indicative prices published for more than 100 employees | From 50 to more than 50,000 employees | From 1 to more than 500 employees | All sizes | From 1 to more than 1,000 employees |
-| **Key point** | Most detailed prices | Time management and hosting in France | Broad HR platform for SMEs | Scope extended to finance and IT | Payroll specialist |
+| Public price | One price per module | Entry price of the Business plan | Grid by plan and by size | Entry price | Price list by plan (checked on 5 November 2026) |
+| Price found | €3.21 excl. tax per employee per month for core HR (more than 100 employees) | From €4.20 excl. tax per employee per month | From €3.05 excl. tax per employee per month (50 employees) | From €2.9 per user per month (€6.5 in the page title) | €20 to €30 excl. VAT per employee per month + €49 subscription, or €26 with no subscription (first payroll) |
+| Pricing model | Per module, decreasing unit cost | Decreasing with headcount | Modular and decreasing | Tailored plan | Offers by company size |
+| Commitment | No minimum commitment | Trial with no commitment, subscription terms set in the contract | 3 years initially, then renewed yearly | Subscription cancellable at any time | No commitment |
+| Free trial | Not found | Yes, 30 days | Not found | Yes | Yes |
+| Payroll | Payroll preparation and connectors to payroll software | Payroll preparation and checking | Payroll offered | Payroll preparation and checking | Core of the offer: payslips and DSN |
+| Target companies | Indicative prices published for more than 100 employees | From 1 to more than 500 employees | From 50 to more than 50,000 employees | All sizes | From 1 to more than 1,000 employees |
+| **Key point** | Most detailed prices | Broad HR platform for SMEs | Time management and hosting in France | Scope extended to finance and IT | Payroll specialist |
 
 This comparison is not based on a test of the software. Parole de RH has not used any of these tools and has no commercial link with any vendor. The ranking relies on what each vendor publishes.
 
@@ -60,10 +60,10 @@ Naming the **best HR software** means saying on which criteria. User reviews and
 | Rank | Software | Main reason |
 |---|---|---|
 | 1 | Lucca | The only vendor in the comparison to publish a price for each module, with a subscription announced as having no minimum commitment |
-| 2 | Kelio | Grid published by plan and by company size, support and hosting announced in France |
-| 3 | Eurécia | Public entry price and broad HR scope, from administration to talent |
+| 2 | Eurécia | Public entry price, 30-day free trial with no commitment and broad HR scope, from administration to talent |
+| 3 | Kelio | Grid published by plan and by company size, support and hosting announced in France, but a 3-year initial commitment |
 | 4 | Factorial | Public entry price and free trial, scope that goes beyond HR |
-| 5 | PayFit | Offer focused on payroll, price grid not detailed on the page consulted |
+| 5 | PayFit | Offer focused on payroll, price list published by plan (checked on 5 November 2026) |
 
 This rank measures the amount of verifiable information published, not the quality of the software in use. A company whose main need is payroll will look at PayFit first, even though it is ranked fifth here.
 
@@ -98,13 +98,7 @@ Lucca comes first because its [pricing page](https://www.lucca.fr/tarifs) is the
 
 The published prices concern companies with more than 100 employees. For other sizes, the vendor refers to a quote. On payroll, the page consulted presents a preparation assistant and connectors to payroll software: Lucca is not presented there as a tool that calculates payslips.
 
-## Kelio, Eurécia, Factorial and PayFit: detailed analysis
-
-### Kelio: time management and hosting in France
-
-Kelio publishes a grid by plan and by company size. For 50 employees, the three plans are shown from 3.05 euros, 5.75 euros and 11.60 euros excluding tax per employee per month. For 200 employees, from 1.75 euros, 2.60 euros and 4.99 euros. Above 3,000 employees, pricing is on quote. The initial commitment is 3 years, after which the contract renews from year to year by tacit renewal (checked on 5 November 2026).
-
-The vendor announces hosting located entirely in France, unlimited support based in France and legal updates included. Its scope covers time management, scheduling, reviews, training, payroll, expense reports and access control.
+## Eurécia, Kelio, Factorial and PayFit: detailed analysis
 
 ### Eurécia: a broad HR platform for SMEs
 
@@ -116,6 +110,12 @@ Eurécia structures its offer in three levels:
 
 The products listed cover the HR portal, leave, time and activities, scheduling, reviews, skills, training and recruitment. The vendor highlights a consultant dedicated to deployment. Its home page announces a 30-day free trial, included support and the words "no commitment". On 5 November 2026, the FAQ on its pricing page stated that the trial has no commitment and that the subscription's commitment terms are set out in the contract.
 
+### Kelio: time management and hosting in France
+
+Kelio publishes a grid by plan and by company size. For 50 employees, the three plans are shown from 3.05 euros, 5.75 euros and 11.60 euros excluding tax per employee per month. For 200 employees, from 1.75 euros, 2.60 euros and 4.99 euros. Above 3,000 employees, pricing is on quote. The initial commitment is 3 years, after which the contract renews from year to year by tacit renewal (checked on 5 November 2026).
+
+The vendor announces hosting located entirely in France, unlimited support based in France and legal updates included. Its scope covers time management, scheduling, reviews, training, payroll, expense reports and access control.
+
 ### Factorial: a scope that goes beyond HR
 
 On 5 November 2026, the text of Factorial's pricing page showed a price from 2.9 euros per month per user, and its title "from €6.5". On 7 October 2026, this price was 6.90 euros. The vendor then builds a tailored plan, and the subscription can be cancelled at any time according to the FAQ on the same page. All plans include a common core: employee directory, onboarding and offboarding, electronic signature and document management.
@@ -126,7 +126,7 @@ The vendor offers a free trial. Its catalogue goes beyond human resources, with 
 
 PayFit presents itself first as payroll software: payslips, [DSN (nominative social declaration)]({{< relref "dsn-definition-french-payroll-declaration.md" >}}) and event declarations. HR modules complete the offer: leave and absences, time management, reviews, expense reports.
 
-The page consulted shows a price of 26 euros per month per employee for the offer aimed at business founders. The offers for 1 to 9 employees and for 10 to more than 1,000 employees are not priced there. The vendor states that it has 22,000 client companies and offers a free trial.
+On 5 November 2026, its offers page published a price list excluding VAT: 26 euros per employee per month with no subscription for a company running its first payroll, then 20, 27 or 30 euros per employee per month depending on the plan, plus a 49 euro monthly subscription. The plans are announced with no commitment. On 7 October 2026, only the 26 euro price appeared on the page consulted. The vendor states that it has 22,000 client companies and offers a free trial.
 
 ## Which HR software for which need?
 
@@ -173,7 +173,7 @@ The first need is often payroll. PayFit and Eurécia's Starter plan explicitly t
 <details>
 <summary>What is the best HR software in France?</summary>
 
-There is no best HR software in absolute terms: it all depends on the need. On the verifiable criteria used here (price transparency, commitment, published scope), Lucca comes first, ahead of Kelio, Eurécia, Factorial and PayFit. Lucca publishes a price for each of its modules and states that its subscription has no minimum commitment. Kelio stands out for its price grid by company size and its hosting in France, Eurécia and Factorial for a public entry price, PayFit for its payroll specialisation. This ranking is based on the information published by the vendors on 7 October 2026, not on a test of the software.
+There is no best HR software in absolute terms: it all depends on the need. On the verifiable criteria used here (price transparency, commitment, published scope), Lucca comes first, ahead of Eurécia, Kelio, Factorial and PayFit. Lucca publishes a price for each of its modules and states that its subscription has no minimum commitment. Eurécia stands out for a public entry price and a trial with no commitment, Kelio for its price grid by company size and its hosting in France despite a 3-year initial commitment, Factorial for a public entry price, PayFit for its payroll specialisation. This ranking is based on the information published by the vendors on 7 October 2026, updated on 5 November 2026, not on a test of the software.
 
 </details>
 

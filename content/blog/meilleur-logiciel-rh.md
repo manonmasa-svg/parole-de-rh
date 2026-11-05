@@ -3,7 +3,7 @@ title: "Quel est le meilleur logiciel RH ?"
 translationKey: "article-meilleur-logiciel-rh"
 date: 2026-10-07T14:00:00+02:00
 lastmod: 2026-11-05T20:00:00+01:00
-description: "Meilleur logiciel RH : Lucca, Kelio, Eurécia, Factorial et PayFit comparés sur les tarifs et périmètres publiés par les éditeurs."
+description: "Meilleur logiciel RH : Lucca, Eurécia, Kelio, Factorial et PayFit comparés sur les tarifs et périmètres publiés par les éditeurs."
 categories: ["Comparatifs"]
 tags: ["logiciel RH", "SIRH", "comparatif", "Lucca", "Kelio", "Eurécia", "Factorial", "PayFit"]
 author: "julien-carrel"
@@ -12,7 +12,7 @@ imageAlt: "Écran affichant un tableau de bord avec des graphiques et des indica
 imageCredit: "Photo : Luke Chesser sur Unsplash"
 faq:
   - question: "Quel est le meilleur logiciel RH ?"
-    answer: "Il n'existe pas de meilleur logiciel RH dans l'absolu : tout dépend du besoin. Sur les critères vérifiables retenus ici (transparence des tarifs, engagement, périmètre publié), Lucca arrive en tête, devant Kelio, Eurécia, Factorial et PayFit. Lucca publie un prix pour chacun de ses modules et annonce un abonnement sans durée d'engagement. Kelio se distingue par sa grille par taille d'entreprise et son hébergement en France, Eurécia et Factorial par un prix d'entrée public, PayFit par sa spécialisation dans la paie. Ce classement repose sur les informations publiées par les éditeurs le 7 octobre 2026, pas sur un test des logiciels."
+    answer: "Il n'existe pas de meilleur logiciel RH dans l'absolu : tout dépend du besoin. Sur les critères vérifiables retenus ici (transparence des tarifs, engagement, périmètre publié), Lucca arrive en tête, devant Eurécia, Kelio, Factorial et PayFit. Lucca publie un prix pour chacun de ses modules et annonce un abonnement sans durée d'engagement. Eurécia se distingue par un prix d'entrée public et un essai sans engagement, Kelio par sa grille par taille d'entreprise et son hébergement en France malgré un engagement initial de 3 ans, Factorial par un prix d'entrée public, PayFit par sa spécialisation dans la paie. Ce classement repose sur les informations publiées par les éditeurs le 7 octobre 2026, mises à jour le 5 novembre 2026, pas sur un test des logiciels."
   - question: "Combien coûte un logiciel RH ?"
     answer: "Le 5 novembre 2026, le prix d'entrée le plus bas était celui de Factorial, à partir de 2,9 euros par utilisateur et par mois (le titre de sa page de tarifs indiquait 6,5 euros). Kelio affiche sa première formule à partir de 3,05 euros hors taxes par salarié et par mois pour 50 salariés, et Eurécia son offre Business à partir de 4,20 euros hors taxes par collaborateur et par mois. Lucca facture par module, par exemple 3,21 euros hors taxes pour le socle RH dans une entreprise de plus de 100 collaborateurs. Ces prix ne sont pas directement comparables : ils ne couvrent ni le même périmètre ni la même taille d'entreprise."
   - question: "Quelle différence entre un logiciel RH et un logiciel de paie ?"
@@ -22,7 +22,7 @@ faq:
 ---
 
 > **En bref :**
-> 1. Il n'existe pas de **meilleur logiciel RH** universel. Ce comparatif classe Lucca, Kelio, Eurécia, Factorial et PayFit sur des critères vérifiables, relevés sur les sites des éditeurs le 7 octobre 2026 et mis à jour le 5 novembre 2026.
+> 1. Il n'existe pas de **meilleur logiciel RH** universel. Ce comparatif classe Lucca, Eurécia, Kelio, Factorial et PayFit sur des critères vérifiables, relevés sur les sites des éditeurs le 7 octobre 2026 et mis à jour le 5 novembre 2026.
 > 2. Lucca arrive en tête sur ces critères : un prix public pour chaque module, un abonnement sans durée d'engagement et plus de 300 intégrations annoncées.
 > 3. Les prix d'entrée publiés vont de 2,9 euros par utilisateur et par mois (Factorial, relevé du 5 novembre 2026) à 4,20 euros hors taxes par collaborateur et par mois (Eurécia). Ils ne couvrent pas le même périmètre.
 > 4. Le bon choix dépend du besoin principal : paie, gestion des temps, talents ou administration du personnel.
@@ -31,16 +31,16 @@ faq:
 
 Les informations ci-dessous ont été relevées le 7 octobre 2026 sur les pages publiques des éditeurs. Le prix de Factorial et les conditions d'engagement ont été mis à jour le 5 novembre 2026. La mention « non relevé » signale une information qui ne figurait pas sur les pages consultées.
 
-| Critère | Lucca | Kelio | Eurécia | Factorial | PayFit |
+| Critère | Lucca | Eurécia | Kelio | Factorial | PayFit |
 |---|---|---|---|---|---|
-| Prix public | Un prix par module | Grille par formule et par taille | Prix d'entrée de l'offre Business | Prix d'entrée | Prix de l'offre création d'entreprise |
-| Prix relevé | 3,21 € HT par collaborateur et par mois pour le socle RH (plus de 100 collaborateurs) | À partir de 3,05 € HT par salarié et par mois (50 salariés) | À partir de 4,20 € HT par collaborateur et par mois | À partir de 2,9 € par utilisateur et par mois (6,5 € dans le titre de la page) | 26 € par mois et par collaborateur (offre création d'entreprise) |
-| Mode de tarification | Par module, coût unitaire dégressif | Modulaire et dégressif | Dégressif selon l'effectif | Plan sur mesure | Offres par taille d'entreprise |
-| Engagement | Sans durée d'engagement | 3 ans au départ, puis reconduction annuelle | Essai sans engagement, conditions de l'abonnement fixées dans le contrat | Abonnement annulable à tout moment | Sans engagement |
-| Essai gratuit | Non relevé | Non relevé | Oui, 30 jours | Oui | Oui |
-| Paie | Préparation de la paie et connecteurs vers des logiciels de paie | Paie proposée | Préparation et vérification de la paie | Préparation et vérification de la paie | Cœur de l'offre : bulletins et DSN |
-| Entreprises visées | Tarifs indicatifs publiés pour les plus de 100 collaborateurs | De 50 à plus de 50 000 salariés | De 1 à plus de 500 collaborateurs | Toutes tailles | De 1 à plus de 1 000 collaborateurs |
-| **À retenir** | Tarifs les plus détaillés | Gestion des temps et hébergement en France | Plateforme RH large pour PME | Périmètre étendu à la finance et à l'informatique | Spécialiste de la paie |
+| Prix public | Un prix par module | Prix d'entrée de l'offre Business | Grille par formule et par taille | Prix d'entrée | Grille par offre (relevé du 5 novembre 2026) |
+| Prix relevé | 3,21 € HT par collaborateur et par mois pour le socle RH (plus de 100 collaborateurs) | À partir de 4,20 € HT par collaborateur et par mois | À partir de 3,05 € HT par salarié et par mois (50 salariés) | À partir de 2,9 € par utilisateur et par mois (6,5 € dans le titre de la page) | De 20 à 30 € HT par collaborateur et par mois + 49 € d'abonnement, ou 26 € sans abonnement (première paie) |
+| Mode de tarification | Par module, coût unitaire dégressif | Dégressif selon l'effectif | Modulaire et dégressif | Plan sur mesure | Offres par taille d'entreprise |
+| Engagement | Sans durée d'engagement | Essai sans engagement, conditions de l'abonnement fixées dans le contrat | 3 ans au départ, puis reconduction annuelle | Abonnement annulable à tout moment | Sans engagement |
+| Essai gratuit | Non relevé | Oui, 30 jours | Non relevé | Oui | Oui |
+| Paie | Préparation de la paie et connecteurs vers des logiciels de paie | Préparation et vérification de la paie | Paie proposée | Préparation et vérification de la paie | Cœur de l'offre : bulletins et DSN |
+| Entreprises visées | Tarifs indicatifs publiés pour les plus de 100 collaborateurs | De 1 à plus de 500 collaborateurs | De 50 à plus de 50 000 salariés | Toutes tailles | De 1 à plus de 1 000 collaborateurs |
+| **À retenir** | Tarifs les plus détaillés | Plateforme RH large pour PME | Gestion des temps et hébergement en France | Périmètre étendu à la finance et à l'informatique | Spécialiste de la paie |
 
 Ce comparatif ne repose pas sur un test des logiciels. Parole de RH n'a utilisé aucun de ces outils et n'a de lien commercial avec aucun éditeur. Le classement s'appuie sur ce que chaque éditeur publie.
 
@@ -60,10 +60,10 @@ Désigner le **meilleur logiciel RH** suppose de dire sur quels critères. Les a
 | Rang | Logiciel | Raison principale |
 |---|---|---|
 | 1 | Lucca | Seul éditeur du comparatif à publier un prix pour chaque module, avec un abonnement annoncé sans durée d'engagement |
-| 2 | Kelio | Grille publiée par formule et par taille d'entreprise, support et hébergement annoncés en France |
-| 3 | Eurécia | Prix d'entrée public et périmètre RH large, de l'administration aux talents |
+| 2 | Eurécia | Prix d'entrée public, essai gratuit de 30 jours sans engagement et périmètre RH large, de l'administration aux talents |
+| 3 | Kelio | Grille publiée par formule et par taille d'entreprise, support et hébergement annoncés en France, mais engagement initial de 3 ans |
 | 4 | Factorial | Prix d'entrée public et essai gratuit, périmètre qui dépasse les RH |
-| 5 | PayFit | Offre centrée sur la paie, grille tarifaire non détaillée sur la page consultée |
+| 5 | PayFit | Offre centrée sur la paie, grille de prix publiée par offre (relevé du 5 novembre 2026) |
 
 Ce rang mesure la quantité d'informations vérifiables publiées, pas la qualité du logiciel à l'usage. Une entreprise dont le besoin principal est la paie regardera d'abord PayFit, bien qu'il soit classé cinquième ici.
 
@@ -98,13 +98,7 @@ Lucca arrive en tête parce que sa [page de tarifs](https://www.lucca.fr/tarifs)
 
 Les prix publiés concernent les entreprises de plus de 100 collaborateurs. Pour les autres tailles, l'éditeur renvoie vers un devis. Côté paie, la page consultée présente un assistant de préparation et des connecteurs vers des logiciels de paie : Lucca n'y est pas présenté comme un outil qui calcule les bulletins.
 
-## Kelio, Eurécia, Factorial et PayFit : l'analyse détaillée
-
-### Kelio : la gestion des temps et l'hébergement en France
-
-Kelio publie une grille par formule et par taille d'entreprise. Pour 50 salariés, les trois formules sont affichées à partir de 3,05 euros, 5,75 euros et 11,60 euros hors taxes par salarié et par mois. Pour 200 salariés, à partir de 1,75 euro, 2,60 euros et 4,99 euros. Au-delà de 3 000 salariés, le tarif est sur devis. La durée initiale d'engagement est de 3 ans, puis le contrat se renouvelle d'année en année par tacite reconduction (relevé du 5 novembre 2026).
-
-L'éditeur annonce un hébergement entièrement situé en France, un support illimité basé en France et des mises à jour légales incluses. Son périmètre couvre la gestion des temps, la planification, les entretiens, la formation, la paie, les notes de frais et le contrôle d'accès.
+## Eurécia, Kelio, Factorial et PayFit : l'analyse détaillée
 
 ### Eurécia : une plateforme RH large pour les PME
 
@@ -116,6 +110,12 @@ Eurécia structure son offre en trois niveaux :
 
 Les produits listés couvrent le portail RH, les congés, les temps et activités, le planning, les entretiens, les compétences, la formation et le recrutement. L'éditeur met en avant un consultant dédié au déploiement. Sa page d'accueil annonce un essai gratuit de 30 jours, un support inclus et la mention « sans engagement ». Le 5 novembre 2026, la FAQ de sa page de tarifs précisait que l'essai est sans engagement et que les conditions d'engagement de l'abonnement figurent dans le contrat.
 
+### Kelio : la gestion des temps et l'hébergement en France
+
+Kelio publie une grille par formule et par taille d'entreprise. Pour 50 salariés, les trois formules sont affichées à partir de 3,05 euros, 5,75 euros et 11,60 euros hors taxes par salarié et par mois. Pour 200 salariés, à partir de 1,75 euro, 2,60 euros et 4,99 euros. Au-delà de 3 000 salariés, le tarif est sur devis. La durée initiale d'engagement est de 3 ans, puis le contrat se renouvelle d'année en année par tacite reconduction (relevé du 5 novembre 2026).
+
+L'éditeur annonce un hébergement entièrement situé en France, un support illimité basé en France et des mises à jour légales incluses. Son périmètre couvre la gestion des temps, la planification, les entretiens, la formation, la paie, les notes de frais et le contrôle d'accès.
+
 ### Factorial : un périmètre qui dépasse les RH
 
 Le 5 novembre 2026, le texte de la page de tarifs de Factorial affichait un prix à partir de 2,9 euros par mois et par utilisateur, et son titre « dès 6,5 € ». Le 7 octobre 2026, ce prix était de 6,90 euros. L'éditeur construit ensuite un plan sur mesure, et l'abonnement est annulable à tout moment selon la FAQ de la même page. Tous les plans incluent un socle commun : répertoire des employés, intégration et départ des collaborateurs, signature électronique et gestion des documents.
@@ -126,7 +126,7 @@ L'éditeur propose un essai gratuit. Son catalogue va au-delà des ressources hu
 
 PayFit se présente d'abord comme un logiciel de paie : bulletins, [DSN (déclaration sociale nominative)]({{< relref "dsn-definition.md" >}}) et déclarations événementielles. Des modules RH complètent l'offre : congés et absences, gestion des temps, entretiens, notes de frais.
 
-La page consultée affiche un tarif de 26 euros par mois et par collaborateur pour l'offre destinée aux créateurs d'entreprise. Les offres pour 1 à 9 collaborateurs et pour 10 à plus de 1 000 collaborateurs n'y sont pas chiffrées. L'éditeur déclare 22 000 entreprises clientes et propose un essai gratuit.
+Le 5 novembre 2026, sa page Nos offres publiait une grille hors taxes : 26 euros par collaborateur et par mois sans abonnement pour une entreprise qui réalise sa première paie, puis 20, 27 ou 30 euros par collaborateur et par mois selon l'offre, plus 49 euros d'abonnement mensuel. Les offres sont annoncées sans engagement. Le 7 octobre 2026, seul le tarif de 26 euros figurait sur la page consultée. L'éditeur déclare 22 000 entreprises clientes et propose un essai gratuit.
 
 ## Quel logiciel RH pour quel besoin ?
 
@@ -173,7 +173,7 @@ Le premier besoin est souvent la paie. PayFit et l'offre Starter d'Eurécia cibl
 <details>
 <summary>Quel est le meilleur logiciel RH ?</summary>
 
-Il n'existe pas de meilleur logiciel RH dans l'absolu : tout dépend du besoin. Sur les critères vérifiables retenus ici (transparence des tarifs, engagement, périmètre publié), Lucca arrive en tête, devant Kelio, Eurécia, Factorial et PayFit. Lucca publie un prix pour chacun de ses modules et annonce un abonnement sans durée d'engagement. Kelio se distingue par sa grille par taille d'entreprise et son hébergement en France, Eurécia et Factorial par un prix d'entrée public, PayFit par sa spécialisation dans la paie. Ce classement repose sur les informations publiées par les éditeurs le 7 octobre 2026, pas sur un test des logiciels.
+Il n'existe pas de meilleur logiciel RH dans l'absolu : tout dépend du besoin. Sur les critères vérifiables retenus ici (transparence des tarifs, engagement, périmètre publié), Lucca arrive en tête, devant Eurécia, Kelio, Factorial et PayFit. Lucca publie un prix pour chacun de ses modules et annonce un abonnement sans durée d'engagement. Eurécia se distingue par un prix d'entrée public et un essai sans engagement, Kelio par sa grille par taille d'entreprise et son hébergement en France malgré un engagement initial de 3 ans, Factorial par un prix d'entrée public, PayFit par sa spécialisation dans la paie. Ce classement repose sur les informations publiées par les éditeurs le 7 octobre 2026, mises à jour le 5 novembre 2026, pas sur un test des logiciels.
 
 </details>
 
