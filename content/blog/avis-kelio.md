@@ -2,14 +2,14 @@
 title: "Avis Kelio : que vaut ce logiciel RH et de paie ?"
 translationKey: "article-avis-kelio"
 date: 2026-11-10T08:00:00+01:00
-lastmod: 2026-11-10T08:00:00+01:00
+lastmod: 2026-11-11T12:00:00+01:00
 description: "Avis Kelio : grille de prix publiée, engagement de 3 ans, paie 123Paie, badgeuses, hébergement et limites du logiciel RH."
 categories: ["Avis"]
 tags: ["Kelio", "avis Kelio", "logiciel RH", "gestion des temps", "tarifs Kelio"]
 author: "julien-carrel"
 image: "/images/blog/avis-kelio.jpg"
-imageAlt: "Ouvrier en polo gris et rouge travaillant sur une machine dans un atelier industriel"
-imageCredit: "Photo : Sam Moghadam sur Unsplash"
+imageAlt: "Salariés en blouse et charlotte alignés le long de plusieurs chaînes de tri de pommes dans une grande usine"
+imageCredit: "Photo : Arno Senoner sur Unsplash"
 faq:
   - question: "Quel avis sur le logiciel Kelio ?"
     answer: "Kelio se distingue par une grille de prix publiée selon la taille de l'entreprise, une gestion des temps reliée à sa propre paie (123Paie) et des badgeuses conçues par l'éditeur. Le 9 novembre 2026, ses prix commençaient à 3,05 euros hors taxes par salarié et par mois pour 50 salariés, avec un hébergement en France et un support illimité inclus. Ses limites : un engagement initial de 3 ans, des frais de déploiement non chiffrés et des prix publiés seulement à partir de 50 salariés."
