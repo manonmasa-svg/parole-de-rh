@@ -2,14 +2,14 @@
 title: "Kelio review: is this HR and payroll software worth it?"
 translationKey: "article-avis-kelio"
 date: 2026-11-10T08:00:00+01:00
-lastmod: 2026-11-11T12:00:00+01:00
+lastmod: 2026-11-11T17:00:00+01:00
 description: "Kelio review: published price grid, 3-year commitment, 123Paie payroll, time clocks, hosting and limits of this HR software."
 categories: ["Reviews"]
 tags: ["Kelio", "Kelio review", "HR software", "time management", "Kelio pricing"]
 author: "julien-carrel"
 image: "/images/blog/avis-kelio.jpg"
-imageAlt: "Workers in coats and hairnets lined up along several apple sorting lines in a large factory"
-imageCredit: "Photo: Arno Senoner on Unsplash"
+imageAlt: "Manager in a black blazer and glasses working on a laptop at a wooden table"
+imageCredit: "Photo: Aleksei Zhivilov on Unsplash"
 faq:
   - question: "Is Kelio good HR software?"
     answer: "Kelio stands out for a price grid published by company size, time management linked to its own payroll software (123Paie) and time clocks designed by the vendor. On 9 November 2026, its prices started at 3.05 euros excluding VAT per employee per month for 50 employees, with hosting in France and unlimited support included. Its limits: a 3-year initial commitment, set-up fees that are not priced and prices published only from 50 employees."
