@@ -7,7 +7,7 @@ description: "Avis Kelio : grille de prix publiée, engagement de 3 ans, paie 12
 categories: ["Avis"]
 tags: ["Kelio", "avis Kelio", "logiciel RH", "gestion des temps", "tarifs Kelio"]
 author: "julien-carrel"
-image: "/images/blog/avis-kelio.jpg"
+image: "/images/blog/avis-kelio-bureau.jpg"
 imageAlt: "Responsable en blazer noir et lunettes travaillant sur un ordinateur portable à une table en bois"
 imageCredit: "Photo : Aleksei Zhivilov sur Unsplash"
 faq:

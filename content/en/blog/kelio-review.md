@@ -7,7 +7,7 @@ description: "Kelio review: published price grid, 3-year commitment, 123Paie pay
 categories: ["Reviews"]
 tags: ["Kelio", "Kelio review", "HR software", "time management", "Kelio pricing"]
 author: "julien-carrel"
-image: "/images/blog/avis-kelio.jpg"
+image: "/images/blog/avis-kelio-bureau.jpg"
 imageAlt: "Manager in a black blazer and glasses working on a laptop at a wooden table"
 imageCredit: "Photo: Aleksei Zhivilov on Unsplash"
 faq:
