@@ -3,7 +3,7 @@ title: "Events industry: is training the answer to hiring difficulties?"
 translationKey: "article-evenementiel-formation-recrutement"
 date: 2026-11-13T08:00:00+01:00
 lastmod: 2026-11-13T08:00:00+01:00
-description: "Op-ed: 54% of HR managers in French events struggle to recruit. Training, career change and AI as HR levers, by Franck PRIME."
+description: "Recruitment difficulties in the events industry: 54% of HR managers affected. Training, career change and AI as levers, by Franck PRIME."
 categories: ["Training"]
 tags: ["events industry", "professional training", "recruitment", "career change", "artificial intelligence"]
 author: "franck-prime"

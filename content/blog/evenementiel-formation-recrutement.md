@@ -3,7 +3,7 @@ title: "Événementiel : la formation, réponse aux difficultés de recrutement 
 translationKey: "article-evenementiel-formation-recrutement"
 date: 2026-11-13T08:00:00+01:00
 lastmod: 2026-11-13T08:00:00+01:00
-description: "Tribune : 54 % des RH de l'événementiel peinent à recruter. Formation, reconversion et IA comme leviers RH, selon Franck PRIME."
+description: "Difficultés de recrutement dans l'événementiel : 54 % des RH concernés. Formation, reconversion et IA comme leviers, selon Franck PRIME."
 categories: ["Formation"]
 tags: ["événementiel", "formation professionnelle", "recrutement", "reconversion", "intelligence artificielle"]
 author: "franck-prime"
