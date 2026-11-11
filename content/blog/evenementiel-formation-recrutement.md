@@ -1,5 +1,5 @@
 ---
-title: "Événementiel : la formation, réponse aux difficultés de recrutement ?"
+title: "Difficultés de recrutement dans l'événementiel : la formation, une réponse ?"
 translationKey: "article-evenementiel-formation-recrutement"
 date: 2026-11-13T08:00:00+01:00
 lastmod: 2026-11-13T08:00:00+01:00
@@ -21,7 +21,7 @@ faq:
 ---
 
 > **En bref :**
-> 1. Dans l'**événementiel**, 54 % des responsables RH interrogés rencontrent des difficultés de recrutement, notamment sur les métiers techniques et commerciaux (OPIIEC, juin 2026).
+> 1. Les **difficultés de recrutement dans l'événementiel** touchent 54 % des responsables RH interrogés, notamment sur les métiers techniques et commerciaux (OPIIEC, juin 2026).
 > 2. La filière représente 10,4 milliards d'euros de chiffre d'affaires, sur la base des données consolidées de 2023 (UNIMEV, Event Data Book 2026).
 > 3. 53 % des entreprises interrogées prévoient d'intégrer des solutions fondées sur l'intelligence artificielle (OPIIEC).
 > 4. Pour l'auteur de cette tribune, la formation professionnelle, la reconversion et la formation des managers sont des leviers de recrutement et de fidélisation.

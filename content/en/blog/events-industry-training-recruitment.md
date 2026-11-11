@@ -1,5 +1,5 @@
 ---
-title: "Events industry: is training the answer to hiring difficulties?"
+title: "Recruitment difficulties in the events industry: is training the answer?"
 translationKey: "article-evenementiel-formation-recrutement"
 date: 2026-11-13T08:00:00+01:00
 lastmod: 2026-11-13T08:00:00+01:00
@@ -21,7 +21,7 @@ faq:
 ---
 
 > **In short:**
-> 1. In the French **events industry**, 54% of the HR managers surveyed have difficulty recruiting, particularly for technical and sales roles (OPIIEC, June 2026).
+> 1. **Recruitment difficulties in the events industry** affect 54% of the HR managers surveyed in France, particularly for technical and sales roles (OPIIEC, June 2026).
 > 2. The industry generates 10.4 billion euros in revenue, based on consolidated 2023 data (UNIMEV, Event Data Book 2026).
 > 3. 53% of the companies surveyed plan to adopt solutions based on artificial intelligence (OPIIEC).
 > 4. For the author of this op-ed, professional training, career change and manager training are levers for recruitment and retention.
