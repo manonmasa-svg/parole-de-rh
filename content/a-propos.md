@@ -24,4 +24,4 @@ Chaque article s'appuie sur des sources officielles consultables en ligne (Servi
 
 ## Qui signe les articles
 
-Les articles sont signés par des noms de plume. Chaque signature correspond à un périmètre éditorial du site et non à une personne physique identifiée. Aucun diplôme, aucune expérience professionnelle ni aucun parcours ne leur sont attribués.
+Les articles sont signés par des noms de plume. Chaque signature correspond à un périmètre éditorial du site et non à une personne physique identifiée. Aucun diplôme, aucune expérience professionnelle ni aucun parcours ne leur sont attribués. Seule exception : les tribunes, signalées comme telles en tête d'article, sont signées par leur auteur, une personne extérieure à la rédaction présentée avec la biographie qu'elle a fournie.

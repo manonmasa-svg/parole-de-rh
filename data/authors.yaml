@@ -151,3 +151,30 @@ nora-bellamy:
     - training
     - wellbeing
     - hr trends
+
+# Auteurs invites (tribunes) : personnes reelles, bio fournie par l'auteur et reprise telle quelle.
+# `guest: true` les exclut de la liste « La redaction » (page A propos) et le JSON-LD les rattache
+# a leur propre organisation (`employer`), pas a Parole de RH. Pas de `topics` : jamais choisis
+# automatiquement par /create-article.
+
+franck-prime:
+  id: franck-prime
+  name: Franck PRIME
+  type: person
+  guest: true
+  employer: OPC TRAINING
+  avatar: ""
+  linkedinUrl: ""
+  jobTitle:
+    fr: Président d'OPC TRAINING
+    en: President of OPC TRAINING
+  role:
+    fr: Auteur invité, président d'OPC TRAINING
+    en: Guest author, President of OPC TRAINING
+  bio:
+    fr: "Franck PRIME est président d'OPC TRAINING, organisme spécialisé dans la formation professionnelle aux métiers de l'événementiel et du marketing digital, au sein du Groupe ALGO. Son parcours dans la création et l'organisation de 350 événements professionnels sur toute l'EUROPE nourrit son analyse des évolutions du secteur et des besoins en compétences des entreprises."
+    en: "Franck PRIME is President of OPC TRAINING, a provider specialising in professional training for careers in events and digital marketing, part of the ALGO Group. His background in creating and organising 350 professional events across EUROPE informs his analysis of how the sector is changing and of companies' skills needs."
+  expertise:
+    fr: ["Événementiel", "Formation professionnelle"]
+    en: ["Events industry", "Professional training"]
+  topics: []

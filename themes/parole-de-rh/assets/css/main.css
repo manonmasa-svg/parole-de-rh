@@ -3334,3 +3334,22 @@ h1, h2, h3, .section-title, .card-title, .article-title, .page-hero h1 {
     .hub-top { grid-template-columns: minmax(0, 1fr); gap: 1.6rem; }
     .hub-cta { position: static; }
 }
+
+/* Tribune : bandeau en tete d'un article signe par un auteur invite (11 novembre 2026).
+   Filets fins, pas de fond colore, dans l'esprit presse ecrite. */
+.tribune-note {
+    border-top: 2px solid var(--text);
+    border-bottom: 1px solid var(--border);
+    padding: 0.9rem 0 1rem;
+    margin: 0 0 2rem;
+}
+.tribune-note .kicker {
+    margin-bottom: 0.35rem;
+}
+.tribune-note p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--text-light);
+    font-style: italic;
+}

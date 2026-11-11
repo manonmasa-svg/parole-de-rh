@@ -18,6 +18,7 @@
         <section class="team">
             <h2 class="team-title">{{ T "team" }}</h2>
             {{ range hugo.Data.authors }}
+            {{ if not .guest }}
             <div class="author-box tone-{{ index $tones (mod $i 6) }}">
                 <div class="avatar" aria-hidden="true">{{ slicestr .name 0 1 }}</div>
                 <div class="author-box-content">
@@ -27,6 +28,7 @@
                 </div>
             </div>
             {{ $i = add $i 1 }}
+            {{ end }}
             {{ end }}
         </section>
         {{ end }}

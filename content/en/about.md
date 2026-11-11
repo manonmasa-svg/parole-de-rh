@@ -24,4 +24,4 @@ Every article relies on official sources that can be consulted online (Service-P
 
 ## Who writes the articles
 
-Articles are published under pen names. Each byline corresponds to an editorial area of the site, not to an identified individual. No degree, professional experience or career history is attributed to them.
+Articles are published under pen names. Each byline corresponds to an editorial area of the site, not to an identified individual. No degree, professional experience or career history is attributed to them. The only exception is op-eds, labelled as such at the top of the article, which are signed by their author, a person from outside the editorial team introduced with the biography they provided.

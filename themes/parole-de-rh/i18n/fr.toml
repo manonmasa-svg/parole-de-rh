@@ -150,3 +150,7 @@ hubSoftwareWord = "logiciel"
 hubTableTitle = "Les logiciels RH comparés en un coup d'œil"
 hubSoftwareTitle = "Les comparatifs de logiciels RH"
 hubOtherTitle = "Contrats, ruptures et avantages : les autres comparatifs"
+
+# Tribune (article signe par un auteur invite, `tribune: true` dans le frontmatter)
+tribuneLabel = "Tribune"
+tribuneNote = "Ce texte est une tribune signée par un auteur extérieur à la rédaction, présenté en fin d'article. Il exprime son point de vue et n'engage que lui. Parole de RH a vérifié les chiffres cités sur leurs sources."

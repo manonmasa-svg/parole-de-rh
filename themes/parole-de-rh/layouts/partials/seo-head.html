@@ -89,7 +89,9 @@
 {{ $article := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" .Description "datePublished" (.Date.Format "2006-01-02") "dateModified" (.Lastmod.Format "2006-01-02") "inLanguage" .Site.Language.Locale "wordCount" .WordCount "timeRequired" (printf "PT%dM" .ReadingTime) "publisher" (dict "@type" "Organization" "@id" $orgId "name" .Site.Title) "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) "isPartOf" (dict "@type" "Blog" "name" .Site.Title "url" .Site.Home.Permalink) }}
 {{ with .Params.image }}{{ $article = merge $article (dict "image" (strings.TrimPrefix "/" . | absURL)) }}{{ end }}
 {{ with $author }}
-    {{ $person := dict "@type" (cond (eq .type "organization") "Organization" "Person") "name" .name "worksFor" (dict "@id" $orgId) }}
+    {{ $worksFor := dict "@id" $orgId }}
+    {{ if .guest }}{{ $worksFor = dict "@type" "Organization" "name" .employer }}{{ end }}
+    {{ $person := dict "@type" (cond (eq .type "organization") "Organization" "Person") "name" .name "worksFor" $worksFor }}
     {{ with index .jobTitle $lang }}{{ $person = merge $person (dict "jobTitle" .) }}{{ end }}
     {{ with index .bio $lang }}{{ $person = merge $person (dict "description" .) }}{{ end }}
     {{ with index .expertise $lang }}{{ $person = merge $person (dict "knowsAbout" .) }}{{ end }}

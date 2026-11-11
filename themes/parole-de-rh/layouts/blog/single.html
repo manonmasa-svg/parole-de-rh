@@ -77,6 +77,12 @@
             {{ end }}
 
             <div class="article-main">
+                {{ if .Params.tribune }}
+                <aside class="tribune-note" aria-label="{{ T "tribuneLabel" }}">
+                    <span class="kicker">{{ T "tribuneLabel" }}</span>
+                    <p>{{ partial "typo.html" (T "tribuneNote") }}</p>
+                </aside>
+                {{ end }}
                 <div class="prose article-content">
                     {{ partial "typo.html" .Content | safeHTML }}
                 </div>
