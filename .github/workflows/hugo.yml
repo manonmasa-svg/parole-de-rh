@@ -4,8 +4,11 @@ on:
   push:
     branches: ["main"]
   schedule:
-    # Tous les jours a 6 h 05 et 7 h 05 UTC (soit 8 h 05 a Paris, ete comme hiver) : publie les articles programmes et rafraichit l agenda
-    - cron: "5 6,7 * * *"
+    # Publie les articles programmes et rafraichit l agenda. GitHub retarde ou saute parfois les taches
+    # planifiees (plusieurs heures en novembre 2026) : on multiplie les creneaux, toutes les 30 minutes
+    # de 6 h 13 a 10 h 43 UTC (7 h 13 a 11 h 43 a Paris en hiver, 8 h 13 a 12 h 43 en ete).
+    # Minutes 13 et 43 : les heures pile sont les plus encombrees chez GitHub.
+    - cron: "13,43 6-10 * * *"
   workflow_dispatch:
 
 permissions:
