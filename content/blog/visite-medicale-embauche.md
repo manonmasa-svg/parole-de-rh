@@ -1,8 +1,8 @@
 ---
 title: "Visite médicale d'embauche : quand l'organiser ?"
 translationKey: "article-visite-medicale-embauche"
-date: 2026-11-17T20:45:00+01:00
-lastmod: 2026-11-17T20:45:00+01:00
+date: 2026-11-18T08:00:00+01:00
+lastmod: 2026-11-18T08:00:00+01:00
 description: "Visite médicale d'embauche : délai de 3 mois, cas avant l'affectation, rémunération, renouvellement, dispense et suivi renforcé."
 categories: ["Onboarding"]
 tags: ["visite médicale d'embauche", "visite d'information et de prévention", "médecine du travail", "embauche", "suivi individuel renforcé"]
