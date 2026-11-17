@@ -1,8 +1,8 @@
 ---
 title: "Pre-employment medical check in France: when is it due?"
 translationKey: "article-visite-medicale-embauche"
-date: 2026-11-18T08:00:00+01:00
-lastmod: 2026-11-18T08:00:00+01:00
+date: 2026-11-17T20:45:00+01:00
+lastmod: 2026-11-17T20:45:00+01:00
 description: "Pre-employment medical check in France: 3-month deadline, cases before starting, pay, renewal, exemption and reinforced monitoring."
 categories: ["Onboarding"]
 tags: ["pre-employment medical check", "information and prevention visit", "occupational health", "hiring", "reinforced monitoring"]
