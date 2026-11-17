@@ -2,14 +2,14 @@
 title: "Quels sont les 10 meilleurs logiciels de note de frais ?"
 translationKey: "article-meilleur-logiciel-note-de-frais"
 date: 2026-11-17T08:00:00+01:00
-lastmod: 2026-11-17T08:00:00+01:00
+lastmod: 2026-11-17T21:30:00+01:00
 description: "Meilleur logiciel de note de frais : N2F, Rydoo, Pleo, Lucca, PayFit, Eurécia, Spendesk, Mooncard, Expensya et Jenji comparés."
 categories: ["Comparatifs"]
 tags: ["logiciel note de frais", "notes de frais", "frais professionnels", "N2F", "Rydoo", "Pleo"]
 author: "julien-carrel"
-image: "/images/blog/meilleur-logiciel-note-de-frais.jpg"
-imageAlt: "Main tenant un ticket de parking d'aéroport froissé, justificatif de frais de déplacement, devant un pare-brise"
-imageCredit: "Photo : Am sur Unsplash"
+image: "/images/blog/meilleur-logiciel-note-de-frais-justificatifs.jpg"
+imageAlt: "Pile de tickets de caisse et de justificatifs papier entassés, vue en gros plan"
+imageCredit: "Photo : Camilo Rueda López sur Unsplash"
 faq:
   - question: "Quel est le meilleur logiciel de note de frais ?"
     answer: "Il n'existe pas de meilleur logiciel de note de frais dans l'absolu : tout dépend de la taille de l'entreprise et du besoin de cartes de paiement. Sur les critères vérifiables retenus ici, N2F arrive en tête, avec des prix publiés dès 1 utilisateur (5,1 euros hors taxes par mois en annuel), un essai gratuit et une certification ISO 27001. Suivent Rydoo (8 euros par utilisateur et par mois en annuel), Pleo (8 à 18 euros), Lucca (5,81 euros hors taxes par déclarant, plus de 100 collaborateurs), PayFit (option à 3 euros par collaborateur), Eurécia, Spendesk, Mooncard, Expensya et Jenji. Relevé du 16 novembre 2026."

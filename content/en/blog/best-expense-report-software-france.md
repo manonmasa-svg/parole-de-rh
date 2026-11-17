@@ -2,14 +2,14 @@
 title: "What are the 10 best expense report software tools?"
 translationKey: "article-meilleur-logiciel-note-de-frais"
 date: 2026-11-17T08:00:00+01:00
-lastmod: 2026-11-17T08:00:00+01:00
+lastmod: 2026-11-17T21:30:00+01:00
 description: "Best expense report software in France: N2F, Rydoo, Pleo, Lucca, PayFit, Eurécia, Spendesk, Mooncard, Expensya and Jenji compared."
 categories: ["Comparisons"]
 tags: ["expense report software", "expense reports", "business expenses", "N2F", "Rydoo", "Pleo"]
 author: "julien-carrel"
-image: "/images/blog/meilleur-logiciel-note-de-frais.jpg"
-imageAlt: "Hand holding a crumpled airport parking ticket, a travel expense receipt, in front of a windscreen"
-imageCredit: "Photo: Am on Unsplash"
+image: "/images/blog/meilleur-logiciel-note-de-frais-justificatifs.jpg"
+imageAlt: "Close-up of a pile of till receipts and paper expense receipts stacked together"
+imageCredit: "Photo: Camilo Rueda López on Unsplash"
 faq:
   - question: "What is the best expense report software?"
     answer: "There is no single best expense report software: it depends on company size and on whether payment cards are needed. On the verifiable criteria used here, N2F comes first, with prices published from 1 user (5.1 euros excluding VAT per month, billed annually), a free trial and ISO 27001 certification. It is followed by Rydoo (8 euros per user per month, billed annually), Pleo (8 to 18 euros), Lucca (5.81 euros excluding VAT per claimant, more than 100 employees), PayFit (3 euro option per employee), Eurécia, Spendesk, Mooncard, Expensya and Jenji. Checked on 16 November 2026."
