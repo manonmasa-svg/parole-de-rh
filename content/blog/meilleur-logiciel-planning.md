@@ -2,14 +2,14 @@
 title: "Quel est le meilleur logiciel de planning du personnel ?"
 translationKey: "article-meilleur-logiciel-planning"
 date: 2026-11-19T10:00:00+01:00
-lastmod: 2026-11-19T10:00:00+01:00
+lastmod: 2026-11-19T12:00:00+01:00
 description: "Meilleur logiciel de planning : Combo, Skello, Planday, Kelio, Eurécia et Factorial comparés sur leurs prix, alertes légales et essais."
 categories: ["Comparatifs"]
 tags: ["logiciel de planning", "planning du personnel", "Combo", "Skello", "Planday", "gestion des temps"]
 author: "julien-carrel"
-image: "/images/blog/meilleur-logiciel-planning.jpg"
-imageAlt: "Chef et commis au travail dans une cuisine de restaurant éclairée par des suspensions noires"
-imageCredit: "Photo : Zoren Tan sur Unsplash"
+image: "/images/blog/meilleur-logiciel-planning-bureau.jpg"
+imageAlt: "Responsable travaillant sur un tableau dans un ordinateur portable, devant un tableau blanc de salle de réunion"
+imageCredit: "Photo : Brian Jones sur Unsplash"
 faq:
   - question: "Quel est le meilleur logiciel de planning du personnel ?"
     answer: "Il n'existe pas de meilleur logiciel de planning dans l'absolu : tout dépend du nombre d'établissements, de salariés et des règles à respecter. Sur les critères vérifiables retenus ici, Combo arrive en tête, avec un prix publié par établissement (68 euros par mois pour l'offre Time), une offre annoncée sans engagement et des alertes liées à la convention collective. Suivent Skello (planning dès 79 euros par mois), Planday (2,99 euros par utilisateur et par mois), Kelio, Eurécia et Factorial. Relevé du 16 novembre 2026."

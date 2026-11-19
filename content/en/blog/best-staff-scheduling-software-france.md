@@ -2,14 +2,14 @@
 title: "What is the best staff scheduling software?"
 translationKey: "article-meilleur-logiciel-planning"
 date: 2026-11-19T10:00:00+01:00
-lastmod: 2026-11-19T10:00:00+01:00
+lastmod: 2026-11-19T12:00:00+01:00
 description: "Best staff scheduling software in France: Combo, Skello, Planday, Kelio, Eurécia and Factorial compared on prices, legal alerts and trials."
 categories: ["Comparisons"]
 tags: ["staff scheduling software", "employee scheduling", "Combo", "Skello", "Planday", "time management"]
 author: "julien-carrel"
-image: "/images/blog/meilleur-logiciel-planning.jpg"
-imageAlt: "Chef and kitchen staff at work in a restaurant kitchen lit by black pendant lamps"
-imageCredit: "Photo: Zoren Tan on Unsplash"
+image: "/images/blog/meilleur-logiciel-planning-bureau.jpg"
+imageAlt: "Manager working on a spreadsheet on a laptop, in front of a meeting room whiteboard"
+imageCredit: "Photo: Brian Jones on Unsplash"
 faq:
   - question: "What is the best staff scheduling software?"
     answer: "There is no single best staff scheduling software: it depends on the number of sites, employees and rules to follow. On the verifiable criteria used here, Combo comes first, with a price published per site (68 euros per month for the Time plan), a plan announced with no commitment and alerts linked to the collective agreement. It is followed by Skello (scheduling from 79 euros per month), Planday (2.99 euros per user per month), Kelio, Eurécia and Factorial. Checked on 16 November 2026."
