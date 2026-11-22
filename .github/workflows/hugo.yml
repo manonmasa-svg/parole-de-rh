@@ -10,6 +10,11 @@ on:
     # Minutes 13 et 43 : les heures pile sont les plus encombrees chez GitHub.
     - cron: "13,43 6-10 * * *"
   workflow_dispatch:
+    inputs:
+      indexnow_all:
+        description: "Envoyer TOUTES les adresses du sitemap a IndexNow"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -46,6 +51,20 @@ jobs:
         # L adresse du site vient de baseURL dans hugo.toml (https://parole-de-rh.fr/)
         run: hugo --gc --minify
 
+      - name: IndexNow, liste des adresses nouvelles ou modifiees
+        # Compare le sitemap en ligne (encore l ancienne version) avec celui qui vient d etre genere
+        continue-on-error: true
+        run: python3 .github/scripts/indexnow.py diff public indexnow-urls.txt ${{ inputs.indexnow_all && '--all' || '' }}
+
+      - name: IndexNow, conserver la liste pour l envoi apres deploiement
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-urls
+          path: indexnow-urls.txt
+          retention-days: 1
+          if-no-files-found: ignore
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -61,3 +80,19 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  indexnow:
+    # Previent Bing (et les autres moteurs IndexNow) une fois le site en ligne. Un echec ici ne casse pas le site.
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Recuperer la liste
+        uses: actions/download-artifact@v4
+        with:
+          name: indexnow-urls
+
+      - name: Envoyer a IndexNow
+        run: python3 .github/scripts/indexnow.py submit indexnow-urls.txt
