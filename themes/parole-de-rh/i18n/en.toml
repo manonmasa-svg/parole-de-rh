@@ -153,4 +153,4 @@ hubOtherTitle = "Contracts, terminations and benefits: other comparisons"
 
 # Op-ed (article signed by a guest author, `tribune: true` in the front matter)
 tribuneLabel = "Op-ed"
-tribuneNote = "This text is an op-ed signed by an author from outside the editorial team, introduced at the end of the article. It expresses their own views and is their sole responsibility. Parole de RH has checked the figures quoted against their sources."
+tribuneNote = "This text is an op-ed signed by an author from outside the editorial team, introduced at the end of the article. It expresses their own views and is their sole responsibility. Parole de RH has checked the figures quoted against their sources; details of the author's career are self-reported."
