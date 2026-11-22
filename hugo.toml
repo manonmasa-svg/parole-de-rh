@@ -285,6 +285,9 @@ enableRobotsTXT = false
 [outputs]
   home = ["html", "rss", "json"]
   section = ["html", "rss"]
+  # Pas de flux RSS pour les rubriques ni les etiquettes (22/11/2026) : seuls l accueil et le blog en ont un
+  taxonomy = ["html"]
+  term = ["html"]
 
 [related]
   includeNewer = true
