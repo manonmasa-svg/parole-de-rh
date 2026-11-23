@@ -2,7 +2,7 @@
 title: "What is the best time clock software in France?"
 translationKey: "article-meilleur-logiciel-pointage"
 date: 2026-11-04T08:00:00+01:00
-lastmod: 2026-11-05T19:30:00+01:00
+lastmod: 2026-11-23T22:30:00+01:00
 description: "Best time clock software in France: Combo, Lucca, Kelio, Eurécia, Skello and Factorial compared on prices, clock-in options and terms."
 categories: ["Comparisons"]
 tags: ["time clock software", "time tracking", "clock-in", "comparison", "Combo", "Kelio", "Skello"]
@@ -126,6 +126,7 @@ Skello publishes three families of plans, with a 10% discount for an annual comm
 | Duo Max | From €129 per month | Staffing forecasts, automatic scheduling |
 
 - **Price unit**: the page does not state whether these amounts are per site or per company.
+- **Taxes**: the pricing page does not say whether prices exclude VAT, but Skello's terms and conditions (version of 1 December 2025, consulted on 23 November 2026) state that all prices exclude VAT.
 - **Trial**: 14 days free. According to the FAQ, the trial automatically converts into a subscription unless cancelled at the end of the period.
 - **Seasonality**: the subscription can be paused for up to 9 months over a rolling 12 months, for customers of at least 3 months.
 
@@ -213,6 +214,7 @@ Employers must comply with maximum working hours: 10 hours a day and 48 hours in
 - Kelio, [Tarifs](https://www.kelio.com/fr/tarifs.html) (pricing), page consulted on 3 November 2026.
 - Eurécia, [Tarifs](https://www.eurecia.com/tarifs) (pricing) and [Logiciel de pointage](https://www.eurecia.com/logiciel-pointage) (time clock software), pages consulted on 3 November 2026.
 - Skello, [Tarifs](https://www.skello.io/pricing) (pricing), page consulted on 3 November 2026.
+- Skello, [Conditions Générales de Services](https://www.skello.io/landing/conditions-generales) (terms and conditions, in French), version of 1 December 2025, consulted on 23 November 2026.
 - Factorial, [Tarifs](https://factorial.fr/tarifs) (pricing) and [Logiciel de pointage](https://factorial.fr/logiciel-pointage) (time clock software), pages consulted on 3 November 2026.
 - Service-Public, [Durée du travail d'un salarié du secteur privé à temps plein âgé d'au moins 18 ans](https://www.service-public.gouv.fr/particuliers/vosdroits/F1911) (working time for full-time employees), guide checked on 25 September 2025, consulted on 3 November 2026.
 - Service-Public, [Heures supplémentaires d'un salarié du secteur privé](https://www.service-public.gouv.fr/particuliers/vosdroits/F2391) (overtime), guide checked on 8 June 2026, consulted on 28 October 2026.

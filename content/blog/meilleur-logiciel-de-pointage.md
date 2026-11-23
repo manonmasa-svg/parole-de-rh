@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel de pointage ?"
 translationKey: "article-meilleur-logiciel-pointage"
 date: 2026-11-04T08:00:00+01:00
-lastmod: 2026-11-05T19:30:00+01:00
+lastmod: 2026-11-23T22:30:00+01:00
 description: "Meilleur logiciel de pointage : Combo, Lucca, Kelio, Eurécia, Skello et Factorial comparés sur leurs prix, badgeuses et engagements."
 categories: ["Comparatifs"]
 tags: ["logiciel de pointage", "badgeuse", "gestion des temps", "comparatif", "Combo", "Kelio", "Skello"]
@@ -126,6 +126,7 @@ Skello publie trois familles d'offres, avec 10 % de réduction pour un engagemen
 | Duo Max | Dès 129 € par mois | Prévision des besoins, création automatique de plannings |
 
 - **Unité de prix** : la page ne précise pas si ces montants s'entendent par établissement ou par entreprise.
+- **Taxes** : la page de tarifs ne dit pas si les prix sont hors taxes, mais les conditions générales de Skello (version du 1er décembre 2025, consultées le 23 novembre 2026) précisent que tous les prix sont exprimés hors TVA.
 - **Essai** : 14 jours gratuits. Selon la FAQ, l'essai se convertit automatiquement en abonnement en l'absence de démarche contraire à la fin de la période.
 - **Saisonnalité** : l'abonnement peut être mis en pause jusqu'à 9 mois sur 12 mois glissants, pour un client depuis au moins 3 mois.
 
@@ -213,6 +214,7 @@ L'employeur doit respecter les durées maximales de travail : 10 heures par jour
 - Kelio, [Tarifs](https://www.kelio.com/fr/tarifs.html), page consultée le 3 novembre 2026.
 - Eurécia, [Tarifs](https://www.eurecia.com/tarifs) et [Logiciel de pointage](https://www.eurecia.com/logiciel-pointage), pages consultées le 3 novembre 2026.
 - Skello, [Tarifs](https://www.skello.io/pricing), page consultée le 3 novembre 2026.
+- Skello, [Conditions Générales de Services](https://www.skello.io/landing/conditions-generales), version du 1er décembre 2025, consultées le 23 novembre 2026.
 - Factorial, [Tarifs](https://factorial.fr/tarifs) et [Logiciel de pointage](https://factorial.fr/logiciel-pointage), pages consultées le 3 novembre 2026.
 - Service-Public, [Durée du travail d'un salarié du secteur privé à temps plein âgé d'au moins 18 ans](https://www.service-public.gouv.fr/particuliers/vosdroits/F1911), fiche vérifiée le 25 septembre 2025, consultée le 3 novembre 2026.
 - Service-Public, [Heures supplémentaires d'un salarié du secteur privé](https://www.service-public.gouv.fr/particuliers/vosdroits/F2391), fiche vérifiée le 8 juin 2026, consultée le 28 octobre 2026.

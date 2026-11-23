@@ -2,7 +2,7 @@
 title: "What is the best staff scheduling software?"
 translationKey: "article-meilleur-logiciel-planning"
 date: 2026-11-19T10:00:00+01:00
-lastmod: 2026-11-19T12:00:00+01:00
+lastmod: 2026-11-23T22:30:00+01:00
 description: "Best staff scheduling software in France: Combo, Skello, Planday, Kelio, Eurécia and Factorial compared on prices, legal alerts and trials."
 categories: ["Comparisons"]
 tags: ["staff scheduling software", "employee scheduling", "Combo", "Skello", "Planday", "time management"]
@@ -79,7 +79,7 @@ Skello publishes two scheduling-only plans, with 10% off for an annual commitmen
 - **Planning Standard**: from €79 per month, with week, month and day views, regulatory alerts predefined according to the collective agreement and a single schedule template.
 - **Planning Max**: from €109 per month, with staffing forecasts, replacement suggestions and automatic schedule creation.
 
-The Duo plans (scheduling and time clock) start at €99 per month. A tailored Enterprise plan targets organisations with 200 to 10,000 employees. The page does not say whether prices apply per site or per company.
+The Duo plans (scheduling and time clock) start at €99 per month. A tailored Enterprise plan targets organisations with 200 to 10,000 employees. The page does not say whether prices apply per site or per company. Nor does it say whether they exclude VAT, but Skello's terms and conditions (version of 1 December 2025, consulted on 23 November 2026) state that all prices exclude VAT.
 
 ### Planday: a price per user
 
@@ -134,7 +134,7 @@ Hours scheduled beyond the legal working week give rise to a pay increase, under
 
 - No software was tested: the information is what vendors published.
 - Prices cannot be compared directly: per site (Combo), per month with no unit stated (Skello), per user (Planday, Factorial) or per employee (Kelio).
-- Skello and Planday do not say on their page whether their prices exclude VAT.
+- Skello and Planday do not say on their pricing page whether their prices exclude VAT. For Skello, the terms and conditions state that prices exclude VAT.
 - Shiftbase, another scheduling tool, had no pricing page available in French on 16 November 2026 and was not included.
 
 ## Frequently asked questions
@@ -171,6 +171,7 @@ Yes, with several vendors. On 16 November 2026, Planday offered 30 free days wit
 
 - Combo, [Nos offres](https://combohr.com/fr/nos-offres) (plans) and [home page](https://combohr.com/fr/), pages consulted on 16 November 2026.
 - Skello, [Tarifs](https://www.skello.io/pricing) (pricing), page consulted on 16 November 2026.
+- Skello, [Conditions Générales de Services](https://www.skello.io/landing/conditions-generales) (terms and conditions, in French), version of 1 December 2025, consulted on 23 November 2026.
 - Planday, [Tarifs et formules](https://www.planday.com/fr/tarifs) (pricing), page consulted on 16 November 2026.
 - Kelio, [Planning](https://www.kelio.com/fr/fonctionnalites/gestion-des-temps-gta/planning.html) (scheduling, consulted on 16 November 2026) and [Tarifs](https://www.kelio.com/fr/tarifs.html) (pricing, consulted on 9 November 2026).
 - Eurécia, [Logiciel de planning](https://www.eurecia.com/logiciel-planning) (scheduling) and [Tarifs](https://www.eurecia.com/tarifs) (pricing), pages consulted on 16 November 2026.

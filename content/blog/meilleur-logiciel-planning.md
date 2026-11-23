@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel de planning du personnel ?"
 translationKey: "article-meilleur-logiciel-planning"
 date: 2026-11-19T10:00:00+01:00
-lastmod: 2026-11-19T12:00:00+01:00
+lastmod: 2026-11-23T22:30:00+01:00
 description: "Meilleur logiciel de planning : Combo, Skello, Planday, Kelio, Eurécia et Factorial comparés sur leurs prix, alertes légales et essais."
 categories: ["Comparatifs"]
 tags: ["logiciel de planning", "planning du personnel", "Combo", "Skello", "Planday", "gestion des temps"]
@@ -79,7 +79,7 @@ Skello publie deux offres de planning seul, avec 10 % de réduction pour un enga
 - **Planning Standard** : dès 79 € par mois, avec vues semaine, mois et journée, alertes réglementaires prédéfinies selon la convention collective et un seul modèle de planning.
 - **Planning Max** : dès 109 € par mois, avec prévision des besoins en personnel, suggestions de remplacement et création automatique des plannings.
 
-Les offres Duo (planning et badgeuse) commencent à 99 € par mois. Une offre Entreprise sur mesure vise les structures de 200 à 10 000 employés. La page ne précise pas si les prix s'entendent par établissement ou par entreprise.
+Les offres Duo (planning et badgeuse) commencent à 99 € par mois. Une offre Entreprise sur mesure vise les structures de 200 à 10 000 employés. La page ne précise pas si les prix s'entendent par établissement ou par entreprise. Elle n'indique pas non plus s'ils sont hors taxes, mais les conditions générales de Skello (version du 1er décembre 2025, consultées le 23 novembre 2026) précisent que tous les prix sont exprimés hors TVA.
 
 ### Planday : un prix par utilisateur
 
@@ -134,7 +134,7 @@ Les heures planifiées au-delà de la durée légale ouvrent droit à majoration
 
 - Aucun logiciel n'a été testé : les informations sont celles publiées par les éditeurs.
 - Les prix ne se comparent pas directement : par établissement (Combo), par mois sans unité précisée (Skello), par utilisateur (Planday, Factorial) ou par salarié (Kelio).
-- Skello et Planday ne précisent pas sur leur page si leurs prix sont hors taxes.
+- Skello et Planday ne précisent pas sur leur page de tarifs si leurs prix sont hors taxes. Pour Skello, les conditions générales indiquent des prix hors TVA.
 - Shiftbase, autre logiciel de planning, n'avait pas de page de tarifs consultable en français le 16 novembre 2026 et n'a pas été retenu.
 
 ## Questions fréquentes
@@ -171,6 +171,7 @@ Oui, chez plusieurs éditeurs. Le 16 novembre 2026, Planday proposait 30 jours g
 
 - Combo, [Nos offres](https://combohr.com/fr/nos-offres) et [page d'accueil](https://combohr.com/fr/), pages consultées le 16 novembre 2026.
 - Skello, [Tarifs](https://www.skello.io/pricing), page consultée le 16 novembre 2026.
+- Skello, [Conditions Générales de Services](https://www.skello.io/landing/conditions-generales), version du 1er décembre 2025, consultées le 23 novembre 2026.
 - Planday, [Tarifs et formules](https://www.planday.com/fr/tarifs), page consultée le 16 novembre 2026.
 - Kelio, [Planning](https://www.kelio.com/fr/fonctionnalites/gestion-des-temps-gta/planning.html) (consultée le 16 novembre 2026) et [Tarifs](https://www.kelio.com/fr/tarifs.html) (consultée le 9 novembre 2026).
 - Eurécia, [Logiciel de planning](https://www.eurecia.com/logiciel-planning) et [Tarifs](https://www.eurecia.com/tarifs), pages consultées le 16 novembre 2026.
