@@ -2,15 +2,15 @@
 title: "Transferable skills: 8 strengths of events professionals"
 translationKey: "article-competences-transferables-evenementiel"
 date: 2026-11-23T08:00:00+01:00
-lastmod: 2026-11-23T08:00:00+01:00
+lastmod: 2026-11-23T21:45:00+01:00
 description: "Transferable skills: 8 strengths of events industry professionals that recruiters underestimate, according to Franck PRIME."
 categories: ["Recruitment"]
 tags: ["transferable skills", "recruitment", "events industry", "career change", "career mobility"]
 author: "franck-prime"
 tribune: true
-image: "/images/blog/competences-transferables-evenementiel.jpg"
-imageAlt: "Rows of empty conference chairs with open-work backs, in a room ready to welcome an audience"
-imageCredit: "Photo: ål nik on Unsplash"
+image: "/images/blog/competences-transferables-evenementiel-reseautage.jpg"
+imageAlt: "Professionals talking at a networking event in a bright workspace"
+imageCredit: "Photo: M ACCELERATOR on Unsplash"
 faq:
   - question: "What is a transferable skill?"
     answer: "According to France Travail, the French public employment service, transferable skills let a person carry their know-how from one job to another, and let a company recruit beyond conventional profiles. France Travail notes that between 2016 and 2021, one in four workers undertook a career change."

@@ -2,15 +2,15 @@
 title: "Compétences transférables : 8 atouts des profils de l'événementiel"
 translationKey: "article-competences-transferables-evenementiel"
 date: 2026-11-23T08:00:00+01:00
-lastmod: 2026-11-23T08:00:00+01:00
+lastmod: 2026-11-23T21:45:00+01:00
 description: "Compétences transférables : 8 savoir-faire des professionnels de l'événementiel que les recruteurs sous-estiment, selon Franck PRIME."
 categories: ["Recrutement"]
 tags: ["compétences transférables", "recrutement", "événementiel", "reconversion", "mobilité professionnelle"]
 author: "franck-prime"
 tribune: true
-image: "/images/blog/competences-transferables-evenementiel.jpg"
-imageAlt: "Rangées de chaises de conférence vides aux dossiers ajourés, dans une salle prête à accueillir le public"
-imageCredit: "Photo : ål nik sur Unsplash"
+image: "/images/blog/competences-transferables-evenementiel-reseautage.jpg"
+imageAlt: "Professionnels en discussion lors d'un événement de réseautage dans un espace de travail lumineux"
+imageCredit: "Photo : M ACCELERATOR sur Unsplash"
 faq:
   - question: "Qu'est-ce qu'une compétence transférable ?"
     answer: "Selon France Travail, les compétences transférables permettent à une personne de transférer son savoir-faire d'un métier à un autre, et à l'entreprise de recruter au-delà des profils classiques. France Travail rappelle qu'entre 2016 et 2021, un actif sur quatre a entrepris une reconversion professionnelle."
