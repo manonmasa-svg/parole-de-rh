@@ -16,14 +16,15 @@ steps:
     label: { fr: "Besoin", en: "Need" }
     question: { fr: "Quel est votre besoin principal ?", en: "What is your main need?" }
     help:
-      fr: "Le besoin principal détermine le type de logiciel : paie, SIRH, gestion des temps, recrutement ou formation."
-      en: "Your main need determines the type of software: payroll, HRIS, time management, recruitment or training."
+      fr: "Le besoin principal détermine le type de logiciel : paie, SIRH, gestion des temps, recrutement, formation ou notes de frais."
+      en: "Your main need determines the type of software: payroll, HRIS, time management, recruitment, training or expense reports."
     options:
       - { value: paie, label: { fr: "Produire la paie et la DSN", en: "Run payroll and the DSN" }, hint: { fr: "Bulletins, déclarations sociales, conventions collectives", en: "Payslips, social security returns, collective agreements" } }
       - { value: sirh, label: { fr: "Centraliser la gestion RH", en: "Centralise HR management" }, hint: { fr: "Dossiers du personnel, congés et absences, entretiens", en: "Employee records, leave and absence, reviews" } }
       - { value: temps, label: { fr: "Suivre les temps et les plannings", en: "Track time and schedules" }, hint: { fr: "Pointage, feuilles de temps, planning des équipes", en: "Clocking, timesheets, team scheduling" } }
       - { value: recrutement, label: { fr: "Recruter", en: "Recruit" }, hint: { fr: "Offres d'emploi, candidatures, suivi des candidats", en: "Job ads, applications, candidate tracking" } }
       - { value: formation, label: { fr: "Former les salariés", en: "Train employees" }, hint: { fr: "E-learning, parcours, plan de formation", en: "E-learning, learning paths, training plan" } }
+      - { value: frais, label: { fr: "Gérer les notes de frais", en: "Manage expense reports" }, hint: { fr: "Justificatifs, frais kilométriques, remboursements", en: "Receipts, mileage, reimbursements" } }
   - key: size
     label: { fr: "Taille", en: "Size" }
     question: { fr: "Combien de salariés compte l'entreprise ?", en: "How many employees does the company have?" }
@@ -54,19 +55,20 @@ articles:
   temps: { fr: meilleur-logiciel-rh.md, en: best-hr-software-france.md }
   recrutement: { fr: meilleur-logiciel-de-recrutement.md, en: best-recruitment-software-france.md }
   formation: { fr: meilleur-logiciel-formation.md, en: best-lms-training-software-france.md }
+  frais: { fr: meilleur-logiciel-note-de-frais.md, en: best-expense-report-software-france.md }
 
 # needs : besoin -> ordre dans le comparatif correspondant (sert à départager deux scores égaux)
 # sizes : tranches pour lesquelles l'éditeur publie une offre (liste vide = non relevé, sans effet)
 vendors:
   - name: PayFit
-    needs: { paie: 1 }
+    needs: { paie: 1, frais: 5 }
     sizes: [s1, s2, s3, s4]
     flags: { price: true, flex: true, secure: true, service: true }
     target: { fr: "De 1 à plus de 1 000 collaborateurs", en: "From 1 to over 1,000 employees" }
     fact:
-      fr: "Paie au cœur de l'offre : bulletins, DSN et déclarations événementielles. De 20 à 30 € HT par collaborateur et par mois plus 49 € d'abonnement, ou 26 € sans abonnement pour une première paie, offres sans engagement. Service de paie réalisée par ses experts, certification ISO 27001 et données hébergées en France."
-      en: "Payroll is the core of the offer: payslips, DSN and event-based returns. €20 to €30 excl. VAT per employee per month plus a €49 subscription, or €26 with no subscription for a first payroll, plans with no commitment. Payroll service run by its experts, ISO 27001 certification and data hosted in France."
-    checked: { fr: "Relevé des 12 et 29 octobre et du 5 novembre 2026", en: "Checked on 12 and 29 October and 5 November 2026" }
+      fr: "Paie au cœur de l'offre : bulletins, DSN et déclarations événementielles. De 20 à 30 € HT par collaborateur et par mois plus 49 € d'abonnement, ou 26 € sans abonnement pour une première paie, offres sans engagement. Service de paie réalisée par ses experts, notes de frais en option à 3 € par collaborateur et par mois, certification ISO 27001 et données hébergées en France."
+      en: "Payroll is the core of the offer: payslips, DSN and event-based returns. €20 to €30 excl. VAT per employee per month plus a €49 subscription, or €26 with no subscription for a first payroll, plans with no commitment. Payroll service run by its experts, expense reports as an option at €3 per employee per month, ISO 27001 certification and data hosted in France."
+    checked: { fr: "Relevé des 12 et 29 octobre et des 5 et 16 novembre 2026", en: "Checked on 12 and 29 October and 5 and 16 November 2026" }
   - name: Kelio
     needs: { paie: 2, temps: 1 }
     sizes: [s3, s4]
@@ -104,23 +106,23 @@ vendors:
       en: "Two payroll products: Sage Business Cloud Paie for small businesses, Sage 100 Paie & RH for SMEs and mid-sized companies. Payroll outsourcing mentioned, no price found."
     checked: { fr: "Relevé du 12 octobre 2026", en: "Checked on 12 October 2026" }
   - name: Lucca
-    needs: { sirh: 1, temps: 4, recrutement: 3, formation: 5 }
+    needs: { sirh: 1, temps: 4, recrutement: 3, formation: 5, frais: 4 }
     sizes: [s3, s4]
     flags: { price: true, flex: true, secure: true }
     target: { fr: "Tarifs publiés au-delà de 100 collaborateurs", en: "Prices published for over 100 employees" }
     fact:
-      fr: "Un prix publié pour chaque module, par exemple 3,21 € HT par collaborateur et par mois pour le socle RH, la formation ou le recrutement et 3,00 € pour les feuilles de temps, sans durée d'engagement. Hébergement chez OVH en France et en Allemagne, certification ISO 27001."
-      en: "A published price for each module, for example €3.21 excl. VAT per employee per month for core HR, training or recruitment and €3.00 for timesheets, with no minimum term. Hosting with OVH in France and Germany, ISO 27001 certification."
-    checked: { fr: "Relevé des 21 et 25 octobre et du 24 novembre 2026", en: "Checked on 21 and 25 October and 24 November 2026" }
+      fr: "Un prix publié pour chaque module, par exemple 3,21 € HT par collaborateur et par mois pour le socle RH, la formation ou le recrutement, 3,00 € pour les feuilles de temps et 5,81 € HT par déclarant pour les frais professionnels, sans durée d'engagement. Hébergement chez OVH en France et en Allemagne, certification ISO 27001."
+      en: "A published price for each module, for example €3.21 excl. VAT per employee per month for core HR, training or recruitment, €3.00 for timesheets and €5.81 excl. VAT per claimant for business expenses, with no minimum term. Hosting with OVH in France and Germany, ISO 27001 certification."
+    checked: { fr: "Relevé des 21 et 25 octobre et des 16 et 24 novembre 2026", en: "Checked on 21 and 25 October and 16 and 24 November 2026" }
   - name: Eurécia
-    needs: { sirh: 2, temps: 2, formation: 6 }
+    needs: { sirh: 2, temps: 2, formation: 6, frais: 6 }
     sizes: [s1, s2, s3, s4]
     flags: { price: true, flex: true, secure: true }
     target: { fr: "De 1 à plus de 500 collaborateurs", en: "From 1 to over 500 employees" }
     fact:
-      fr: "À partir de 4,20 € HT par collaborateur et par mois (offre Business, 11 à 500 collaborateurs, tous modules dont la formation), essai gratuit de 30 jours sans engagement (conditions de l'abonnement fixées dans le contrat), hébergement annoncé en France. Offre Starter de 1 à 10 collaborateurs via le cabinet d'expertise comptable."
-      en: "From €4.20 excl. VAT per employee per month (Business plan, 11 to 500 employees, all modules including training), 30-day free trial with no commitment (subscription terms set in the contract), hosting stated as based in France. Starter plan for 1 to 10 employees through the accounting firm."
-    checked: { fr: "Relevé des 21 octobre, 5 et 24 novembre 2026", en: "Checked on 21 October, 5 and 24 November 2026" }
+      fr: "À partir de 4,20 € HT par collaborateur et par mois (offre Business, 11 à 500 collaborateurs, tous modules dont la formation et les notes de frais), essai gratuit de 30 jours sans engagement (conditions de l'abonnement fixées dans le contrat), hébergement annoncé en France. Offre Starter de 1 à 10 collaborateurs via le cabinet d'expertise comptable."
+      en: "From €4.20 excl. VAT per employee per month (Business plan, 11 to 500 employees, all modules including training and expense reports), 30-day free trial with no commitment (subscription terms set in the contract), hosting stated as based in France. Starter plan for 1 to 10 employees through the accounting firm."
+    checked: { fr: "Relevé des 21 octobre, 5, 16 et 24 novembre 2026", en: "Checked on 21 October, 5, 16 and 24 November 2026" }
   - name: Factorial
     needs: { sirh: 3, temps: 3 }
     sizes: [s1, s2, s3, s4]
@@ -266,6 +268,69 @@ vendors:
       fr: "Outil auteur (Studio) et plateforme LCMS (Platform), support et formation illimités annoncés. Tarifs sur demande."
       en: "Authoring tool (Studio) and LCMS platform (Platform), unlimited support and training stated. Prices on request."
     checked: { fr: "Relevé du 24 novembre 2026", en: "Checked on 24 November 2026" }
+  - name: N2F
+    needs: { frais: 1 }
+    sizes: [s1]
+    flags: { price: true, flex: true, secure: true }
+    target: { fr: "Prix publiés dès 1 utilisateur", en: "Prices published from 1 user" }
+    fact:
+      fr: "Notes de frais à 5,1 € HT par mois pour 1 utilisateur et 6,9 € HT par utilisateur de 2 à 5 utilisateurs (facturation annuelle), offre Advanced sur devis. Essai gratuit, certification ISO 27001 et hébergement en Europe annoncés."
+      en: "Expense reports at €5.1 excl. VAT per month for 1 user and €6.9 excl. VAT per user for 2 to 5 users (annual billing), Advanced plan on quote. Free trial, ISO 27001 certification and European hosting stated."
+    checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
+  - name: Rydoo
+    needs: { frais: 2 }
+    sizes: []
+    flags: { price: true }
+    target: { fr: "À partir de 5 utilisateurs", en: "From 5 users" }
+    fact:
+      fr: "Offre Essentials à 8 € par utilisateur et par mois en annuel (10 € en mensuel), Pro à 10 € (12 € en mensuel), à partir de 5 utilisateurs. Offres Business et Enterprise sur mesure, facturées aux seuls utilisateurs actifs."
+      en: "Essentials plan at €8 per user per month billed annually (€10 monthly), Pro at €10 (€12 monthly), from 5 users. Business and Enterprise plans are custom, billed for active users only."
+    checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
+  - name: Pleo
+    needs: { frais: 3 }
+    sizes: []
+    flags: { price: true, flex: true }
+    target: { fr: "De 1 administrateur à plusieurs équipes", en: "From 1 admin to several teams" }
+    fact:
+      fr: "Cartes de paiement et notes de frais : 8 €, 14 € ou 18 € par utilisateur et par mois selon l'offre, essai gratuit. Le remboursement des dépenses avancées par les salariés commence à l'offre Build (14 €, annuelle, 3 utilisateurs minimum)."
+      en: "Payment cards and expense reports: €8, €14 or €18 per user per month depending on the plan, free trial. Reimbursement of expenses paid by employees starts with the Build plan (€14, annual, 3 users minimum)."
+    checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
+  - name: Spendesk
+    needs: { frais: 7 }
+    sizes: []
+    flags: {}
+    target: { fr: "Utilisateurs illimités", en: "Unlimited users" }
+    fact:
+      fr: "Abonnement fixe et frais variables par transaction (achats par carte, factures, remboursements de notes de frais), utilisateurs illimités, cartes gratuites. Prix sur devis."
+      en: "Fixed subscription plus variable fees per transaction (card purchases, invoices, expense reimbursements), unlimited users, free cards. Price on quote."
+    checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
+  - name: Mooncard
+    needs: { frais: 8 }
+    sizes: []
+    flags: {}
+    target: { fr: "Solution de cartes de paiement", en: "Payment card solution" }
+    fact:
+      fr: "Cartes de paiement paramétrables, 10 € de frais d'émission par carte, saisie des notes de frais hors carte en option. Offres Original et Hub sur devis."
+      en: "Configurable payment cards, €10 issuing fee per card, entry of non-card expense reports as an option. Original and Hub plans on quote."
+    checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
+  - name: Expensya
+    needs: { frais: 9 }
+    sizes: []
+    flags: {}
+    target: { fr: "Selon l'offre choisie", en: "Depending on the plan" }
+    fact:
+      fr: "Lecture illimitée des justificatifs, frais kilométriques, indemnités journalières, archivage légal et cartes. Offre Premium sur devis."
+      en: "Unlimited receipt scanning, mileage, per diems, legal archiving and cards. Premium plan on quote."
+    checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
+  - name: Jenji
+    needs: { frais: 10 }
+    sizes: []
+    flags: {}
+    target: { fr: "Offre autonome ou liée à Silae", en: "Standalone or linked to Silae" }
+    fact:
+      fr: "Lecture des justificatifs, kilométrage automatique, mode hors ligne et coffre-fort numérique. Offres Jenji Solo et Silae Expense (liée au logiciel de paie Silae), prix non publié."
+      en: "Receipt scanning, automatic mileage, offline mode and digital vault. Jenji Solo and Silae Expense plans (linked to the Silae payroll software), no published price."
+    checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
 
 # Les cinq critères affichés sous le questionnaire (repris des comparatifs SIRH et paie)
 criteria:
