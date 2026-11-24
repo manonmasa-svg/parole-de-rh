@@ -16,12 +16,13 @@ steps:
     label: { fr: "Besoin", en: "Need" }
     question: { fr: "Quel est votre besoin principal ?", en: "What is your main need?" }
     help:
-      fr: "Le besoin principal détermine le type de logiciel : paie, SIRH, gestion des temps, recrutement, formation ou notes de frais."
-      en: "Your main need determines the type of software: payroll, HRIS, time management, recruitment, training or expense reports."
+      fr: "Le besoin principal détermine le type de logiciel : paie, SIRH, gestion des temps, planning, recrutement, formation ou notes de frais."
+      en: "Your main need determines the type of software: payroll, HRIS, time management, scheduling, recruitment, training or expense reports."
     options:
       - { value: paie, label: { fr: "Produire la paie et la DSN", en: "Run payroll and the DSN" }, hint: { fr: "Bulletins, déclarations sociales, conventions collectives", en: "Payslips, social security returns, collective agreements" } }
       - { value: sirh, label: { fr: "Centraliser la gestion RH", en: "Centralise HR management" }, hint: { fr: "Dossiers du personnel, congés et absences, entretiens", en: "Employee records, leave and absence, reviews" } }
-      - { value: temps, label: { fr: "Suivre les temps et les plannings", en: "Track time and schedules" }, hint: { fr: "Pointage, feuilles de temps, planning des équipes", en: "Clocking, timesheets, team scheduling" } }
+      - { value: temps, label: { fr: "Suivre les temps de travail", en: "Track working time" }, hint: { fr: "Pointage, feuilles de temps, absences", en: "Clocking, timesheets, absences" } }
+      - { value: planning, label: { fr: "Organiser les plannings des équipes", en: "Schedule teams" }, hint: { fr: "Horaires, rotations, alertes sur la durée du travail", en: "Shifts, rotations, working time alerts" } }
       - { value: recrutement, label: { fr: "Recruter", en: "Recruit" }, hint: { fr: "Offres d'emploi, candidatures, suivi des candidats", en: "Job ads, applications, candidate tracking" } }
       - { value: formation, label: { fr: "Former les salariés", en: "Train employees" }, hint: { fr: "E-learning, parcours, plan de formation", en: "E-learning, learning paths, training plan" } }
       - { value: frais, label: { fr: "Gérer les notes de frais", en: "Manage expense reports" }, hint: { fr: "Justificatifs, frais kilométriques, remboursements", en: "Receipts, mileage, reimbursements" } }
@@ -56,6 +57,7 @@ articles:
   recrutement: { fr: meilleur-logiciel-de-recrutement.md, en: best-recruitment-software-france.md }
   formation: { fr: meilleur-logiciel-formation.md, en: best-lms-training-software-france.md }
   frais: { fr: meilleur-logiciel-note-de-frais.md, en: best-expense-report-software-france.md }
+  planning: { fr: meilleur-logiciel-planning.md, en: best-staff-scheduling-software-france.md }
 
 # needs : besoin -> ordre dans le comparatif correspondant (sert à départager deux scores égaux)
 # sizes : tranches pour lesquelles l'éditeur publie une offre (liste vide = non relevé, sans effet)
@@ -70,14 +72,14 @@ vendors:
       en: "Payroll is the core of the offer: payslips, DSN and event-based returns. €20 to €30 excl. VAT per employee per month plus a €49 subscription, or €26 with no subscription for a first payroll, plans with no commitment. Payroll service run by its experts, expense reports as an option at €3 per employee per month, ISO 27001 certification and data hosted in France."
     checked: { fr: "Relevé des 12 et 29 octobre et des 5 et 16 novembre 2026", en: "Checked on 12 and 29 October and 5 and 16 November 2026" }
   - name: Kelio
-    needs: { paie: 2, temps: 1 }
+    needs: { paie: 2, temps: 1, planning: 4 }
     sizes: [s3, s4]
     flags: { price: true, secure: true, service: true }
     target: { fr: "Grille publiée à partir de 50 salariés", en: "Price grid published from 50 employees" }
     fact:
-      fr: "Gestion des temps reliée à la paie (123Paie, plus de 200 conventions collectives annoncées). À partir de 3,05 € HT par salarié et par mois pour 50 salariés, engagement initial de 3 ans, hébergement et support annoncés en France, externalisation de la paie proposée."
-      en: "Time management linked to payroll (123Paie, over 200 collective agreements stated). From €3.05 excl. VAT per employee per month for 50 employees, 3-year initial commitment, hosting and support stated as based in France, payroll outsourcing offered."
-    checked: { fr: "Relevé des 7 et 12 octobre et du 5 novembre 2026", en: "Checked on 7 and 12 October and 5 November 2026" }
+      fr: "Gestion des temps reliée à la paie (123Paie, plus de 200 conventions collectives annoncées). À partir de 3,05 € HT par salarié et par mois pour 50 salariés (5,75 € HT avec la planification avancée), engagement initial de 3 ans, hébergement et support annoncés en France, externalisation de la paie proposée."
+      en: "Time management linked to payroll (123Paie, over 200 collective agreements stated). From €3.05 excl. VAT per employee per month for 50 employees (€5.75 excl. VAT with advanced scheduling), 3-year initial commitment, hosting and support stated as based in France, payroll outsourcing offered."
+    checked: { fr: "Relevé des 7 et 12 octobre et des 5 et 9 novembre 2026", en: "Checked on 7 and 12 October and 5 and 9 November 2026" }
   - name: Silae
     needs: { paie: 3 }
     sizes: [s1, s2, s3]
@@ -115,16 +117,16 @@ vendors:
       en: "A published price for each module, for example €3.21 excl. VAT per employee per month for core HR, training or recruitment, €3.00 for timesheets and €5.81 excl. VAT per claimant for business expenses, with no minimum term. Hosting with OVH in France and Germany, ISO 27001 certification."
     checked: { fr: "Relevé des 21 et 25 octobre et des 16 et 24 novembre 2026", en: "Checked on 21 and 25 October and 16 and 24 November 2026" }
   - name: Eurécia
-    needs: { sirh: 2, temps: 2, formation: 6, frais: 6 }
+    needs: { sirh: 2, temps: 2, formation: 6, frais: 6, planning: 5 }
     sizes: [s1, s2, s3, s4]
     flags: { price: true, flex: true, secure: true }
     target: { fr: "De 1 à plus de 500 collaborateurs", en: "From 1 to over 500 employees" }
     fact:
-      fr: "À partir de 4,20 € HT par collaborateur et par mois (offre Business, 11 à 500 collaborateurs, tous modules dont la formation et les notes de frais), essai gratuit de 30 jours sans engagement (conditions de l'abonnement fixées dans le contrat), hébergement annoncé en France. Offre Starter de 1 à 10 collaborateurs via le cabinet d'expertise comptable."
-      en: "From €4.20 excl. VAT per employee per month (Business plan, 11 to 500 employees, all modules including training and expense reports), 30-day free trial with no commitment (subscription terms set in the contract), hosting stated as based in France. Starter plan for 1 to 10 employees through the accounting firm."
+      fr: "À partir de 4,20 € HT par collaborateur et par mois (offre Business, 11 à 500 collaborateurs, tous modules dont le planning, la formation et les notes de frais), essai gratuit de 30 jours sans engagement (conditions de l'abonnement fixées dans le contrat), hébergement annoncé en France. Offre Starter de 1 à 10 collaborateurs via le cabinet d'expertise comptable."
+      en: "From €4.20 excl. VAT per employee per month (Business plan, 11 to 500 employees, all modules including scheduling, training and expense reports), 30-day free trial with no commitment (subscription terms set in the contract), hosting stated as based in France. Starter plan for 1 to 10 employees through the accounting firm."
     checked: { fr: "Relevé des 21 octobre, 5, 16 et 24 novembre 2026", en: "Checked on 21 October, 5, 16 and 24 November 2026" }
   - name: Factorial
-    needs: { sirh: 3, temps: 3 }
+    needs: { sirh: 3, temps: 3, planning: 6 }
     sizes: [s1, s2, s3, s4]
     flags: { price: true, flex: true, secure: true }
     target: { fr: "Toutes tailles d'entreprise", en: "Companies of all sizes" }
@@ -330,6 +332,33 @@ vendors:
     fact:
       fr: "Lecture des justificatifs, kilométrage automatique, mode hors ligne et coffre-fort numérique. Offres Jenji Solo et Silae Expense (liée au logiciel de paie Silae), prix non publié."
       en: "Receipt scanning, automatic mileage, offline mode and digital vault. Jenji Solo and Silae Expense plans (linked to the Silae payroll software), no published price."
+    checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
+  - name: Combo
+    needs: { planning: 1 }
+    sizes: []
+    flags: { price: true, flex: true }
+    target: { fr: "Prix par établissement", en: "Price per site" }
+    fact:
+      fr: "Planning à partir de 68 € par établissement et par mois (offre Time) ou 89 € (offre People), alertes liées à la convention collective, planning prédictif. Offre annoncée sans engagement et sans carte bancaire, pointeuse en option à 2 € par employé et par mois."
+      en: "Scheduling from €68 per site per month (Time plan) or €89 (People plan), alerts based on the collective agreement, predictive scheduling. Offer stated with no commitment and no credit card, time clock as an option at €2 per employee per month."
+    checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
+  - name: Skello
+    needs: { planning: 2 }
+    sizes: []
+    flags: { price: true, flex: true }
+    target: { fr: "Équipes de terrain, jusqu'à 10 000 employés (offre Entreprise)", en: "Frontline teams, up to 10,000 employees (Enterprise plan)" }
+    fact:
+      fr: "Planning dès 79 € par mois (Planning Standard) ou 109 € (Planning Max, avec planification automatique), alertes selon la convention collective, 10 % de remise en engagement annuel. Essai de 14 jours converti automatiquement en abonnement sans démarche contraire, prix hors TVA selon les conditions générales."
+      en: "Scheduling from €79 per month (Planning Standard) or €109 (Planning Max, with automatic scheduling), alerts based on the collective agreement, 10% off with an annual commitment. 14-day trial automatically converted into a subscription unless the customer acts, prices excluding VAT according to the terms and conditions."
+    checked: { fr: "Relevé des 16 et 23 novembre 2026", en: "Checked on 16 and 23 November 2026" }
+  - name: Planday
+    needs: { planning: 3 }
+    sizes: []
+    flags: { price: true, flex: true }
+    target: { fr: "À partir de 5 utilisateurs", en: "From 5 users" }
+    fact:
+      fr: "Planning à 2,99 € par utilisateur et par mois (Starter, 5 utilisateurs minimum) ou 4,99 € plus 25 € d'abonnement mensuel (Plus, 10 utilisateurs minimum). 30 jours gratuits sans carte bancaire, annulation possible à tout moment."
+      en: "Scheduling at €2.99 per user per month (Starter, 5 users minimum) or €4.99 plus a €25 monthly subscription (Plus, 10 users minimum). 30 days free with no credit card, cancellation possible at any time."
     checked: { fr: "Relevé du 16 novembre 2026", en: "Checked on 16 November 2026" }
 
 # Les cinq critères affichés sous le questionnaire (repris des comparatifs SIRH et paie)
