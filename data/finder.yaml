@@ -16,13 +16,14 @@ steps:
     label: { fr: "Besoin", en: "Need" }
     question: { fr: "Quel est votre besoin principal ?", en: "What is your main need?" }
     help:
-      fr: "Le besoin principal détermine le type de logiciel : paie, SIRH, gestion des temps ou recrutement."
-      en: "Your main need determines the type of software: payroll, HRIS, time management or recruitment."
+      fr: "Le besoin principal détermine le type de logiciel : paie, SIRH, gestion des temps, recrutement ou formation."
+      en: "Your main need determines the type of software: payroll, HRIS, time management, recruitment or training."
     options:
       - { value: paie, label: { fr: "Produire la paie et la DSN", en: "Run payroll and the DSN" }, hint: { fr: "Bulletins, déclarations sociales, conventions collectives", en: "Payslips, social security returns, collective agreements" } }
       - { value: sirh, label: { fr: "Centraliser la gestion RH", en: "Centralise HR management" }, hint: { fr: "Dossiers du personnel, congés et absences, entretiens", en: "Employee records, leave and absence, reviews" } }
       - { value: temps, label: { fr: "Suivre les temps et les plannings", en: "Track time and schedules" }, hint: { fr: "Pointage, feuilles de temps, planning des équipes", en: "Clocking, timesheets, team scheduling" } }
       - { value: recrutement, label: { fr: "Recruter", en: "Recruit" }, hint: { fr: "Offres d'emploi, candidatures, suivi des candidats", en: "Job ads, applications, candidate tracking" } }
+      - { value: formation, label: { fr: "Former les salariés", en: "Train employees" }, hint: { fr: "E-learning, parcours, plan de formation", en: "E-learning, learning paths, training plan" } }
   - key: size
     label: { fr: "Taille", en: "Size" }
     question: { fr: "Combien de salariés compte l'entreprise ?", en: "How many employees does the company have?" }
@@ -52,6 +53,7 @@ articles:
   sirh: { fr: meilleur-logiciel-sirh.md, en: best-hris-software-france.md }
   temps: { fr: meilleur-logiciel-rh.md, en: best-hr-software-france.md }
   recrutement: { fr: meilleur-logiciel-de-recrutement.md, en: best-recruitment-software-france.md }
+  formation: { fr: meilleur-logiciel-formation.md, en: best-lms-training-software-france.md }
 
 # needs : besoin -> ordre dans le comparatif correspondant (sert à départager deux scores égaux)
 # sizes : tranches pour lesquelles l'éditeur publie une offre (liste vide = non relevé, sans effet)
@@ -102,23 +104,23 @@ vendors:
       en: "Two payroll products: Sage Business Cloud Paie for small businesses, Sage 100 Paie & RH for SMEs and mid-sized companies. Payroll outsourcing mentioned, no price found."
     checked: { fr: "Relevé du 12 octobre 2026", en: "Checked on 12 October 2026" }
   - name: Lucca
-    needs: { sirh: 1, temps: 4, recrutement: 3 }
+    needs: { sirh: 1, temps: 4, recrutement: 3, formation: 5 }
     sizes: [s3, s4]
     flags: { price: true, flex: true, secure: true }
     target: { fr: "Tarifs publiés au-delà de 100 collaborateurs", en: "Prices published for over 100 employees" }
     fact:
-      fr: "Un prix publié pour chaque module, par exemple 3,21 € HT par collaborateur et par mois pour le socle RH ou le recrutement et 3,00 € pour les feuilles de temps, sans durée d'engagement. Hébergement chez OVH en France et en Allemagne, certification ISO 27001."
-      en: "A published price for each module, for example €3.21 excl. VAT per employee per month for core HR or recruitment and €3.00 for timesheets, with no minimum term. Hosting with OVH in France and Germany, ISO 27001 certification."
-    checked: { fr: "Relevé des 21 et 25 octobre 2026", en: "Checked on 21 and 25 October 2026" }
+      fr: "Un prix publié pour chaque module, par exemple 3,21 € HT par collaborateur et par mois pour le socle RH, la formation ou le recrutement et 3,00 € pour les feuilles de temps, sans durée d'engagement. Hébergement chez OVH en France et en Allemagne, certification ISO 27001."
+      en: "A published price for each module, for example €3.21 excl. VAT per employee per month for core HR, training or recruitment and €3.00 for timesheets, with no minimum term. Hosting with OVH in France and Germany, ISO 27001 certification."
+    checked: { fr: "Relevé des 21 et 25 octobre et du 24 novembre 2026", en: "Checked on 21 and 25 October and 24 November 2026" }
   - name: Eurécia
-    needs: { sirh: 2, temps: 2 }
+    needs: { sirh: 2, temps: 2, formation: 6 }
     sizes: [s1, s2, s3, s4]
     flags: { price: true, flex: true, secure: true }
     target: { fr: "De 1 à plus de 500 collaborateurs", en: "From 1 to over 500 employees" }
     fact:
-      fr: "À partir de 4,20 € HT par collaborateur et par mois (offre Business, 11 à 500 collaborateurs), essai gratuit de 30 jours sans engagement (conditions de l'abonnement fixées dans le contrat), hébergement annoncé en France. Offre Starter de 1 à 10 collaborateurs via le cabinet d'expertise comptable."
-      en: "From €4.20 excl. VAT per employee per month (Business plan, 11 to 500 employees), 30-day free trial with no commitment (subscription terms set in the contract), hosting stated as based in France. Starter plan for 1 to 10 employees through the accounting firm."
-    checked: { fr: "Relevé des 21 octobre et 5 novembre 2026", en: "Checked on 21 October and 5 November 2026" }
+      fr: "À partir de 4,20 € HT par collaborateur et par mois (offre Business, 11 à 500 collaborateurs, tous modules dont la formation), essai gratuit de 30 jours sans engagement (conditions de l'abonnement fixées dans le contrat), hébergement annoncé en France. Offre Starter de 1 à 10 collaborateurs via le cabinet d'expertise comptable."
+      en: "From €4.20 excl. VAT per employee per month (Business plan, 11 to 500 employees, all modules including training), 30-day free trial with no commitment (subscription terms set in the contract), hosting stated as based in France. Starter plan for 1 to 10 employees through the accounting firm."
+    checked: { fr: "Relevé des 21 octobre, 5 et 24 novembre 2026", en: "Checked on 21 October, 5 and 24 November 2026" }
   - name: Factorial
     needs: { sirh: 3, temps: 3 }
     sizes: [s1, s2, s3, s4]
@@ -191,6 +193,79 @@ vendors:
       fr: "Offres décrites en détail, essai gratuit, stockage illimité des candidats. Aucun prix publié."
       en: "Plans described in detail, free trial, unlimited candidate storage. No published price."
     checked: { fr: "Relevé du 21 octobre 2026", en: "Checked on 21 October 2026" }
+
+  - name: 360Learning
+    needs: { formation: 1 }
+    sizes: []
+    flags: { price: true, flex: true, secure: true }
+    target: { fr: "Offre Team jusqu'à 100 utilisateurs", en: "Team plan up to 100 users" }
+    fact:
+      fr: "LMS à 8 € par utilisateur et par mois (offre Team, jusqu'à 100 utilisateurs), facturation mensuelle sans engagement annuel, essai gratuit de 30 jours. RGPD, SOC 2 et ISO 27001 annoncés."
+      en: "LMS at €8 per user per month (Team plan, up to 100 users), monthly billing with no annual commitment, 30-day free trial. GDPR, SOC 2 and ISO 27001 stated."
+    checked: { fr: "Relevé du 24 novembre 2026", en: "Checked on 24 November 2026" }
+  - name: iSpring LMS
+    needs: { formation: 2 }
+    sizes: []
+    flags: { price: true, flex: true }
+    target: { fr: "Grille publiée pour 100, 300 et 500 utilisateurs", en: "Price grid published for 100, 300 and 500 users" }
+    fact:
+      fr: "LMS facturé à l'année par utilisateur actif : 6,61 € par mois pour 100 utilisateurs (7 936 € par an), 4,25 € pour 300, 3,78 € pour 500. Essai gratuit de 30 jours et garantie de remboursement annoncée."
+      en: "LMS billed annually per active user: €6.61 per month for 100 users (€7,936 per year), €4.25 for 300, €3.78 for 500. 30-day free trial and money-back guarantee stated."
+    checked: { fr: "Relevé du 24 novembre 2026", en: "Checked on 24 November 2026" }
+  - name: TalentLMS
+    needs: { formation: 3 }
+    sizes: [s1]
+    flags: { price: true, flex: true }
+    target: { fr: "Gratuit jusqu'à 5 utilisateurs", en: "Free up to 5 users" }
+    fact:
+      fr: "LMS gratuit jusqu'à 5 utilisateurs et 10 cours, puis 119 $, 229 $ ou 449 $ par mois en facturation annuelle (jusqu'à 40, 70 ou 100 utilisateurs). Prix affichés en dollars."
+      en: "LMS free up to 5 users and 10 courses, then $119, $229 or $449 per month billed annually (up to 40, 70 or 100 users). Prices shown in dollars."
+    checked: { fr: "Relevé du 24 novembre 2026", en: "Checked on 24 November 2026" }
+  - name: Moodle
+    needs: { formation: 4 }
+    sizes: []
+    flags: { flex: true }
+    target: { fr: "Logiciel open source à héberger", en: "Open source software to host" }
+    fact:
+      fr: "LMS open source à installer sur son propre serveur (PHP et base de données). Formule hébergée MoodleCloud avec 28 jours d'essai sans carte bancaire, prix non relevés."
+      en: "Open source LMS to install on your own server (PHP and a database). Hosted MoodleCloud service with a 28-day trial and no credit card, prices not found."
+    checked: { fr: "Relevé du 24 novembre 2026", en: "Checked on 24 November 2026" }
+  - name: Didask
+    needs: { formation: 7 }
+    sizes: []
+    flags: { price: true, service: true }
+    target: { fr: "Selon le volume d'utilisateurs", en: "Depending on the number of users" }
+    fact:
+      fr: "Plateforme de formation et de coaching assistée par l'IA, tarif annoncé à partir de 10 000 € par an, sans frais d'installation, accompagnement humain inclus."
+      en: "AI-assisted training and coaching platform, price stated from €10,000 per year, no set-up fees, human support included."
+    checked: { fr: "Relevé du 24 novembre 2026", en: "Checked on 24 November 2026" }
+  - name: Rise Up
+    needs: { formation: 8 }
+    sizes: []
+    flags: { secure: true, service: true }
+    target: { fr: "Offre sur mesure", en: "Custom offer" }
+    fact:
+      fr: "LMS sur devis, certification ISO 27001, conformité RGPD et hébergement en Europe annoncés, chargé de compte dédié dans les deux niveaux de service."
+      en: "LMS on quote, ISO 27001 certification, GDPR compliance and European hosting stated, dedicated customer success manager in both service levels."
+    checked: { fr: "Relevé du 24 novembre 2026", en: "Checked on 24 November 2026" }
+  - name: Docebo
+    needs: { formation: 9 }
+    sizes: [s4]
+    flags: { service: true }
+    target: { fr: "Grandes organisations", en: "Large organisations" }
+    fact:
+      fr: "LMS sur devis, contrat d'un an minimum (la plupart des clients signent pour 3 à 5 ans), services professionnels de déploiement proposés."
+      en: "LMS on quote, one-year minimum contract (most customers sign for 3 to 5 years), professional deployment services offered."
+    checked: { fr: "Relevé du 24 novembre 2026", en: "Checked on 24 November 2026" }
+  - name: Teach Up
+    needs: { formation: 10 }
+    sizes: []
+    flags: { service: true }
+    target: { fr: "Grands groupes, PME et organismes de formation", en: "Large groups, SMEs and training organisations" }
+    fact:
+      fr: "Outil auteur (Studio) et plateforme LCMS (Platform), support et formation illimités annoncés. Tarifs sur demande."
+      en: "Authoring tool (Studio) and LCMS platform (Platform), unlimited support and training stated. Prices on request."
+    checked: { fr: "Relevé du 24 novembre 2026", en: "Checked on 24 November 2026" }
 
 # Les cinq critères affichés sous le questionnaire (repris des comparatifs SIRH et paie)
 criteria:
